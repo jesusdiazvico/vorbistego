@@ -1,0 +1,110 @@
+\hypertarget{structcryptos__config__t}{
+\section{cryptos\_\-config\_\-t Struct Reference}
+\label{structcryptos__config__t}\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}}
+}
+
+
+Defines the global configuration of the cryptographic protocol.  
+
+
+{\ttfamily \#include $<$include/cryptos\_\-types.h$>$}\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structcryptos__config__t_a235962cb863bfd75cb837814bd86cef4}{cipher\_\-algo}
+\item 
+int \hyperlink{structcryptos__config__t_ad9bab3292aaefb4655a76ba03bb4e647}{md\_\-algo}
+\item 
+int \hyperlink{structcryptos__config__t_accebe1ccacfcc0e531c012ad4dfa9ff7}{md\_\-len}
+\item 
+int \hyperlink{structcryptos__config__t_a131f67ed366d0d24a6f9dd20e06f2030}{max\_\-data}
+\item 
+int \hyperlink{structcryptos__config__t_a4ccc3efa7eb7c5bac4424489b1e9e616}{hmac}
+\item 
+gcry\_\-cipher\_\-hd\_\-t \hyperlink{structcryptos__config__t_a07ceae1485d08d3ef32dd276c1822860}{chd}
+\item 
+gcry\_\-md\_\-hd\_\-t \hyperlink{structcryptos__config__t_ade08a42531e6824fd61ef4698d0c851c}{mdhd}
+\item 
+\hyperlink{structcryptos__key__t}{cryptos\_\-key\_\-t} $\ast$ \hyperlink{structcryptos__config__t_a3a247a5836789dbf4b0a0000754794a9}{key}
+\item 
+\hyperlink{structcryptos__key__t}{cryptos\_\-key\_\-t} $\ast$ \hyperlink{structcryptos__config__t_a66a52c965c6c838e343ebeb05a4a5cf2}{iv}
+\item 
+uint64\_\-t \hyperlink{structcryptos__config__t_a201dba03c6609d57a8c2949496e52cdf}{emission}
+\item 
+uint64\_\-t \hyperlink{structcryptos__config__t_ad027dbc31d02c462e5c701e9f407c092}{packet}
+\item 
+uint64\_\-t \hyperlink{structcryptos__config__t_adb53007d66d9e4258ba5765958df794b}{default\_\-data\_\-size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the global configuration of the cryptographic protocol. \begin{DoxySeeAlso}{See also}
+\hyperlink{structcryptos__key__t}{cryptos\_\-key\_\-t} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcryptos__config__t_a07ceae1485d08d3ef32dd276c1822860}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!chd@{chd}}
+\index{chd@{chd}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{chd}]{\setlength{\rightskip}{0pt plus 5cm}gcry\_\-cipher\_\-hd\_\-t {\bf cryptos\_\-config\_\-t::chd}}}
+\label{structcryptos__config__t_a07ceae1485d08d3ef32dd276c1822860}
+Handler for the ciphering algorithm \hypertarget{structcryptos__config__t_a235962cb863bfd75cb837814bd86cef4}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!cipher\_\-algo@{cipher\_\-algo}}
+\index{cipher\_\-algo@{cipher\_\-algo}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{cipher\_\-algo}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cryptos\_\-config\_\-t::cipher\_\-algo}}}
+\label{structcryptos__config__t_a235962cb863bfd75cb837814bd86cef4}
+Cipher algorithm to use \hypertarget{structcryptos__config__t_adb53007d66d9e4258ba5765958df794b}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!default\_\-data\_\-size@{default\_\-data\_\-size}}
+\index{default\_\-data\_\-size@{default\_\-data\_\-size}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{default\_\-data\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}uint64\_\-t {\bf cryptos\_\-config\_\-t::default\_\-data\_\-size}}}
+\label{structcryptos__config__t_adb53007d66d9e4258ba5765958df794b}
+Default size of data, in bytes, to send in a given packet. \hypertarget{structcryptos__config__t_a201dba03c6609d57a8c2949496e52cdf}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!emission@{emission}}
+\index{emission@{emission}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{emission}]{\setlength{\rightskip}{0pt plus 5cm}uint64\_\-t {\bf cryptos\_\-config\_\-t::emission}}}
+\label{structcryptos__config__t_a201dba03c6609d57a8c2949496e52cdf}
+Current emission ID \hypertarget{structcryptos__config__t_a4ccc3efa7eb7c5bac4424489b1e9e616}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!hmac@{hmac}}
+\index{hmac@{hmac}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{hmac}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cryptos\_\-config\_\-t::hmac}}}
+\label{structcryptos__config__t_a4ccc3efa7eb7c5bac4424489b1e9e616}
+When active, indicate hmac variant of digest algorithm \hypertarget{structcryptos__config__t_a66a52c965c6c838e343ebeb05a4a5cf2}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!iv@{iv}}
+\index{iv@{iv}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{iv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cryptos\_\-key\_\-t}$\ast$ {\bf cryptos\_\-config\_\-t::iv}}}
+\label{structcryptos__config__t_a66a52c965c6c838e343ebeb05a4a5cf2}
+IV to use in the cipher algorithm \hypertarget{structcryptos__config__t_a3a247a5836789dbf4b0a0000754794a9}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!key@{key}}
+\index{key@{key}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cryptos\_\-key\_\-t}$\ast$ {\bf cryptos\_\-config\_\-t::key}}}
+\label{structcryptos__config__t_a3a247a5836789dbf4b0a0000754794a9}
+\hypertarget{structcryptos__config__t_a131f67ed366d0d24a6f9dd20e06f2030}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!max\_\-data@{max\_\-data}}
+\index{max\_\-data@{max\_\-data}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{max\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cryptos\_\-config\_\-t::max\_\-data}}}
+\label{structcryptos__config__t_a131f67ed366d0d24a6f9dd20e06f2030}
+Max data to hide. Will depend on the cipher and digest algorithms \hypertarget{structcryptos__config__t_ad9bab3292aaefb4655a76ba03bb4e647}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!md\_\-algo@{md\_\-algo}}
+\index{md\_\-algo@{md\_\-algo}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{md\_\-algo}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cryptos\_\-config\_\-t::md\_\-algo}}}
+\label{structcryptos__config__t_ad9bab3292aaefb4655a76ba03bb4e647}
+Digest algorithm to use \hypertarget{structcryptos__config__t_accebe1ccacfcc0e531c012ad4dfa9ff7}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!md\_\-len@{md\_\-len}}
+\index{md\_\-len@{md\_\-len}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{md\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cryptos\_\-config\_\-t::md\_\-len}}}
+\label{structcryptos__config__t_accebe1ccacfcc0e531c012ad4dfa9ff7}
+Digest length \hypertarget{structcryptos__config__t_ade08a42531e6824fd61ef4698d0c851c}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!mdhd@{mdhd}}
+\index{mdhd@{mdhd}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{mdhd}]{\setlength{\rightskip}{0pt plus 5cm}gcry\_\-md\_\-hd\_\-t {\bf cryptos\_\-config\_\-t::mdhd}}}
+\label{structcryptos__config__t_ade08a42531e6824fd61ef4698d0c851c}
+Handler for the message digest algorithm \hypertarget{structcryptos__config__t_ad027dbc31d02c462e5c701e9f407c092}{
+\index{cryptos\_\-config\_\-t@{cryptos\_\-config\_\-t}!packet@{packet}}
+\index{packet@{packet}!cryptos_config_t@{cryptos\_\-config\_\-t}}
+\subsubsection[{packet}]{\setlength{\rightskip}{0pt plus 5cm}uint64\_\-t {\bf cryptos\_\-config\_\-t::packet}}}
+\label{structcryptos__config__t_ad027dbc31d02c462e5c701e9f407c092}
+Current packet ID 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{cryptos__types_8h}{cryptos\_\-types.h}\end{DoxyCompactItemize}

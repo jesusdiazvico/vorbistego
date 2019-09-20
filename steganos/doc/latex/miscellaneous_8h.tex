@@ -1,0 +1,221 @@
+\hypertarget{miscellaneous_8h}{
+\section{lib/miscellaneous.h File Reference}
+\label{miscellaneous_8h}\index{lib/miscellaneous.h@{lib/miscellaneous.h}}
+}
+{\ttfamily \#include \char`\"{}steganos\_\-types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}global\_\-types.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{miscellaneous_8h_ad2b1460351f5355e3c70daa352bb2a20}{I\_\-MISC\_\-OK}~0
+\begin{DoxyCompactList}\small\item\em Error code for 'No error' to use in functions of integer return type. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_a1d433231101c66374f7727189344d6fe}{I\_\-MISC\_\-ERR}~1
+\begin{DoxyCompactList}\small\item\em Error code for 'Error occured' to use in functions of integer return type. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_a943f538bdecb6c774fd532057ba54d21}{I\_\-MISC\_\-INVALID\_\-XML}~-\/1
+\begin{DoxyCompactList}\small\item\em Error code for 'Invalid xml file' while validating an xml file. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_aa7ab93aa765f8cb45e8d8b6899c81d08}{XML\_\-KEY}~\char`\"{}key\char`\"{}
+\begin{DoxyCompactList}\small\item\em String representing the field 'key' in xml config. files. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_aee6132345033ff4d5e13f20a1bbed1f5}{XML\_\-KEY\_\-LENGTH}~\char`\"{}length\char`\"{}
+\begin{DoxyCompactList}\small\item\em String representing the field 'length' within key elements in xml config. files. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_a0018394437e23c16058b4e3fc2302d54}{XML\_\-KEY\_\-BITSTREAM}~\char`\"{}bitstream\char`\"{}
+\begin{DoxyCompactList}\small\item\em String representing the field 'bitstream' within key elements in xml config. files. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_ae84066102c62d82f2ba730870674acfd}{XML\_\-SYNCHROMODE}~\char`\"{}synchromode\char`\"{}
+\begin{DoxyCompactList}\small\item\em String representing the field 'synchromode' in xml config. files. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_a01aaa039b70f3a9c5694ad875610e630}{XML\_\-HIDEMETHOD}~\char`\"{}hidemethod\char`\"{}
+\begin{DoxyCompactList}\small\item\em String representing the field 'hidemethod' in xml config. files. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_a72ab7070c231ea6c6bb84a66d445a393}{XML\_\-AGGRESS}~\char`\"{}aggressiveness\char`\"{}
+\begin{DoxyCompactList}\small\item\em String representing the field 'agressiveness' in xml config. files. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{miscellaneous_8h_a3e4ce996feb7213a49ccd949ca6cc624}{XML\_\-LEAFS}~5
+\begin{DoxyCompactList}\small\item\em Number of \char`\"{}leaf nodes\char`\"{} (i.e. elements of type other than child) in the steganos DTD. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{miscellaneous_8h_a5cf751a12acd471e0107e917b5246a53}{to\_\-byte} (void $\ast$stream, size\_\-t nmemb, size\_\-t size, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$byte\_\-stream)
+\begin{DoxyCompactList}\small\item\em Converts the given pointer of generic type to a byte pointer. \item\end{DoxyCompactList}\item 
+int \hyperlink{miscellaneous_8h_abafa2fa6cff3b5768c3b7c118d953e90}{print\_\-bytestream} (int fd, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$stream, int length)
+\begin{DoxyCompactList}\small\item\em Prints a bytestream in fd. \item\end{DoxyCompactList}\item 
+int \hyperlink{miscellaneous_8h_adf60f2bf139bc198cb4d71dcd4ce51f7}{bitstream\_\-rol} (\hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$bitstream, int length, int rot)
+\begin{DoxyCompactList}\small\item\em Rotates bitstream rot bits to the left. \item\end{DoxyCompactList}\item 
+int \hyperlink{miscellaneous_8h_a3b50b0113ea5ef7e9b7aeb62ed32b1c7}{bitstream\_\-ror} (\hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$bitstream, int length, int rot)
+\begin{DoxyCompactList}\small\item\em Rotates bitstream rot bits to the right. \item\end{DoxyCompactList}\item 
+int \hyperlink{miscellaneous_8h_a7b29f598882ea4b532fba4e33566baa6}{message\_\-log} (const char $\ast$caller, const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Writes the specified message in the log file log\_\-$<$pid$>$. \item\end{DoxyCompactList}\item 
+int \hyperlink{miscellaneous_8h_af25957653c674e007b3dc1119d0cd729}{zlib\_\-def} (FILE $\ast$source, FILE $\ast$dest, int level)
+\item 
+int \hyperlink{miscellaneous_8h_a087fad01701cb19791f10721ab52608d}{zlib\_\-inf} (FILE $\ast$source, FILE $\ast$dest)
+\item 
+void \hyperlink{miscellaneous_8h_aeb0306843ec063511b03c371b640480c}{zlib\_\-zerr} (int ret)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{miscellaneous_8h_a1d433231101c66374f7727189344d6fe}{
+\index{miscellaneous.h@{miscellaneous.h}!I\_\-MISC\_\-ERR@{I\_\-MISC\_\-ERR}}
+\index{I\_\-MISC\_\-ERR@{I\_\-MISC\_\-ERR}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{I\_\-MISC\_\-ERR}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\_\-MISC\_\-ERR~1}}
+\label{miscellaneous_8h_a1d433231101c66374f7727189344d6fe}
+
+
+Error code for 'Error occured' to use in functions of integer return type. \hypertarget{miscellaneous_8h_a943f538bdecb6c774fd532057ba54d21}{
+\index{miscellaneous.h@{miscellaneous.h}!I\_\-MISC\_\-INVALID\_\-XML@{I\_\-MISC\_\-INVALID\_\-XML}}
+\index{I\_\-MISC\_\-INVALID\_\-XML@{I\_\-MISC\_\-INVALID\_\-XML}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{I\_\-MISC\_\-INVALID\_\-XML}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\_\-MISC\_\-INVALID\_\-XML~-\/1}}
+\label{miscellaneous_8h_a943f538bdecb6c774fd532057ba54d21}
+
+
+Error code for 'Invalid xml file' while validating an xml file. \hypertarget{miscellaneous_8h_ad2b1460351f5355e3c70daa352bb2a20}{
+\index{miscellaneous.h@{miscellaneous.h}!I\_\-MISC\_\-OK@{I\_\-MISC\_\-OK}}
+\index{I\_\-MISC\_\-OK@{I\_\-MISC\_\-OK}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{I\_\-MISC\_\-OK}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\_\-MISC\_\-OK~0}}
+\label{miscellaneous_8h_ad2b1460351f5355e3c70daa352bb2a20}
+
+
+Error code for 'No error' to use in functions of integer return type. \hypertarget{miscellaneous_8h_a72ab7070c231ea6c6bb84a66d445a393}{
+\index{miscellaneous.h@{miscellaneous.h}!XML\_\-AGGRESS@{XML\_\-AGGRESS}}
+\index{XML\_\-AGGRESS@{XML\_\-AGGRESS}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{XML\_\-AGGRESS}]{\setlength{\rightskip}{0pt plus 5cm}\#define XML\_\-AGGRESS~\char`\"{}aggressiveness\char`\"{}}}
+\label{miscellaneous_8h_a72ab7070c231ea6c6bb84a66d445a393}
+
+
+String representing the field 'agressiveness' in xml config. files. \hypertarget{miscellaneous_8h_a01aaa039b70f3a9c5694ad875610e630}{
+\index{miscellaneous.h@{miscellaneous.h}!XML\_\-HIDEMETHOD@{XML\_\-HIDEMETHOD}}
+\index{XML\_\-HIDEMETHOD@{XML\_\-HIDEMETHOD}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{XML\_\-HIDEMETHOD}]{\setlength{\rightskip}{0pt plus 5cm}\#define XML\_\-HIDEMETHOD~\char`\"{}hidemethod\char`\"{}}}
+\label{miscellaneous_8h_a01aaa039b70f3a9c5694ad875610e630}
+
+
+String representing the field 'hidemethod' in xml config. files. \hypertarget{miscellaneous_8h_aa7ab93aa765f8cb45e8d8b6899c81d08}{
+\index{miscellaneous.h@{miscellaneous.h}!XML\_\-KEY@{XML\_\-KEY}}
+\index{XML\_\-KEY@{XML\_\-KEY}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{XML\_\-KEY}]{\setlength{\rightskip}{0pt plus 5cm}\#define XML\_\-KEY~\char`\"{}key\char`\"{}}}
+\label{miscellaneous_8h_aa7ab93aa765f8cb45e8d8b6899c81d08}
+
+
+String representing the field 'key' in xml config. files. \hypertarget{miscellaneous_8h_a0018394437e23c16058b4e3fc2302d54}{
+\index{miscellaneous.h@{miscellaneous.h}!XML\_\-KEY\_\-BITSTREAM@{XML\_\-KEY\_\-BITSTREAM}}
+\index{XML\_\-KEY\_\-BITSTREAM@{XML\_\-KEY\_\-BITSTREAM}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{XML\_\-KEY\_\-BITSTREAM}]{\setlength{\rightskip}{0pt plus 5cm}\#define XML\_\-KEY\_\-BITSTREAM~\char`\"{}bitstream\char`\"{}}}
+\label{miscellaneous_8h_a0018394437e23c16058b4e3fc2302d54}
+
+
+String representing the field 'bitstream' within key elements in xml config. files. \hypertarget{miscellaneous_8h_aee6132345033ff4d5e13f20a1bbed1f5}{
+\index{miscellaneous.h@{miscellaneous.h}!XML\_\-KEY\_\-LENGTH@{XML\_\-KEY\_\-LENGTH}}
+\index{XML\_\-KEY\_\-LENGTH@{XML\_\-KEY\_\-LENGTH}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{XML\_\-KEY\_\-LENGTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define XML\_\-KEY\_\-LENGTH~\char`\"{}length\char`\"{}}}
+\label{miscellaneous_8h_aee6132345033ff4d5e13f20a1bbed1f5}
+
+
+String representing the field 'length' within key elements in xml config. files. \hypertarget{miscellaneous_8h_a3e4ce996feb7213a49ccd949ca6cc624}{
+\index{miscellaneous.h@{miscellaneous.h}!XML\_\-LEAFS@{XML\_\-LEAFS}}
+\index{XML\_\-LEAFS@{XML\_\-LEAFS}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{XML\_\-LEAFS}]{\setlength{\rightskip}{0pt plus 5cm}\#define XML\_\-LEAFS~5}}
+\label{miscellaneous_8h_a3e4ce996feb7213a49ccd949ca6cc624}
+
+
+Number of \char`\"{}leaf nodes\char`\"{} (i.e. elements of type other than child) in the steganos DTD. \hypertarget{miscellaneous_8h_ae84066102c62d82f2ba730870674acfd}{
+\index{miscellaneous.h@{miscellaneous.h}!XML\_\-SYNCHROMODE@{XML\_\-SYNCHROMODE}}
+\index{XML\_\-SYNCHROMODE@{XML\_\-SYNCHROMODE}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{XML\_\-SYNCHROMODE}]{\setlength{\rightskip}{0pt plus 5cm}\#define XML\_\-SYNCHROMODE~\char`\"{}synchromode\char`\"{}}}
+\label{miscellaneous_8h_ae84066102c62d82f2ba730870674acfd}
+
+
+String representing the field 'synchromode' in xml config. files. 
+
+\subsection{Function Documentation}
+\hypertarget{miscellaneous_8h_adf60f2bf139bc198cb4d71dcd4ce51f7}{
+\index{miscellaneous.h@{miscellaneous.h}!bitstream\_\-rol@{bitstream\_\-rol}}
+\index{bitstream\_\-rol@{bitstream\_\-rol}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{bitstream\_\-rol}]{\setlength{\rightskip}{0pt plus 5cm}int bitstream\_\-rol ({\bf byte} $\ast$ {\em bitstream}, \/  int {\em length}, \/  int {\em rot})}}
+\label{miscellaneous_8h_adf60f2bf139bc198cb4d71dcd4ce51f7}
+
+
+Rotates bitstream rot bits to the left. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em bitstream}]The bit stream to rotate at the input, the rotated resulting bitstream at the output. \item[\mbox{$\leftarrow$} {\em length}]The length of bitstream, in bits. \item[\mbox{$\leftarrow$} {\em rot}]The number of bits to rotate to the left.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-MISC\_\-OK if no error was present and I\_\-MISC\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-MISC\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-MISC\_\-ERR}]if unable to open log file, with errno updated to consequently (see fopen man page). \end{DoxyRetVals}
+\hypertarget{miscellaneous_8h_a3b50b0113ea5ef7e9b7aeb62ed32b1c7}{
+\index{miscellaneous.h@{miscellaneous.h}!bitstream\_\-ror@{bitstream\_\-ror}}
+\index{bitstream\_\-ror@{bitstream\_\-ror}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{bitstream\_\-ror}]{\setlength{\rightskip}{0pt plus 5cm}int bitstream\_\-ror ({\bf byte} $\ast$ {\em bitstream}, \/  int {\em length}, \/  int {\em rot})}}
+\label{miscellaneous_8h_a3b50b0113ea5ef7e9b7aeb62ed32b1c7}
+
+
+Rotates bitstream rot bits to the right. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em bitstream}]The bit stream to rotate at the input, the rotated resulting bitstream at the output. \item[\mbox{$\leftarrow$} {\em length}]The length of bitstream, in bits. \item[\mbox{$\leftarrow$} {\em rot}]The number of bits to rotate to the right.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-MISC\_\-OK if no error was present and I\_\-MISC\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-MISC\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-MISC\_\-ERR}]if unable to open log file, with errno updated to consequently (see fopen man page). \end{DoxyRetVals}
+\hypertarget{miscellaneous_8h_a7b29f598882ea4b532fba4e33566baa6}{
+\index{miscellaneous.h@{miscellaneous.h}!message\_\-log@{message\_\-log}}
+\index{message\_\-log@{message\_\-log}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{message\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}int message\_\-log (const char $\ast$ {\em caller}, \/  const char $\ast$ {\em message})}}
+\label{miscellaneous_8h_a7b29f598882ea4b532fba4e33566baa6}
+
+
+Writes the specified message in the log file log\_\-$<$pid$>$. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em caller}]Name of the calling function. \item[\mbox{$\leftarrow$} {\em message}]The message to write in the log.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-MISC\_\-OK if no error was present and I\_\-MISC\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-MISC\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-MISC\_\-ERR}]if unable to open log file, with errno updated to consequently (see fopen man page). \end{DoxyRetVals}
+\hypertarget{miscellaneous_8h_abafa2fa6cff3b5768c3b7c118d953e90}{
+\index{miscellaneous.h@{miscellaneous.h}!print\_\-bytestream@{print\_\-bytestream}}
+\index{print\_\-bytestream@{print\_\-bytestream}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{print\_\-bytestream}]{\setlength{\rightskip}{0pt plus 5cm}int print\_\-bytestream (int {\em fd}, \/  {\bf byte} $\ast$ {\em stream}, \/  int {\em length})}}
+\label{miscellaneous_8h_abafa2fa6cff3b5768c3b7c118d953e90}
+
+
+Prints a bytestream in fd. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em fd}]The file descriptor to print in. -\/1 to write in the system log \item[\mbox{$\leftarrow$} {\em stream}]The stream to print. \item[\mbox{$\leftarrow$} {\em length}]The length of {\itshape stream\/} in bytes.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-MISC\_\-OK if no error was present and I\_\-MISC\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-MISC\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-MISC\_\-ERR}]with errno = EINVAL (Invalid argument). \end{DoxyRetVals}
+\hypertarget{miscellaneous_8h_a5cf751a12acd471e0107e917b5246a53}{
+\index{miscellaneous.h@{miscellaneous.h}!to\_\-byte@{to\_\-byte}}
+\index{to\_\-byte@{to\_\-byte}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{to\_\-byte}]{\setlength{\rightskip}{0pt plus 5cm}int to\_\-byte (void $\ast$ {\em stream}, \/  size\_\-t {\em nmemb}, \/  size\_\-t {\em size}, \/  {\bf byte} $\ast$ {\em byte\_\-stream})}}
+\label{miscellaneous_8h_a5cf751a12acd471e0107e917b5246a53}
+
+
+Converts the given pointer of generic type to a byte pointer. Converts the pointer {\itshape stream\/}, composed by {\itshape nmemb\/} elements of size {\itshape size\/} bytes each into a byte pointer, stored in {\itshape byte\_\-stream\/}. Uses big endian ordering.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em stream}]The void pointer to convert. \item[\mbox{$\leftarrow$} {\em nmemb}]The number of elements in {\itshape stream\/}. \item[\mbox{$\leftarrow$} {\em size}]The size, in bytes, of each {\itshape stream\/}'s element. \item[\mbox{$\leftrightarrow$} {\em byte\_\-stream}]The pointer which will store the byte conversion of {\itshape stream\/}. Enough memory must have been allocated previously to calling the function, which must be, at least nmemb$\ast$size bytes. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-MISC\_\-OK if no error was present and I\_\-MISC\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-MISC\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-MISC\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{miscellaneous_8h_af25957653c674e007b3dc1119d0cd729}{
+\index{miscellaneous.h@{miscellaneous.h}!zlib\_\-def@{zlib\_\-def}}
+\index{zlib\_\-def@{zlib\_\-def}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{zlib\_\-def}]{\setlength{\rightskip}{0pt plus 5cm}int zlib\_\-def (FILE $\ast$ {\em source}, \/  FILE $\ast$ {\em dest}, \/  int {\em level})}}
+\label{miscellaneous_8h_af25957653c674e007b3dc1119d0cd729}
+\hypertarget{miscellaneous_8h_a087fad01701cb19791f10721ab52608d}{
+\index{miscellaneous.h@{miscellaneous.h}!zlib\_\-inf@{zlib\_\-inf}}
+\index{zlib\_\-inf@{zlib\_\-inf}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{zlib\_\-inf}]{\setlength{\rightskip}{0pt plus 5cm}int zlib\_\-inf (FILE $\ast$ {\em source}, \/  FILE $\ast$ {\em dest})}}
+\label{miscellaneous_8h_a087fad01701cb19791f10721ab52608d}
+\hypertarget{miscellaneous_8h_aeb0306843ec063511b03c371b640480c}{
+\index{miscellaneous.h@{miscellaneous.h}!zlib\_\-zerr@{zlib\_\-zerr}}
+\index{zlib\_\-zerr@{zlib\_\-zerr}!miscellaneous.h@{miscellaneous.h}}
+\subsubsection[{zlib\_\-zerr}]{\setlength{\rightskip}{0pt plus 5cm}void zlib\_\-zerr (int {\em ret})}}
+\label{miscellaneous_8h_aeb0306843ec063511b03c371b640480c}

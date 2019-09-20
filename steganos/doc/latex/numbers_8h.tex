@@ -1,0 +1,184 @@
+\hypertarget{numbers_8h}{
+\section{include/numbers.h File Reference}
+\label{numbers_8h}\index{include/numbers.h@{include/numbers.h}}
+}
+{\ttfamily \#include \char`\"{}global\_\-types.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structprng__t}{prng\_\-t}
+\begin{DoxyCompactList}\small\item\em Defines the structure to use as PRNG abstraction. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{numbers_8h_a5fe20a851db4149a10a752ae33c1f77f}{prng\_\-init} (\hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Initializes the PRNG. \item\end{DoxyCompactList}\item 
+int \hyperlink{numbers_8h_a06b34019764006abea3bb6a3e983b7aa}{prng\_\-free} (\hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Sets the seed to use to the {\itshape seed\/}, of {\itshape size\/} bits. \item\end{DoxyCompactList}\item 
+int \hyperlink{numbers_8h_a89259543ba794132bed3f05deb4bc005}{prng\_\-reset\_\-byte} (\hyperlink{structprng__t}{prng\_\-t} $\ast$prng, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$seed, int size, long int iters)
+\begin{DoxyCompactList}\small\item\em Recalculate the state of the given PRNG seeded with {\itshape seed\/} and used {\itshape prng-\/$>$iters\/} times. \item\end{DoxyCompactList}\item 
+int \hyperlink{numbers_8h_a149561c471311793e3b6d7eb52baa934}{prng\_\-set\_\-seed\_\-byte} (\hyperlink{structprng__t}{prng\_\-t} $\ast$prng, const \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$seed, const int size)
+\begin{DoxyCompactList}\small\item\em Sets the seed to use to the {\itshape seed\/}, of {\itshape size\/} bits. \item\end{DoxyCompactList}\item 
+int \hyperlink{numbers_8h_a24201a74f661d2b2c9dbb9a0440e80e4}{prng\_\-set\_\-seed\_\-int} (\hyperlink{structprng__t}{prng\_\-t} $\ast$prng, const int seed)
+\begin{DoxyCompactList}\small\item\em Sets the seed to use to the {\itshape seed\/}. \item\end{DoxyCompactList}\item 
+int \hyperlink{numbers_8h_a6171bca2e3d0ded3d4cbd4fa24e81b39}{prng\_\-get\_\-random\_\-int} (\hyperlink{structprng__t}{prng\_\-t} $\ast$prng, const int modulo, int $\ast$r)
+\begin{DoxyCompactList}\small\item\em Feeds {\itshape r\/} with a pseudo random integer. \item\end{DoxyCompactList}\item 
+int \hyperlink{numbers_8h_a9592547aa66f1962940e8566890bc995}{linear\_\-interpolation\_\-y} (const float x1, const float y1, const float x2, const float y2, const float x, float $\ast$y)
+\begin{DoxyCompactList}\small\item\em Stores the result of the lineal interpolation between the points \mbox{[}x1,y1\mbox{]} and \mbox{[}x2,y2\mbox{]} in \mbox{[}x,y\mbox{]}. \item\end{DoxyCompactList}\item 
+int \hyperlink{numbers_8h_a993344d3a70320de74a2f90297d4bec2}{seek} (int $\ast$sequence, int seq\_\-len, int number, int $\ast$exist)
+\begin{DoxyCompactList}\small\item\em Looks for {\itshape number\/} in {\itshape sequence\/}, updating {\itshape exist\/} in consequence. \item\end{DoxyCompactList}\item 
+int \hyperlink{numbers_8h_ab807a7b72bd9b5949e614bf6a95f8998}{seek\_\-interval} (int $\ast$sequence, int seq\_\-len, int lower, int higher, int $\ast$exist)
+\begin{DoxyCompactList}\small\item\em Looks if there is any number in {\itshape sequence\/} belonging to the interval defined by \mbox{[}{\itshape lower, higher\/}\mbox{]}, updating {\itshape exist\/} in consequence. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{numbers_8h_a9592547aa66f1962940e8566890bc995}{
+\index{numbers.h@{numbers.h}!linear\_\-interpolation\_\-y@{linear\_\-interpolation\_\-y}}
+\index{linear\_\-interpolation\_\-y@{linear\_\-interpolation\_\-y}!numbers.h@{numbers.h}}
+\subsubsection[{linear\_\-interpolation\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}int linear\_\-interpolation\_\-y (const float {\em x1}, \/  const float {\em y1}, \/  const float {\em x2}, \/  const float {\em y2}, \/  const float {\em x}, \/  float $\ast$ {\em y})}}
+\label{numbers_8h_a9592547aa66f1962940e8566890bc995}
+
+
+Stores the result of the lineal interpolation between the points \mbox{[}x1,y1\mbox{]} and \mbox{[}x2,y2\mbox{]} in \mbox{[}x,y\mbox{]}. Given \mbox{[}x1, y1\mbox{]}, \mbox{[}x2, y2\mbox{]} and x, stores the result of the lineal interpolation between the points \mbox{[}x1,y1\mbox{]} and \mbox{[}x2,y2\mbox{]} in \mbox{[}x,y\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em x1}]The first point x-\/coordinate. \item[\mbox{$\leftarrow$} {\em y1}]The first point y-\/coordinate. \item[\mbox{$\leftarrow$} {\em x2}]The second point x-\/coordinate. \item[\mbox{$\leftarrow$} {\em y2}]The second point y-\/coordinate. \item[\mbox{$\leftarrow$} {\em x}]The x coordinate of the new point. \item[\mbox{$\rightarrow$} {\em y}]Will store the resulting new point y-\/coordinate. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{numbers_8h_a06b34019764006abea3bb6a3e983b7aa}{
+\index{numbers.h@{numbers.h}!prng\_\-free@{prng\_\-free}}
+\index{prng\_\-free@{prng\_\-free}!numbers.h@{numbers.h}}
+\subsubsection[{prng\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}int prng\_\-free ({\bf prng\_\-t} $\ast$ {\em prng})}}
+\label{numbers_8h_a06b34019764006abea3bb6a3e983b7aa}
+
+
+Sets the seed to use to the {\itshape seed\/}, of {\itshape size\/} bits. Frees the memory allocated for the given PRNG 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em prng}]PRNG to free. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \end{DoxyRetVals}
+\hypertarget{numbers_8h_a6171bca2e3d0ded3d4cbd4fa24e81b39}{
+\index{numbers.h@{numbers.h}!prng\_\-get\_\-random\_\-int@{prng\_\-get\_\-random\_\-int}}
+\index{prng\_\-get\_\-random\_\-int@{prng\_\-get\_\-random\_\-int}!numbers.h@{numbers.h}}
+\subsubsection[{prng\_\-get\_\-random\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int prng\_\-get\_\-random\_\-int ({\bf prng\_\-t} $\ast$ {\em prng}, \/  const int {\em modulo}, \/  int $\ast$ {\em r})}}
+\label{numbers_8h_a6171bca2e3d0ded3d4cbd4fa24e81b39}
+
+
+Feeds {\itshape r\/} with a pseudo random integer. Obtains a new pseudo random number and stores it in {\itshape r\/}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em prng}]PRNG abstraction pointer. \item[\mbox{$\leftarrow$} {\em modulo}]The pseudo random number generated will take a value between 0 and {\itshape modulo-\/1\/}. If {\itshape modulo\/} equals 0, the function won't apply any modular arithmetic. \item[\mbox{$\rightarrow$} {\em r}]Will store the pseudo random number generated. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{numbers_8h_a5fe20a851db4149a10a752ae33c1f77f}{
+\index{numbers.h@{numbers.h}!prng\_\-init@{prng\_\-init}}
+\index{prng\_\-init@{prng\_\-init}!numbers.h@{numbers.h}}
+\subsubsection[{prng\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int prng\_\-init ({\bf prng\_\-t} $\ast$ {\em prng})}}
+\label{numbers_8h_a5fe20a851db4149a10a752ae33c1f77f}
+
+
+Initializes the PRNG. Allocates for the given PRNG 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em prng}]PRNG to allocate. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{numbers_8h_a89259543ba794132bed3f05deb4bc005}{
+\index{numbers.h@{numbers.h}!prng\_\-reset\_\-byte@{prng\_\-reset\_\-byte}}
+\index{prng\_\-reset\_\-byte@{prng\_\-reset\_\-byte}!numbers.h@{numbers.h}}
+\subsubsection[{prng\_\-reset\_\-byte}]{\setlength{\rightskip}{0pt plus 5cm}int prng\_\-reset\_\-byte ({\bf prng\_\-t} $\ast$ {\em prng}, \/  {\bf byte} $\ast$ {\em seed}, \/  int {\em size}, \/  long int {\em iters})}}
+\label{numbers_8h_a89259543ba794132bed3f05deb4bc005}
+
+
+Recalculate the state of the given PRNG seeded with {\itshape seed\/} and used {\itshape prng-\/$>$iters\/} times. Recalculates the state of the PRNG {\itshape prng\/} after being seeded with {\itshape seed\/} and iterated {\itshape iters\/} times.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em prng}]The PRNG. \item[\mbox{$\leftarrow$} {\em seed}]The seed used to initialize prng. \item[\mbox{$\leftarrow$} {\em size}]The size of seed, in bits. \item[\mbox{$\leftarrow$} {\em iters}]The iterations to \char`\"{}discard\char`\"{}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{numbers_8h_a149561c471311793e3b6d7eb52baa934}{
+\index{numbers.h@{numbers.h}!prng\_\-set\_\-seed\_\-byte@{prng\_\-set\_\-seed\_\-byte}}
+\index{prng\_\-set\_\-seed\_\-byte@{prng\_\-set\_\-seed\_\-byte}!numbers.h@{numbers.h}}
+\subsubsection[{prng\_\-set\_\-seed\_\-byte}]{\setlength{\rightskip}{0pt plus 5cm}int prng\_\-set\_\-seed\_\-byte ({\bf prng\_\-t} $\ast$ {\em prng}, \/  const {\bf byte} $\ast$ {\em seed}, \/  const int {\em size})}}
+\label{numbers_8h_a149561c471311793e3b6d7eb52baa934}
+
+
+Sets the seed to use to the {\itshape seed\/}, of {\itshape size\/} bits. Sets the seed to use for generating \mbox{[}CS\mbox{]}PRN sequences to {\itshape seed\/}, which will have {\itshape size\/} bits of length. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em prng}]PRNG abstraction pointer. \item[\mbox{$\leftarrow$} {\em seed}]The seed to use, in a byte representation \item[\mbox{$\leftarrow$} {\em size}]The size of the seed, in bits \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{numbers_8h_a24201a74f661d2b2c9dbb9a0440e80e4}{
+\index{numbers.h@{numbers.h}!prng\_\-set\_\-seed\_\-int@{prng\_\-set\_\-seed\_\-int}}
+\index{prng\_\-set\_\-seed\_\-int@{prng\_\-set\_\-seed\_\-int}!numbers.h@{numbers.h}}
+\subsubsection[{prng\_\-set\_\-seed\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int prng\_\-set\_\-seed\_\-int ({\bf prng\_\-t} $\ast$ {\em prng}, \/  const int {\em seed})}}
+\label{numbers_8h_a24201a74f661d2b2c9dbb9a0440e80e4}
+
+
+Sets the seed to use to the {\itshape seed\/}. Sets the seed to use for generating \mbox{[}CS\mbox{]}PRN sequences to {\itshape seed\/}, which will have {\itshape size\/} bits of length. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em prng}]PRNG abstraction pointer. \item[\mbox{$\leftarrow$} {\em seed}]The seed to use, in an int representation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{numbers_8h_a993344d3a70320de74a2f90297d4bec2}{
+\index{numbers.h@{numbers.h}!seek@{seek}}
+\index{seek@{seek}!numbers.h@{numbers.h}}
+\subsubsection[{seek}]{\setlength{\rightskip}{0pt plus 5cm}int seek (int $\ast$ {\em sequence}, \/  int {\em seq\_\-len}, \/  int {\em number}, \/  int $\ast$ {\em exist})}}
+\label{numbers_8h_a993344d3a70320de74a2f90297d4bec2}
+
+
+Looks for {\itshape number\/} in {\itshape sequence\/}, updating {\itshape exist\/} in consequence. Looks for {\itshape number\/} in {\itshape sequence\/}. After a successful run, {\itshape exist\/} will equal to 1 if the number exists and 0 otherwise. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em sequence}]A list of numbers. \item[\mbox{$\leftarrow$} {\em seq\_\-len}]The number of elements in sequence. \item[\mbox{$\leftarrow$} {\em number}]The number to look for. \item[\mbox{$\rightarrow$} {\em exist}]Will be 1 if the number exist and 0 otherwise, in a successful run of the function. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{numbers_8h_ab807a7b72bd9b5949e614bf6a95f8998}{
+\index{numbers.h@{numbers.h}!seek\_\-interval@{seek\_\-interval}}
+\index{seek\_\-interval@{seek\_\-interval}!numbers.h@{numbers.h}}
+\subsubsection[{seek\_\-interval}]{\setlength{\rightskip}{0pt plus 5cm}int seek\_\-interval (int $\ast$ {\em sequence}, \/  int {\em seq\_\-len}, \/  int {\em lower}, \/  int {\em higher}, \/  int $\ast$ {\em exist})}}
+\label{numbers_8h_ab807a7b72bd9b5949e614bf6a95f8998}
+
+
+Looks if there is any number in {\itshape sequence\/} belonging to the interval defined by \mbox{[}{\itshape lower, higher\/}\mbox{]}, updating {\itshape exist\/} in consequence. Looks if there is any number in {\itshape sequence\/} belgoning to the interval defined by \mbox{[}{\itshape lower, higher\/}\mbox{]}. After a successful run, {\itshape exist\/} will equal to 1 if the number exists and 0 otherwise. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em sequence}]A list of numbers. \item[\mbox{$\leftarrow$} {\em seq\_\-len}]The number of elements in sequence. \item[\mbox{$\leftarrow$} {\em lower}]The lower end of the interval. \item[\mbox{$\leftarrow$} {\em higher}]The higher end of the interval. \item[\mbox{$\rightarrow$} {\em exist}]Will be 1 if the number exist and 0 otherwise, in a successful run of the function. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-OK if no error was present and I\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}

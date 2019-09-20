@@ -1,0 +1,503 @@
+\hypertarget{steganos__channel_8h}{
+\section{lib/steganos\_\-channel.h File Reference}
+\label{steganos__channel_8h}\index{lib/steganos\_\-channel.h@{lib/steganos\_\-channel.h}}
+}
+{\ttfamily \#include \char`\"{}global\_\-types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}steganos\_\-types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}numbers.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{steganos__channel_8h_a3a910090cddf9706ec15c833a48f2a8e}{DISTRESS\_\-SYNC\_\-BYTES}~3
+\begin{DoxyCompactList}\small\item\em Size, in bytes, of the \char`\"{}distress\char`\"{} header, used to resynchronize when using streaming mode. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_adc2023a733b66ab9dd8a001d67e6f499}{DISTRESS\_\-SYNC\_\-BITS}~DISTRESS\_\-SYNC\_\-BYTES$\ast$BITS\_\-PER\_\-BYTE
+\begin{DoxyCompactList}\small\item\em Size, in bits, of the \char`\"{}distress\char`\"{} header, used to resynchronize when using streaming mode. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_a6d2af2ef9b90b2b6d0ffd606c6a46c33}{FILE\_\-SIZE\_\-BYTES}~4
+\begin{DoxyCompactList}\small\item\em Size, in bytes, of the field that will mark the amount of subliminal data that we will try to hide at a given audio file. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_a49497baece34e927d932d1fe1ab1054d}{FILE\_\-SIZE\_\-BITS}~FILE\_\-SIZE\_\-BYTES$\ast$BITS\_\-PER\_\-BYTE
+\begin{DoxyCompactList}\small\item\em Size, in bits, of the field that will mark the amount of subliminal data that we will try to hide at a given audio file. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_ab032d3750eeb6b857f8697df75ed40d1}{SYNCHRO\_\-HEADER\_\-BYTES\_\-RES}~1
+\begin{DoxyCompactList}\small\item\em Length of the synchronization header field when using RES\_\-HEADER synchronization mode. Doesn't include the size field bytes. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_a4b157f235116b4e0c71133c99217bb6f}{SIZE\_\-FIELD\_\-BITS}~8
+\begin{DoxyCompactList}\small\item\em Length of the synchronization field addressed to indicate the number of subliminal bits hided in a given frame and channel. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_a2ef627e8131838a0c5fa39808318fcf2}{RES\_\-HEADER\_\-BITS}~SYNCHRO\_\-HEADER\_\-BYTES\_\-RES$\ast$BITS\_\-PER\_\-BYTE+SIZE\_\-FIELD\_\-BITS
+\begin{DoxyCompactList}\small\item\em The size in bits of THE WHOLE header when using RES\_\-HEADER synchronization method. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_a8633c74ff9fe5d61fe5d468810ebcbc8}{MAX\_\-SUBLIMINAL\_\-SIZE}~((1 $<$$<$ SIZE\_\-FIELD\_\-BITS) -\/ 1)
+\begin{DoxyCompactList}\small\item\em Maximum number of subliminal bits that could be hidden in a residue. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_a396190ca227164f20675fe7a1b9ee5e4}{BITS\_\-PARITY}~2
+\begin{DoxyCompactList}\small\item\em Number of bits to use to calculate the parity in the parity bit method. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__channel_8h_a81f0623e23898eea26cde983c483bbcc}{ITU\_\-R\_\-BS\_\-468\_\-SIZE}~20
+\begin{DoxyCompactList}\small\item\em Size of the global static array ITU\_\-R\_\-BS\_\-468. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{steganos__channel_8h_a8d2c843d3f270eb95e9ba84114b2e766}{steganos\_\-state\_\-init} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss, int da, int \hyperlink{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}{hide\_\-method}, int \hyperlink{steganos__types_8h_ac758d5077b8857eb7a2059be7f6b2e03}{sync\_\-method}, char $\ast$key, int keylen)
+\begin{DoxyCompactList}\small\item\em Initializes the members of the received stegano\_\-state\_\-t structure. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a175c9279a54ea8cd890b6a7894ab5f37}{steganos\_\-state\_\-reset\_\-iter} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss)
+\begin{DoxyCompactList}\small\item\em Resets the members of the steganos state structure that change from one iteration to the next. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a11f5483ea5980eb540c891b08449d3bb}{steganos\_\-state\_\-free} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss)
+\begin{DoxyCompactList}\small\item\em Frees the members of the received stegano\_\-state\_\-t structure. The structure itself must be freed separately. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_accda0a725ad8b82a9e70d318f0ca9bb6}{steganos\_\-prepare\_\-packet\_\-keys} (\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, \hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss)
+\begin{DoxyCompactList}\small\item\em Manipulates the keys to be ready to be used in a new steganos packet. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a15981152aa066a4dd99ff1f9ef02f644}{steganos\_\-free\_\-packet\_\-keys} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss)
+\begin{DoxyCompactList}\small\item\em Frees the keys used in the current steganos packet. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a3546657420537cfe7903af2724f3a36f}{set\_\-subliminal\_\-capacity\_\-limit} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss, float $\ast$residue, const long rate, const int res\_\-len)
+\begin{DoxyCompactList}\small\item\em Determines and sets the subliminal capacity limit for the current frame and channel. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_acba758dafe7c84a102c85124a228d4bd}{hide\_\-data} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$data, const int d\_\-len, int $\ast$floor, float $\ast$residue, const int res\_\-len, int $\ast$size)
+\begin{DoxyCompactList}\small\item\em Determines the final usage of the residue subliminal channel for the current frame and channel by getting the desired size of subliminal data to hide in it. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_ac250ac9b944122636967302eb0b91f1f}{unhide\_\-data} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss, int $\ast$floor, float $\ast$residue, const int res\_\-len, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$$\ast$data, int $\ast$read)
+\begin{DoxyCompactList}\small\item\em Reads subliminal data from a subliminal residue. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a7de1eec6c10f5270668d497dbbd8c021}{parity\_\-bits\_\-method} (\hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$plain\_\-mess, int p\_\-m\_\-len, int $\ast$floor, float $\ast$res, int res\_\-len, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$key, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$sub\_\-mess, int $\ast$s\_\-m\_\-len, \hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Implementation of Anderson's and Petitcolas's parity bit method. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_abe60a19c0eaf3c5cb497eddb48a40c93}{void\_\-method} (\hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$plain\_\-mess, int p\_\-m\_\-len, int $\ast$floor, float $\ast$res, int res\_\-len, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$key, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$sub\_\-mess, int $\ast$s\_\-m\_\-len, \hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Applies no hiding method to the subliminal data. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_afbc0b9452eb75c882385cd8a0b08b1e1}{synchro\_\-iss} (\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$key, int $\ast$posts, float $\ast$residue, void $\ast$cfg, int decoding, int $\ast$bit, \hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Implementation of ISS watermarking for synchronization method. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_aace00502dd3ec62c30261a4a3956f40d}{iss\_\-cfg\_\-init} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss, int $\ast$posts, int posts\_\-len, float sigma, \hyperlink{structiss__cfg__t}{iss\_\-cfg\_\-t} $\ast$iss\_\-cfg)
+\begin{DoxyCompactList}\small\item\em Initializes the sigma, lambda and alpha values needed for ISS accordingly to the formulas from Malvar and Florencio's. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a94b8dbf3bfb000018b72ecb77a324966}{iss\_\-cfg\_\-free} (\hyperlink{structiss__cfg__t}{iss\_\-cfg\_\-t} $\ast$iss\_\-cfg)
+\begin{DoxyCompactList}\small\item\em Frees the memory allocated for a \hyperlink{structiss__cfg__t}{iss\_\-cfg\_\-t} structure. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a6b1fc6177f238d204df2a0ba0570c392}{iss\_\-simulate\_\-floor} (\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, int $\ast$posts, int $\ast$floor)
+\begin{DoxyCompactList}\small\item\em Simulates the floor that will be calculated by te receiver may the post vector be like {\itshape posts\/}. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_ae277f8b40ffa4a2d8256ce81a2a8058c}{desynchro\_\-res\_\-header} (\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, int $\ast$res\_\-lineup, int $\ast$posts, int $\ast$floor, float $\ast$residue, void $\ast$cfg, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$hiding\_\-key, \hyperlink{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}{hide\_\-method} hide, \hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Type definition for desynchronization functions to use in the protocol. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a99f1393b483919221585bcd1f7c7ecd2}{desynchro\_\-iss} (\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, int $\ast$res\_\-lineup, int $\ast$posts, int $\ast$floor, float $\ast$residue, void $\ast$cfg, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$hiding\_\-key, \hyperlink{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}{hide\_\-method} hide, \hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Desynchronization function when using ISS synchronization method. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a5b94d0fb1f25bbdba982963cee80858a}{steganos\_\-key\_\-init} (\hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$byte\_\-key, const int key\_\-len, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$key)
+\begin{DoxyCompactList}\small\item\em Allocates memory for the key fields and sets them to the received values. \item\end{DoxyCompactList}\item 
+int \hyperlink{steganos__channel_8h_a4521384d279808a1df4c31104621a021}{calculate\_\-residue\_\-lineup} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss, const int res\_\-len)
+\begin{DoxyCompactList}\small\item\em Calculates the residue lineup using the prng in ss. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{steganos__channel_8h_a396190ca227164f20675fe7a1b9ee5e4}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!BITS\_\-PARITY@{BITS\_\-PARITY}}
+\index{BITS\_\-PARITY@{BITS\_\-PARITY}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{BITS\_\-PARITY}]{\setlength{\rightskip}{0pt plus 5cm}\#define BITS\_\-PARITY~2}}
+\label{steganos__channel_8h_a396190ca227164f20675fe7a1b9ee5e4}
+
+
+Number of bits to use to calculate the parity in the parity bit method. \hypertarget{steganos__channel_8h_adc2023a733b66ab9dd8a001d67e6f499}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!DISTRESS\_\-SYNC\_\-BITS@{DISTRESS\_\-SYNC\_\-BITS}}
+\index{DISTRESS\_\-SYNC\_\-BITS@{DISTRESS\_\-SYNC\_\-BITS}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{DISTRESS\_\-SYNC\_\-BITS}]{\setlength{\rightskip}{0pt plus 5cm}\#define DISTRESS\_\-SYNC\_\-BITS~DISTRESS\_\-SYNC\_\-BYTES$\ast$BITS\_\-PER\_\-BYTE}}
+\label{steganos__channel_8h_adc2023a733b66ab9dd8a001d67e6f499}
+
+
+Size, in bits, of the \char`\"{}distress\char`\"{} header, used to resynchronize when using streaming mode. \hypertarget{steganos__channel_8h_a3a910090cddf9706ec15c833a48f2a8e}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!DISTRESS\_\-SYNC\_\-BYTES@{DISTRESS\_\-SYNC\_\-BYTES}}
+\index{DISTRESS\_\-SYNC\_\-BYTES@{DISTRESS\_\-SYNC\_\-BYTES}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{DISTRESS\_\-SYNC\_\-BYTES}]{\setlength{\rightskip}{0pt plus 5cm}\#define DISTRESS\_\-SYNC\_\-BYTES~3}}
+\label{steganos__channel_8h_a3a910090cddf9706ec15c833a48f2a8e}
+
+
+Size, in bytes, of the \char`\"{}distress\char`\"{} header, used to resynchronize when using streaming mode. \hypertarget{steganos__channel_8h_a49497baece34e927d932d1fe1ab1054d}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!FILE\_\-SIZE\_\-BITS@{FILE\_\-SIZE\_\-BITS}}
+\index{FILE\_\-SIZE\_\-BITS@{FILE\_\-SIZE\_\-BITS}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{FILE\_\-SIZE\_\-BITS}]{\setlength{\rightskip}{0pt plus 5cm}\#define FILE\_\-SIZE\_\-BITS~FILE\_\-SIZE\_\-BYTES$\ast$BITS\_\-PER\_\-BYTE}}
+\label{steganos__channel_8h_a49497baece34e927d932d1fe1ab1054d}
+
+
+Size, in bits, of the field that will mark the amount of subliminal data that we will try to hide at a given audio file. \hypertarget{steganos__channel_8h_a6d2af2ef9b90b2b6d0ffd606c6a46c33}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!FILE\_\-SIZE\_\-BYTES@{FILE\_\-SIZE\_\-BYTES}}
+\index{FILE\_\-SIZE\_\-BYTES@{FILE\_\-SIZE\_\-BYTES}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{FILE\_\-SIZE\_\-BYTES}]{\setlength{\rightskip}{0pt plus 5cm}\#define FILE\_\-SIZE\_\-BYTES~4}}
+\label{steganos__channel_8h_a6d2af2ef9b90b2b6d0ffd606c6a46c33}
+
+
+Size, in bytes, of the field that will mark the amount of subliminal data that we will try to hide at a given audio file. \hypertarget{steganos__channel_8h_a81f0623e23898eea26cde983c483bbcc}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!ITU\_\-R\_\-BS\_\-468\_\-SIZE@{ITU\_\-R\_\-BS\_\-468\_\-SIZE}}
+\index{ITU\_\-R\_\-BS\_\-468\_\-SIZE@{ITU\_\-R\_\-BS\_\-468\_\-SIZE}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{ITU\_\-R\_\-BS\_\-468\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define ITU\_\-R\_\-BS\_\-468\_\-SIZE~20}}
+\label{steganos__channel_8h_a81f0623e23898eea26cde983c483bbcc}
+
+
+Size of the global static array ITU\_\-R\_\-BS\_\-468. \hypertarget{steganos__channel_8h_a8633c74ff9fe5d61fe5d468810ebcbc8}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!MAX\_\-SUBLIMINAL\_\-SIZE@{MAX\_\-SUBLIMINAL\_\-SIZE}}
+\index{MAX\_\-SUBLIMINAL\_\-SIZE@{MAX\_\-SUBLIMINAL\_\-SIZE}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{MAX\_\-SUBLIMINAL\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-SUBLIMINAL\_\-SIZE~((1 $<$$<$ SIZE\_\-FIELD\_\-BITS) -\/ 1)}}
+\label{steganos__channel_8h_a8633c74ff9fe5d61fe5d468810ebcbc8}
+
+
+Maximum number of subliminal bits that could be hidden in a residue. \hypertarget{steganos__channel_8h_a2ef627e8131838a0c5fa39808318fcf2}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!RES\_\-HEADER\_\-BITS@{RES\_\-HEADER\_\-BITS}}
+\index{RES\_\-HEADER\_\-BITS@{RES\_\-HEADER\_\-BITS}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{RES\_\-HEADER\_\-BITS}]{\setlength{\rightskip}{0pt plus 5cm}\#define RES\_\-HEADER\_\-BITS~SYNCHRO\_\-HEADER\_\-BYTES\_\-RES$\ast$BITS\_\-PER\_\-BYTE+SIZE\_\-FIELD\_\-BITS}}
+\label{steganos__channel_8h_a2ef627e8131838a0c5fa39808318fcf2}
+
+
+The size in bits of THE WHOLE header when using RES\_\-HEADER synchronization method. \hypertarget{steganos__channel_8h_a4b157f235116b4e0c71133c99217bb6f}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!SIZE\_\-FIELD\_\-BITS@{SIZE\_\-FIELD\_\-BITS}}
+\index{SIZE\_\-FIELD\_\-BITS@{SIZE\_\-FIELD\_\-BITS}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{SIZE\_\-FIELD\_\-BITS}]{\setlength{\rightskip}{0pt plus 5cm}\#define SIZE\_\-FIELD\_\-BITS~8}}
+\label{steganos__channel_8h_a4b157f235116b4e0c71133c99217bb6f}
+
+
+Length of the synchronization field addressed to indicate the number of subliminal bits hided in a given frame and channel. \hypertarget{steganos__channel_8h_ab032d3750eeb6b857f8697df75ed40d1}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!SYNCHRO\_\-HEADER\_\-BYTES\_\-RES@{SYNCHRO\_\-HEADER\_\-BYTES\_\-RES}}
+\index{SYNCHRO\_\-HEADER\_\-BYTES\_\-RES@{SYNCHRO\_\-HEADER\_\-BYTES\_\-RES}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{SYNCHRO\_\-HEADER\_\-BYTES\_\-RES}]{\setlength{\rightskip}{0pt plus 5cm}\#define SYNCHRO\_\-HEADER\_\-BYTES\_\-RES~1}}
+\label{steganos__channel_8h_ab032d3750eeb6b857f8697df75ed40d1}
+
+
+Length of the synchronization header field when using RES\_\-HEADER synchronization mode. Doesn't include the size field bytes. 
+
+\subsection{Function Documentation}
+\hypertarget{steganos__channel_8h_a4521384d279808a1df4c31104621a021}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!calculate\_\-residue\_\-lineup@{calculate\_\-residue\_\-lineup}}
+\index{calculate\_\-residue\_\-lineup@{calculate\_\-residue\_\-lineup}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{calculate\_\-residue\_\-lineup}]{\setlength{\rightskip}{0pt plus 5cm}calculate\_\-residue\_\-lineup ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss}, \/  const int {\em res\_\-len})}}
+\label{steganos__channel_8h_a4521384d279808a1df4c31104621a021}
+
+
+Calculates the residue lineup using the prng in ss. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ss}]Steganos state structure. \item[\mbox{$\leftarrow$} {\em res\_\-len}]Length of the current residue vector.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]\item[{\em I\_\-STEGANOS\_\-ERR}]\end{DoxyRetVals}
+\hypertarget{steganos__channel_8h_a99f1393b483919221585bcd1f7c7ecd2}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!desynchro\_\-iss@{desynchro\_\-iss}}
+\index{desynchro\_\-iss@{desynchro\_\-iss}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{desynchro\_\-iss}]{\setlength{\rightskip}{0pt plus 5cm}int desynchro\_\-iss ({\bf vorbis\_\-config\_\-t} $\ast$ {\em vc}, \/  int $\ast$ {\em res\_\-lineup}, \/  int $\ast$ {\em posts}, \/  int $\ast$ {\em floor}, \/  float $\ast$ {\em residue}, \/  void $\ast$ {\em cfg}, \/  {\bf steganos\_\-key\_\-t} $\ast$ {\em hiding\_\-key}, \/  {\bf hide\_\-method} {\em hide}, \/  {\bf prng\_\-t} $\ast$ {\em prng})}}
+\label{steganos__channel_8h_a99f1393b483919221585bcd1f7c7ecd2}
+
+
+Desynchronization function when using ISS synchronization method. This function should be called when it is not possible to hide information in a given frame-\/channel and the synchronization method in use is ISS. This function will set the first SIZE\_\-FIELD\_\-BITS of the given residue to 0, ensuring this way that, despite the receiver will receive a 1-\/marked floor, he'll read 0 bytes of data.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vc}]Vorbis block and look info. \item[\mbox{$\leftarrow$} {\em res\_\-lineup}]Residue ordering \item[\mbox{$\leftrightarrow$} {\em posts}]Current floor posts vector. \item[\mbox{$\leftarrow$} {\em floor}]Floor vector \item[\mbox{$\leftrightarrow$} {\em residue}]Current residue vector. Will be changed if it comes \char`\"{}naturally\char`\"{} synchronized. \item[\mbox{$\leftarrow$} {\em cfg}]ISS configuration options (sigma, alpha, etc.) \item[\mbox{$\leftarrow$} {\em hiding\_\-key}]Key for hiding \item[\mbox{$\leftarrow$} {\em hide}]Hiding method (pointer to function) in use in the current frame and channel. \item[\mbox{$\leftarrow$} {\em prng}]PRNG in use\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{synchro\_\-method\_\-et} 
+
+iss\_\-synchronization 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_ae277f8b40ffa4a2d8256ce81a2a8058c}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!desynchro\_\-res\_\-header@{desynchro\_\-res\_\-header}}
+\index{desynchro\_\-res\_\-header@{desynchro\_\-res\_\-header}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{desynchro\_\-res\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}int desynchro\_\-res\_\-header ({\bf vorbis\_\-config\_\-t} $\ast$ {\em vc}, \/  int $\ast$ {\em res\_\-lineup}, \/  int $\ast$ {\em posts}, \/  int $\ast$ {\em floor}, \/  float $\ast$ {\em residue}, \/  void $\ast$ {\em cfg}, \/  {\bf steganos\_\-key\_\-t} $\ast$ {\em hiding\_\-key}, \/  {\bf hide\_\-method} {\em hide}, \/  {\bf prng\_\-t} $\ast$ {\em prng})}}
+\label{steganos__channel_8h_ae277f8b40ffa4a2d8256ce81a2a8058c}
+
+
+Type definition for desynchronization functions to use in the protocol. Functions of this type shall solve the false positive synchronization problem that may happen depending on the synchro\_\-method used. Depending on the specific method in use, the {\itshape floor\/} and {\itshape residue\/} vectors will or won't be used.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vc}]Vorbis block and look info. \item[\mbox{$\leftarrow$} {\em res\_\-lineup}]Residue ordering \item[\mbox{$\leftrightarrow$} {\em posts}]Current floor posts vector. \item[\mbox{$\leftarrow$} {\em floor}]Floor vector \item[\mbox{$\leftrightarrow$} {\em residue}]Current residue vector. Will be changed if it comes \char`\"{}naturally\char`\"{} synchronized. \item[\mbox{$\leftarrow$} {\em cfg}]This parameter will be used to pass any argument needed in a concrete synchronization method. \item[\mbox{$\leftarrow$} {\em hiding\_\-key}]Key for hiding \item[\mbox{$\leftarrow$} {\em hide}]Hiding method (pointer to function) in use in the current frame and channel. \item[\mbox{$\leftarrow$} {\em prng}]PRNG in use\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{synchro\_\-method\_\-et} 
+
+iss\_\-synchronization 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_acba758dafe7c84a102c85124a228d4bd}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!hide\_\-data@{hide\_\-data}}
+\index{hide\_\-data@{hide\_\-data}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{hide\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}int hide\_\-data ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss}, \/  {\bf byte} $\ast$ {\em data}, \/  const int {\em d\_\-len}, \/  int $\ast$ {\em floor}, \/  float $\ast$ {\em residue}, \/  const int {\em res\_\-len}, \/  int $\ast$ {\em size})}}
+\label{steganos__channel_8h_acba758dafe7c84a102c85124a228d4bd}
+
+
+Determines the final usage of the residue subliminal channel for the current frame and channel by getting the desired size of subliminal data to hide in it. This function first retrieves the next 'ss-\/$>$aggressiveness$\ast$ss-\/$>$max\_\-fc\_\-capacity' bits of subliminal data to hide in the current frame and channel residue, using the chosen hiding function. This let us make a more precise estimation of the final effects of the changes we will introduce in the original data. Once this is done, the nearest integer size of bits is hided in the residue vector, giving the final subliminal-\/residue vector. Note that this function shouldn't be called if ss-\/$>$aggressiveness$\ast$ss-\/$>$max\_\-fc\_\-capacity is not big enough to store the meta-\/information required (plus some subliminal info).
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em ss}]Internal state structure. The function updates the ss-\/$>$protocol\_\-send\_\-state field, which must be SYNCHRONIZED at the input and will be CONTROLLED after a successful execution. \item[\mbox{$\leftarrow$} {\em data}]The remaining bitstream to hide. Note that can have greater, equal or less size than the subliminal channel usage. \item[\mbox{$\leftarrow$} {\em d\_\-len}]The length of the 'data' stream, in bits. \item[\mbox{$\leftarrow$} {\em floor}]The current frame and channel floor vecotr. Depending on the hiding method selected, it may or may not be used. \item[\mbox{$\leftrightarrow$} {\em residue}]The current frame and channel residue vector. After a successful execution of the function, it will store the subliminal residue. \item[\mbox{$\leftarrow$} {\em res\_\-len}]The length of the residue (and floor) vector. \item[\mbox{$\rightarrow$} {\em size}]The final number of bits of pure data (excluding headers) hided in the current frame and channel residue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error) \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument) \end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_a94b8dbf3bfb000018b72ecb77a324966}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!iss\_\-cfg\_\-free@{iss\_\-cfg\_\-free}}
+\index{iss\_\-cfg\_\-free@{iss\_\-cfg\_\-free}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{iss\_\-cfg\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}int iss\_\-cfg\_\-free ({\bf iss\_\-cfg\_\-t} $\ast$ {\em iss\_\-cfg})}}
+\label{steganos__channel_8h_a94b8dbf3bfb000018b72ecb77a324966}
+
+
+Frees the memory allocated for a \hyperlink{structiss__cfg__t}{iss\_\-cfg\_\-t} structure. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em iss\_\-cfg}]ISS configuration structure to free.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+iss\_\-synchronization 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_aace00502dd3ec62c30261a4a3956f40d}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!iss\_\-cfg\_\-init@{iss\_\-cfg\_\-init}}
+\index{iss\_\-cfg\_\-init@{iss\_\-cfg\_\-init}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{iss\_\-cfg\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int iss\_\-cfg\_\-init ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss}, \/  int $\ast$ {\em posts}, \/  int {\em posts\_\-len}, \/  float {\em sigma}, \/  {\bf iss\_\-cfg\_\-t} $\ast$ {\em iss\_\-cfg})}}
+\label{steganos__channel_8h_aace00502dd3ec62c30261a4a3956f40d}
+
+
+Initializes the sigma, lambda and alpha values needed for ISS accordingly to the formulas from Malvar and Florencio's. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ss}]Internal state structure. \item[\mbox{$\leftarrow$} {\em posts}]Post vector. \item[\mbox{$\leftarrow$} {\em posts\_\-len}]Number of elements in the posts vector. \item[\mbox{$\leftarrow$} {\em sigma}]Sigma parameter (watermark's strength) \item[\mbox{$\leftrightarrow$} {\em iss\_\-cfg}]ISS configuration structure.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+iss\_\-synchronization 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_a6b1fc6177f238d204df2a0ba0570c392}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!iss\_\-simulate\_\-floor@{iss\_\-simulate\_\-floor}}
+\index{iss\_\-simulate\_\-floor@{iss\_\-simulate\_\-floor}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{iss\_\-simulate\_\-floor}]{\setlength{\rightskip}{0pt plus 5cm}int iss\_\-simulate\_\-floor ({\bf vorbis\_\-config\_\-t} $\ast$ {\em vc}, \/  int $\ast$ {\em posts}, \/  int $\ast$ {\em floor})}}
+\label{steganos__channel_8h_a6b1fc6177f238d204df2a0ba0570c392}
+
+
+Simulates the floor that will be calculated by te receiver may the post vector be like {\itshape posts\/}. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vc}]Voribs block and look configuration data. \item[\mbox{$\leftrightarrow$} {\em floor}]The floor vector, as will be calculated by the receiver. The memory must be allocated previously to calling the function. \item[\mbox{$\leftarrow$} {\em posts}]The posts vector.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{steganos__channel_8h_a7de1eec6c10f5270668d497dbbd8c021}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!parity\_\-bits\_\-method@{parity\_\-bits\_\-method}}
+\index{parity\_\-bits\_\-method@{parity\_\-bits\_\-method}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{parity\_\-bits\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}int parity\_\-bits\_\-method ({\bf byte} $\ast$ {\em plain\_\-mess}, \/  int {\em p\_\-m\_\-len}, \/  int $\ast$ {\em floor}, \/  float $\ast$ {\em res}, \/  int {\em res\_\-len}, \/  {\bf steganos\_\-key\_\-t} $\ast$ {\em key}, \/  {\bf byte} $\ast$ {\em sub\_\-mess}, \/  int $\ast$ {\em s\_\-m\_\-len}, \/  {\bf prng\_\-t} $\ast$ {\em prng})}}
+\label{steganos__channel_8h_a7de1eec6c10f5270668d497dbbd8c021}
+
+
+Implementation of Anderson's and Petitcolas's parity bit method. Implementation of Anderson's and Petitcolas's parity bit method. See \char`\"{}On The 
+ Limits of Steganosgraphy\char`\"{} by Anderson and Petitcolas. The function keeps the ($\ast$hide\_\-method) typedef format.
+
+\begin{DoxyNote}{Note}
+This function uses the PRNG function {\itshape get\_\-random\_\-int\/}, therefore, the PRNG must have been seeded previously with the same key used for hiding in order to get the correct data from the residue/floor vectors.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em plain\_\-mess}]Plain message to hide. \item[\mbox{$\leftarrow$} {\em p\_\-m\_\-len}]Length of plain message in bits. \item[\mbox{$\leftarrow$} {\em floor}]Floor vector. \item[\mbox{$\leftarrow$} {\em res}]Residue vector. \item[\mbox{$\leftarrow$} {\em res\_\-len}]Number of elements in {\itshape floor\/} and {\itshape res\/} vectors. \item[\mbox{$\leftarrow$} {\em key}]Key to use. \item[\mbox{$\leftrightarrow$} {\em sub\_\-mess}]String in which the subliminal message will be stored. It has to be allocated previously to calling the function. \item[\mbox{$\leftrightarrow$} {\em s\_\-m\_\-len}]At the input, will store the allocated size (in bits) of {\itshape sub\_\-mess\/}. At the output, the length of the resulting sub\_\-message, in bits (it may be different than p\_\-m\_\-len as it may include de-\/synchronization bits), or discard them. \item[\mbox{$\leftarrow$} {\em prng}]PRNG in use. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}{hide\_\-method} 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_a3546657420537cfe7903af2724f3a36f}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!set\_\-subliminal\_\-capacity\_\-limit@{set\_\-subliminal\_\-capacity\_\-limit}}
+\index{set\_\-subliminal\_\-capacity\_\-limit@{set\_\-subliminal\_\-capacity\_\-limit}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{set\_\-subliminal\_\-capacity\_\-limit}]{\setlength{\rightskip}{0pt plus 5cm}int set\_\-subliminal\_\-capacity\_\-limit ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss}, \/  float $\ast$ {\em residue}, \/  const long {\em rate}, \/  const int {\em res\_\-len})}}
+\label{steganos__channel_8h_a3546657420537cfe7903af2724f3a36f}
+
+
+Determines and sets the subliminal capacity limit for the current frame and channel. This function determines the subliminal capacity limit for the current frame and channel residue, updating the \hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} internal state structure with the values obtained. This limits will be stored in the (float $\ast$)\mbox{[}2\mbox{]} field as \mbox{[}-\/, +\mbox{]} maximum variations to introduce in the corresponding residual value of the frame and channel's residue vector. Also updates the maximum subliminal capacity for the whole frame and channel current residue. The protocol state must be IDLE at the input and MEASURED after a successful execution. Also initializes the ss-\/$>$res\_\-mask variable, which can be seen as some kind of \char`\"{}steganosgraphic mask\char`\"{}, calculated initially from the maximum residual variations here obtained. The protocol state structure variables must have been allocated and reset previously.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em ss}]Internal state structure. It's field capacity\_\-limit will be updated in a successful execution. The protocol state must be IDLE at the input and MEASURED after a successful execution. \item[\mbox{$\leftarrow$} {\em residue}]The current frame and channel residue vector. \item[\mbox{$\leftarrow$} {\em rate}]The sampling rate used (in Hz), to obtain the frequency corresponding to each residue. \item[\mbox{$\leftarrow$} {\em res\_\-len}]Length of the residue and frequencies vectors. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_a15981152aa066a4dd99ff1f9ef02f644}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!steganos\_\-free\_\-packet\_\-keys@{steganos\_\-free\_\-packet\_\-keys}}
+\index{steganos\_\-free\_\-packet\_\-keys@{steganos\_\-free\_\-packet\_\-keys}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{steganos\_\-free\_\-packet\_\-keys}]{\setlength{\rightskip}{0pt plus 5cm}static int steganos\_\-free\_\-packet\_\-keys ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss})}}
+\label{steganos__channel_8h_a15981152aa066a4dd99ff1f9ef02f644}
+
+
+Frees the keys used in the current steganos packet. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ss}]Steganos state structure\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\_\-STEGANOS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{steganos__channel_8h_a5b94d0fb1f25bbdba982963cee80858a}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!steganos\_\-key\_\-init@{steganos\_\-key\_\-init}}
+\index{steganos\_\-key\_\-init@{steganos\_\-key\_\-init}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{steganos\_\-key\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-key\_\-init ({\bf byte} $\ast$ {\em byte\_\-key}, \/  const int {\em key\_\-len}, \/  {\bf steganos\_\-key\_\-t} $\ast$ {\em key})}}
+\label{steganos__channel_8h_a5b94d0fb1f25bbdba982963cee80858a}
+
+
+Allocates memory for the key fields and sets them to the received values. Allocates memory for the key fields and sets them to the received values.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em byte\_\-key}]The key value. \item[\mbox{$\leftarrow$} {\em key\_\-len}]The length of the {\itshape byte\_\-key\/} argument, in bits. \item[\mbox{$\leftrightarrow$} {\em key}]A pointer to a previously allocated \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} variable in which we'll store the key's members.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = ERANGE (invalid key size). \end{DoxyRetVals}
+\hypertarget{steganos__channel_8h_accda0a725ad8b82a9e70d318f0ca9bb6}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!steganos\_\-prepare\_\-packet\_\-keys@{steganos\_\-prepare\_\-packet\_\-keys}}
+\index{steganos\_\-prepare\_\-packet\_\-keys@{steganos\_\-prepare\_\-packet\_\-keys}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{steganos\_\-prepare\_\-packet\_\-keys}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-prepare\_\-packet\_\-keys ({\bf vorbis\_\-config\_\-t} $\ast$ {\em vc}, \/  {\bf steganos\_\-state\_\-t} $\ast$ {\em ss})}}
+\label{steganos__channel_8h_accda0a725ad8b82a9e70d318f0ca9bb6}
+
+
+Manipulates the keys to be ready to be used in a new steganos packet. The key used to hide/sync is obtained following this flow: 1) Cipher md5(vc-\/$>$forward\_\-index) with ARCFOUR, using the master key 2) Use the resulting ciphertext as frame specific keys
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vc}]Vorbis config structure \item[\mbox{$\leftrightarrow$} {\em ss}]Steganos state structure. The internal variables ss-\/$>$hiding\_\-key and ss-\/$>$synchro\_\-key will be updated upon successful execution. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{steganos__channel_8h_a11f5483ea5980eb540c891b08449d3bb}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!steganos\_\-state\_\-free@{steganos\_\-state\_\-free}}
+\index{steganos\_\-state\_\-free@{steganos\_\-state\_\-free}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{steganos\_\-state\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-state\_\-free ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss})}}
+\label{steganos__channel_8h_a11f5483ea5980eb540c891b08449d3bb}
+
+
+Frees the members of the received stegano\_\-state\_\-t structure. The structure itself must be freed separately. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ss}]Pointer to the steganographic protocol state variable.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_a8d2c843d3f270eb95e9ba84114b2e766}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!steganos\_\-state\_\-init@{steganos\_\-state\_\-init}}
+\index{steganos\_\-state\_\-init@{steganos\_\-state\_\-init}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{steganos\_\-state\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-state\_\-init ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss}, \/  int {\em da}, \/  int {\em hide\_\-method}, \/  int {\em sync\_\-method}, \/  char $\ast$ {\em key}, \/  int {\em keylen})}}
+\label{steganos__channel_8h_a8d2c843d3f270eb95e9ba84114b2e766}
+
+
+Initializes the members of the received stegano\_\-state\_\-t structure. This function prepares the steganographic protocol for a new whole step, allocating and initializing the steganos state structure to the default values or those specified as arguments. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ss}]Pointer to the steganographic protocol state variable. \item[\mbox{$\leftarrow$} {\em da}]Desired aggressiveness, i.e., the share of subliminal capacity to use, in 1/10 (e.g. 2 means use 20\%) \item[\mbox{$\leftarrow$} {\em hide\_\-method}]Hide method to use, must be one of the defined in hide\_\-method\_\-et \item[\mbox{$\leftarrow$} {\em sync\_\-method}]Sync method to use, must be one of the defined in sync\_\-method\_\-et \item[\mbox{$\leftarrow$} {\em key}]Master key to use for deriving subkeys \item[\mbox{$\leftarrow$} {\em keylen}]Length of {\itshape key\/} in bits. Must be at least 128.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_a175c9279a54ea8cd890b6a7894ab5f37}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!steganos\_\-state\_\-reset\_\-iter@{steganos\_\-state\_\-reset\_\-iter}}
+\index{steganos\_\-state\_\-reset\_\-iter@{steganos\_\-state\_\-reset\_\-iter}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{steganos\_\-state\_\-reset\_\-iter}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-state\_\-reset\_\-iter ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss})}}
+\label{steganos__channel_8h_a175c9279a54ea8cd890b6a7894ab5f37}
+
+
+Resets the members of the steganos state structure that change from one iteration to the next. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ss}]Pointer to the steganographic protocol state variable.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_afbc0b9452eb75c882385cd8a0b08b1e1}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!synchro\_\-iss@{synchro\_\-iss}}
+\index{synchro\_\-iss@{synchro\_\-iss}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{synchro\_\-iss}]{\setlength{\rightskip}{0pt plus 5cm}int synchro\_\-iss ({\bf vorbis\_\-config\_\-t} $\ast$ {\em vc}, \/  {\bf steganos\_\-key\_\-t} $\ast$ {\em key}, \/  int $\ast$ {\em posts}, \/  float $\ast$ {\em residue}, \/  void $\ast$ {\em cfg}, \/  int {\em decoding}, \/  int $\ast$ {\em bit}, \/  {\bf prng\_\-t} $\ast$ {\em prng})}}
+\label{steganos__channel_8h_afbc0b9452eb75c882385cd8a0b08b1e1}
+
+
+Implementation of ISS watermarking for synchronization method. Implements the Improved Spread Spectrum watermarking technique introduced by Malvar and Florencio (in \char`\"{}Improved Spread Spectrum: a new modulation technique
+ for robust watermarking\char`\"{}) to synchronize sender and receiver by marking the floor vector.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vc}]Vorbis block and look information. \item[\mbox{$\leftarrow$} {\em key}]Key to use \item[\mbox{$\leftrightarrow$} {\em posts}]Current floor posts vector. After a successful execution, it will be modified as needed. \item[\mbox{$\leftrightarrow$} {\em residue}]Current residue vector. Not used here. \item[\mbox{$\leftarrow$} {\em cfg}]Pointer to a structure of \hyperlink{structiss__cfg__t}{iss\_\-cfg\_\-t} with the alpha, lambda and sigma parameters needed for ISS. \item[\mbox{$\leftarrow$} {\em decoding}]Active if the function is called from the decoder's side, \item[\mbox{$\leftrightarrow$} {\em bit}]At the input, the desired bit to include if we are at the encoder's side; at the ouput, the received bit if we are at the decoder's side (i.e. 1 if we're telling the receiver there is hidden data and 0 if not). \item[\mbox{$\leftarrow$} {\em prng}]PRNG in use.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-STEGANOS\_\-SYNC\_\-FAIL}]with errno = 0 (Unable to synchronize).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{synchro\_\-method\_\-et} 
+
+iss\_\-synchronization 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_ac250ac9b944122636967302eb0b91f1f}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!unhide\_\-data@{unhide\_\-data}}
+\index{unhide\_\-data@{unhide\_\-data}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{unhide\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}int unhide\_\-data ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss}, \/  int $\ast$ {\em floor}, \/  float $\ast$ {\em residue}, \/  const int {\em res\_\-len}, \/  {\bf byte} $\ast$$\ast$ {\em data}, \/  int $\ast$ {\em read})}}
+\label{steganos__channel_8h_ac250ac9b944122636967302eb0b91f1f}
+
+
+Reads subliminal data from a subliminal residue. This function recovers the subliminal data hided in the current residue. If the ISS synchronization mode is in use, and this function is called, means the residue surely shelters subliminal data. If the RES\_\-HEADER synchro mode is in use, we have to look for the SYNCHRO\_\-HEADER first, which will tell us if we have to recover any data. At the end of a successful execution, {\itshape data\/} will point to the recovered data and {\itshape read\/} store the number of bits read. If no data has been recovered, {\itshape read\/} will be 0.
+
+\begin{DoxyNote}{Note}
+This function uses the PRNG function {\itshape get\_\-random\_\-int\/}, therefore, the PRNG must have been seeded previously with the same key used for hiding in order to get the correct data from the residue/floor vectors.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em ss}]Internal state structure. The protocol state must be ANALYZED at the input and READ after a successful execution. \item[\mbox{$\leftarrow$} {\em floor}]The floor vector of the current frame and channel. \item[\mbox{$\leftarrow$} {\em residue}]The residue vector of the current frame and channel, containing the subliminal data, if any. \item[\mbox{$\leftarrow$} {\em res\_\-len}]The length of the residue and floor vectors. \item[\mbox{$\leftrightarrow$} {\em data}]Pointer to the bitstream which will store the subliminal data read after a successful execution. \item[\mbox{$\leftrightarrow$} {\em read}]Will store the final amount of data that has been possible to read, in bits. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{steganos__channel_8h_abe60a19c0eaf3c5cb497eddb48a40c93}{
+\index{steganos\_\-channel.h@{steganos\_\-channel.h}!void\_\-method@{void\_\-method}}
+\index{void\_\-method@{void\_\-method}!steganos_channel.h@{steganos\_\-channel.h}}
+\subsubsection[{void\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}int void\_\-method ({\bf byte} $\ast$ {\em plain\_\-mess}, \/  int {\em p\_\-m\_\-len}, \/  int $\ast$ {\em floor}, \/  float $\ast$ {\em res}, \/  int {\em res\_\-len}, \/  {\bf steganos\_\-key\_\-t} $\ast$ {\em key}, \/  {\bf byte} $\ast$ {\em sub\_\-mess}, \/  int $\ast$ {\em s\_\-m\_\-len}, \/  {\bf prng\_\-t} $\ast$ {\em prng})}}
+\label{steganos__channel_8h_abe60a19c0eaf3c5cb497eddb48a40c93}
+
+
+Applies no hiding method to the subliminal data. This hiding method simply returns the first p\_\-m\_\-len bits of plain\_\-mess.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em plain\_\-mess}]Plain message to hide. \item[\mbox{$\leftarrow$} {\em p\_\-m\_\-len}]Length of plain message in bits. \item[\mbox{$\leftarrow$} {\em floor}]Floor vector. \item[\mbox{$\leftarrow$} {\em res}]Residue vector. \item[\mbox{$\leftarrow$} {\em res\_\-len}]Number of elements in {\itshape floor\/} and {\itshape res\/} vectors. \item[\mbox{$\leftarrow$} {\em key}]Key to use. \item[\mbox{$\leftrightarrow$} {\em sub\_\-mess}]String in which the subliminal message will be stored. It has to be allocated previously to calling the function. \item[\mbox{$\leftrightarrow$} {\em s\_\-m\_\-len}]At the input, will store the allocated size (in bits) of {\itshape sub\_\-mess\/}. At the output, the length of the resulting sub\_\-message, in bits (it may be different than p\_\-m\_\-len as it may include de-\/synchronization bits). \item[\mbox{$\leftarrow$} {\em prng}]PRNG in use. Here, NULL. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}{hide\_\-method} 
+\end{DoxySeeAlso}

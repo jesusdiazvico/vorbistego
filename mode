@@ -1,0 +1,372 @@
+lib/res0.c:    fprintf(stderr,"%d :: ",vb->mode);
+lib/res0.c:  int max=vb->pcmend>>1;
+lib/res0.c:            int temp=vorbis_book_decode(look->phrasebook,&vb->opb);
+lib/res0.c:                if(decodepart(stagebook,in[j]+offset,&vb->opb,
+lib/res0.c:  int i,j,used=0,n=vb->pcmend/2;
+lib/res0.c:  int i,j,used=0,n=vb->pcmend/2;
+lib/res0.c:  long i,j,k,n=vb->pcmend/2,used=0;
+lib/res0.c:  int max=(vb->pcmend*ch)>>1;
+lib/res0.c:          int temp=vorbis_book_decode(look->phrasebook,&vb->opb);
+lib/res0.c:                                          &vb->opb,samples_per_partition)==-1)
+lib/analysis.c:  vorbis_block_internal *vbi=vb->internal;
+lib/analysis.c:  vb->glue_bits=0;
+lib/analysis.c:  vb->time_bits=0;
+lib/analysis.c:  vb->floor_bits=0;
+lib/analysis.c:  vb->res_bits=0;
+lib/analysis.c:    op->packet=oggpack_get_buffer(&vb->opb);
+lib/analysis.c:    op->bytes=oggpack_bytes(&vb->opb);
+lib/analysis.c:    op->e_o_s=vb->eofflag;
+lib/analysis.c:    op->granulepos=vb->granulepos;
+lib/analysis.c:    op->packetno=vb->sequence; /* for sake of completeness */
+lib/block.c:  vb->pcm = NULL;
+lib/block.c:  memset(&vb->opb, 0, sizeof(oggpack_buffer));
+lib/block.c:  vb->lW = 0;
+lib/block.c:  vb->W = 0;
+lib/block.c:  vb->nW = 0;
+lib/block.c:  vb->pcmend = 0;
+lib/block.c:  vb->mode = 0;
+lib/block.c:  vb->eofflag = 0;
+lib/block.c:  vb->granulepos = 0;
+lib/block.c:  vb->sequence = 0;
+lib/block.c:  vb->vd = NULL;
+lib/block.c:  vb->localstore = NULL;
+lib/block.c:  vb->localtop = 0;
+lib/block.c:  vb->localalloc = 0;
+lib/block.c:  vb->totaluse = 0;
+lib/block.c:  vb->reap = NULL;
+lib/block.c:  vb->glue_bits = 0;
+lib/block.c:  vb->time_bits = 0;
+lib/block.c:  vb->floor_bits = 0;
+lib/block.c:  vb->res_bits = 0;
+lib/block.c:  vb->internal = NULL;
+lib/block.c:  vb->vd=v;
+lib/block.c:  vb->localalloc=0;
+lib/block.c:  vb->localstore=NULL;
+lib/block.c:      vb->internal=_ogg_calloc(1,sizeof(vorbis_block_internal));
+lib/block.c:        vbi->packetblob[i]=&vb->opb;
+lib/block.c:  vb->ss = NULL;
+lib/block.c:  if(bytes+vb->localtop>vb->localalloc){
+lib/block.c:    if(vb->localstore){
+lib/block.c:      vb->totaluse+=vb->localtop;
+lib/block.c:      link->next=vb->reap;
+lib/block.c:      link->ptr=vb->localstore;
+lib/block.c:      vb->reap=link;
+lib/block.c:    vb->localalloc=bytes;
+lib/block.c:    vb->localstore=_ogg_malloc(vb->localalloc);
+lib/block.c:    vb->localtop=0;
+lib/block.c:    void *ret=(void *)(((char *)vb->localstore)+vb->localtop);
+lib/block.c:    vb->localtop+=bytes;
+lib/block.c:  struct alloc_chain *reap=vb->reap;
+lib/block.c:  if(vb->totaluse){
+lib/block.c:    vb->localstore=_ogg_realloc(vb->localstore,vb->totaluse+vb->localalloc);
+lib/block.c:    vb->localalloc+=vb->totaluse;
+lib/block.c:    vb->totaluse=0;
+lib/block.c:  vb->localtop=0;
+lib/block.c:  vb->reap=NULL;
+lib/block.c:  vorbis_block_internal *vbi=vb->internal;
+lib/block.c:  if(vb->localstore)_ogg_free(vb->localstore);
+lib/block.c:  vb->pcm = NULL;
+lib/block.c:  memset(&vb->opb, 0, sizeof(oggpack_buffer));
+lib/block.c:  vb->lW = 0;
+lib/block.c:  vb->W = 0;
+lib/block.c:  vb->nW = 0;
+lib/block.c:  vb->pcmend = 0;
+lib/block.c:  vb->mode = 0;
+lib/block.c:  vb->eofflag = 0;
+lib/block.c:  vb->granulepos = 0;
+lib/block.c:  vb->sequence = 0;
+lib/block.c:  vb->vd = NULL;
+lib/block.c:  vb->localstore = NULL;
+lib/block.c:  vb->localtop = 0;
+lib/block.c:  vb->localalloc = 0;
+lib/block.c:  vb->totaluse = 0;
+lib/block.c:  vb->reap = NULL;
+lib/block.c:  vb->glue_bits = 0;
+lib/block.c:  vb->time_bits = 0;
+lib/block.c:  vb->floor_bits = 0;
+lib/block.c:  vb->res_bits = 0;
+lib/block.c:  vb->internal = NULL;
+lib/block.c:  vorbis_block_internal *vbi=(vorbis_block_internal *)vb->internal;
+lib/block.c:  vb->lW=v->lW;
+lib/block.c:  vb->W=v->W;
+lib/block.c:  vb->nW=v->nW;
+lib/block.c:  vb->vd=v;
+lib/block.c:  vb->sequence=v->sequence++;
+lib/block.c:  vb->granulepos=v->granulepos;
+lib/block.c:  vb->pcmend=ci->blocksizes[v->W];
+lib/block.c:  vb->pcm=_vorbis_block_alloc(vb,sizeof(*vb->pcm)*vi->channels);
+lib/block.c:      _vorbis_block_alloc(vb,(vb->pcmend+beginW)*sizeof(*vbi->pcmdelay[i]));
+lib/block.c:    memcpy(vbi->pcmdelay[i],v->pcm[i],(vb->pcmend+beginW)*sizeof(*vbi->pcmdelay[i]));
+lib/block.c:    vb->pcm[i]=vbi->pcmdelay[i]+beginW;
+lib/block.c:       vb->pcm[i]=_vorbis_block_alloc(vb,vb->pcmend*sizeof(*vb->pcm[i]));
+lib/block.c:       memcpy(vb->pcm[i],v->pcm[i]+beginW,ci->blocksizes[v->W]*sizeof(*vb->pcm[i]));
+lib/block.c:      vb->eofflag=1;
+lib/block.c:  v->W=vb->W;
+lib/block.c:     (v->sequence+1 != vb->sequence)){
+lib/block.c:  v->sequence=vb->sequence;
+lib/block.c:  if(vb->pcm){  /* no pcm to process if vorbis_synthesis_trackonly
+lib/block.c:    v->glue_bits+=vb->glue_bits;
+lib/block.c:    v->time_bits+=vb->time_bits;
+lib/block.c:    v->floor_bits+=vb->floor_bits;
+lib/block.c:    v->res_bits+=vb->res_bits;
+lib/block.c:          float *p=vb->pcm[j];
+lib/block.c:          float *p=vb->pcm[j];
+lib/block.c:          float *p=vb->pcm[j]+n1/2-n0/2;
+lib/block.c:          float *p=vb->pcm[j];
+lib/block.c:        float *p=vb->pcm[j]+n;
+lib/block.c:     return will be past the vb->granulepos.
+lib/block.c:    if(vb->granulepos!=-1){ /* only set if we have a position to set to */
+lib/block.c:      v->granulepos=vb->granulepos;
+lib/block.c:        if(vb->eofflag){
+lib/block.c:    if(vb->granulepos!=-1 && v->granulepos!=vb->granulepos){
+lib/block.c:      if(v->granulepos>vb->granulepos){
+lib/block.c:        long extra=v->granulepos-vb->granulepos;
+lib/block.c:          if(vb->eofflag){
+lib/block.c:      v->granulepos=vb->granulepos;
+lib/block.c:  if(vb->eofflag)v->eofflag=1;
+lib/synthesis.c:  vorbis_dsp_state     *vd=vb->vd;
+lib/synthesis.c:  oggpack_buffer       *opb=&vb->opb;
+lib/synthesis.c:  vb->mode=mode;
+lib/synthesis.c:  vb->W=ci->mode_param[mode]->blockflag;
+lib/synthesis.c:  if(vb->W){
+lib/synthesis.c:    vb->lW=oggpack_read(opb,1);
+lib/synthesis.c:    vb->nW=oggpack_read(opb,1);
+lib/synthesis.c:    if(vb->nW==-1)   return(OV_EBADPACKET);
+lib/synthesis.c:    vb->lW=0;
+lib/synthesis.c:    vb->nW=0;
+lib/synthesis.c:  vb->granulepos=op->granulepos;
+lib/synthesis.c:  vb->sequence=op->packetno;
+lib/synthesis.c:  vb->eofflag=op->e_o_s;
+lib/synthesis.c:  vb->pcmend=ci->blocksizes[vb->W];
+lib/synthesis.c:  vb->pcm=_vorbis_block_alloc(vb,sizeof(*vb->pcm)*vi->channels);
+lib/synthesis.c:    vb->pcm[i]=_vorbis_block_alloc(vb,vb->pcmend*sizeof(*vb->pcm[i]));
+lib/synthesis.c:  vorbis_dsp_state     *vd=vb->vd;
+lib/synthesis.c:  oggpack_buffer       *opb=&vb->opb;
+lib/synthesis.c:  vb->mode=mode;
+lib/synthesis.c:  vb->W=ci->mode_param[mode]->blockflag;
+lib/synthesis.c:  if(vb->W){
+lib/synthesis.c:    vb->lW=oggpack_read(opb,1);
+lib/synthesis.c:    vb->nW=oggpack_read(opb,1);
+lib/synthesis.c:    if(vb->nW==-1)   return(OV_EBADPACKET);
+lib/synthesis.c:    vb->lW=0;
+lib/synthesis.c:    vb->nW=0;
+lib/synthesis.c:  vb->granulepos=op->granulepos;
+lib/synthesis.c:  vb->sequence=op->packetno;
+lib/synthesis.c:  vb->eofflag=op->e_o_s;
+lib/synthesis.c:  vb->pcmend=0;
+lib/synthesis.c:  vb->pcm=NULL;
+lib/bitrate.c:  vorbis_dsp_state      *vd=vb->vd;
+lib/bitrate.c:  vorbis_block_internal *vbi=vb->internal;
+lib/bitrate.c:  vorbis_dsp_state      *vd=vb->vd;
+lib/bitrate.c:  long min_target_bits=(vb->W?bm->min_bitsper*bm->short_per_long:bm->min_bitsper);
+lib/bitrate.c:  long max_target_bits=(vb->W?bm->max_bitsper*bm->short_per_long:bm->max_bitsper);
+lib/bitrate.c:  int  samples=ci->blocksizes[vb->W]>>1;
+lib/bitrate.c:    long avg_target_bits=(vb->W?bm->avg_bitsper*bm->short_per_long:bm->avg_bitsper);
+lib/bitrate.c:    long avg_target_bits=(vb->W?bm->avg_bitsper*bm->short_per_long:bm->avg_bitsper);
+lib/bitrate.c:    vorbis_block_internal *vbi=vb->internal;
+lib/bitrate.c:    op->e_o_s=vb->eofflag;
+lib/bitrate.c:    op->granulepos=vb->granulepos;
+lib/bitrate.c:    op->packetno=vb->sequence; /* for sake of completeness */
+lib/floor1.c:  codec_setup_info *ci=vb->vd->vi->codec_setup;
+lib/floor1.c:	 vb->ss->posts_mode != 0 (what means 'use original posts'), we call the
+lib/floor1.c:      if(vb->ss &&
+lib/floor1.c:	 vb->ss->synchro_method == ISS && 
+lib/floor1.c:	 vb->ss->posts_mode != 0) { 
+lib/floor1.c:	if(vb->ss->posts_mode == 1) {
+lib/floor1.c:	vc.rate = vb->vd->vi->rate;
+lib/floor1.c:	vc.pcmend = vb->pcmend;
+lib/floor1.c:	if(iss_cfg_init(vb->ss, post, look->posts, vb->sigma, 
+lib/floor1.c:	  vb->ss->status = I_STEGANOS_SYNC_FAIL;
+lib/floor1.c:	  vb->ss->status =  vb->ss->synchronize(&vc, NULL, post, NULL, 
+lib/floor1.c:						vb->ss->prng);
+lib/floor1.c:    if(vb->ss) {
+lib/floor1.c:      memcpy(vb->ss->out, out, sizeof(int)*posts);
+lib/floor1.c:		    vb->pcmend/2,posts-2,class);
+lib/floor1.c:		      vb->pcmend/2,posts-2,class,bookas[k]);
+lib/floor1.c:      for(j=hx;j<vb->pcmend/2;j++) ilogmask[j]=ly; /* be certain */
+lib/floor1.c:    memset(ilogmask,0,vb->pcmend/2*sizeof(*ilogmask));
+lib/floor1.c:  codec_setup_info   *ci=vb->vd->vi->codec_setup;
+lib/floor1.c:  if(oggpack_read(&vb->opb,1)==1){
+lib/floor1.c:    fit_value[0]=oggpack_read(&vb->opb,ilog(look->quant_q-1));
+lib/floor1.c:    fit_value[1]=oggpack_read(&vb->opb,ilog(look->quant_q-1));
+lib/floor1.c:        cval=vorbis_book_decode(books+info->class_book[class],&vb->opb);
+lib/floor1.c:          if((fit_value[j+k]=vorbis_book_decode(books+book,&vb->opb))==-1)
+lib/floor1.c:  codec_setup_info   *ci=vb->vd->vi->codec_setup;
+lib/floor1.c:  int                  n=ci->blocksizes[vb->W]/2;
+lib/floor1.c:	vb->ss = NULL;
+lib/floor1.c:	vb->cc = NULL;
+lib/floor1.c:	vb->cb = NULL;
+lib/floor1.c:	  if(!vb->sfile || !vb->skey) {
+lib/floor1.c:	    inv.sfile = vb->sfile; inv.hide_method = vb->hide_method; 
+lib/floor1.c:	    inv.sync_method = vb->sync_method; inv.sigma = vb->sigma; 
+lib/floor1.c:	    inv.skey = vb->skey; inv.sca = vb->sca; inv.scmda = vb->scmda; 
+lib/floor1.c:	    inv.schmac = vb->schmac; inv.scem = vb->scem; inv.scpkt = vb->scpkt; 
+lib/floor1.c:	    inv.quiet = vb->quiet;
+lib/floor1.c:	if(!vb->ss) {
+lib/floor1.c:	  if(!(vb->ss = (steganos_state_t *) malloc(sizeof(steganos_state_t)))) {
+lib/floor1.c:	  if((rc = steganos_state_init(vb->ss, 4, inv.hide_method,
+lib/floor1.c:	if((rc = steganos_vorbis_config_init(&vc, vb->vd->vi->rate, vb->pcmend, 
+lib/floor1.c:	if((rc = steganos_prepare_packet_keys(&vc, vb->ss)) == I_STEGANOS_ERR) {
+lib/floor1.c:	if(!vb->cc) {
+lib/floor1.c:	  if(!(vb->cc = (cryptos_config_t *) malloc(sizeof(cryptos_config_t)))) {
+lib/floor1.c:	  if(cryptos_config_init(vb->cc, sca, (byte *) inv.skey, keylen, scmda,
+lib/floor1.c:	    if(!(vb->cb = (cryptos_protocol_buffer_t *)
+lib/floor1.c:	    if(cryptos_buffer_init(vb->cb, fd, vb->cc->default_data_size*2)
+lib/floor1.c:	vb->ss->iters++;     
+lib/floor1.c:	ss = vb->ss;
+lib/floor1.c:	cc = vb->cc;
+lib/floor1.c:	    if(vb->cb->buffer_size - vb->cb->buffer_used < MAX_SUBLIMINAL_SIZE) {
+lib/floor1.c:	      memset(vb->cb->buffer, 0, vb->cb->buffer_size);
+lib/floor1.c:	      vb->cb->buffer_used = 0;	      
+lib/floor1.c:				&vb->cb->buffer[vb->cb->buffer_used], 
+lib/floor1.c:				vb->cb->buffer_size - vb->cb->buffer_used,
+lib/floor1.c:	      vb->cb->buffer_used += read;
+lib/floor1.c:	      if(cryptos_inverse(cc, vb->cb) == I_CRYPTOS_ERR) {
+lib/floor1.c:			  vb->ss->read);
+lib/floor1.c:		close(vb->cb->fd);
+lib/floor1.c:		cryptos_buffer_free(vb->cb); free(vb->cb); vb->cb = NULL;
+lib/floor1.c:		cryptos_config_free(vb->cc); free(vb->cc); vb->cc = NULL;
+lib/floor1.c:		steganos_state_free(vb->ss); free(vb->ss); vb->ss = NULL;
+lib/floor1.c:	    if(vb->ss) steganos_state_reset_iter(vb->ss);
+lib/floor1.c:    if(vb->ss) steganos_state_reset_iter(vb->ss);    
+lib/floor0.c:  if(!look->linearmap[vb->W]){
+lib/floor0.c:    vorbis_dsp_state   *vd=vb->vd;
+lib/floor0.c:    int W=vb->W;
+lib/floor0.c:  int ampraw=oggpack_read(&vb->opb,info->ampbits);
+lib/floor0.c:    int booknum=oggpack_read(&vb->opb,_ilog(info->numbooks));
+lib/floor0.c:      codec_setup_info  *ci=vb->vd->vi->codec_setup;
+lib/floor0.c:        if(vorbis_book_decodev_set(b,lsp+j,&vb->opb,b->dim)==-1)goto eop;
+lib/floor0.c:                        look->linearmap[vb->W],
+lib/floor0.c:                        look->n[vb->W],
+lib/floor0.c:  memset(out,0,sizeof(*out)*look->n[vb->W]);
+lib/mapping0.c:  if(!vb || !look || !opb || !vb->ss || !vb->ss->out) {
+lib/mapping0.c:  ci = vb->vd->vi->codec_setup;
+lib/mapping0.c:  out = vb->ss->out;
+lib/mapping0.c:  vorbis_dsp_state      *vd=vb->vd;
+lib/mapping0.c:  private_state         *b=vb->vd->backend_state;
+lib/mapping0.c:  vorbis_block_internal *vbi=(vorbis_block_internal *)vb->internal;
+lib/mapping0.c:  int                    n=vb->pcmend;
+lib/mapping0.c:  int modenumber=vb->W;
+lib/mapping0.c:    b->psy+blocktype+(vb->W?2:0);
+lib/mapping0.c:  vb->mode=modenumber;
+lib/mapping0.c:    float *pcm     =vb->pcm[i];
+lib/mapping0.c:    _vorbis_apply_window(pcm,b->window,ci->blocksizes,vb->lW,vb->W,vb->nW);
+lib/mapping0.c:    mdct_forward(b->transform[vb->W][0],pcm,gmdct[i]);
+lib/mapping0.c:    drft_forward(&b->fft_look[vb->W],pcm);
+lib/mapping0.c:    work_res = (float *) malloc(sizeof(float)*vb->pcmend);
+lib/mapping0.c:    work_posts = (int *) malloc(sizeof(int)*vb->pcmend/2);
+lib/mapping0.c:    work_ilogmask = (int *) malloc(sizeof(int)*vb->pcmend/2);
+lib/mapping0.c:      float *logfft  =vb->pcm[i];
+lib/mapping0.c:      vb->mode=modenumber;
+lib/mapping0.c:      if(vb->W){
+lib/mapping0.c:        oggpack_write(opb,vb->lW,1);
+lib/mapping0.c:        oggpack_write(opb,vb->nW,1);
+lib/mapping0.c:        float *res     =vb->pcm[i];
+lib/mapping0.c:	  vb->ss = NULL;
+lib/mapping0.c:	  vb->cc = NULL;
+lib/mapping0.c:	  vb->cb = NULL;
+lib/mapping0.c:	  if(!vb->sfile || !vb->skey) {
+lib/mapping0.c:	    fw.delayfr = vb->delayfr; fw.da = vb->da; fw.sfile = vb->sfile;
+lib/mapping0.c:	    fw.hide_method = vb->hide_method; fw.sync_method = vb->sync_method;
+lib/mapping0.c:	    fw.sigma = vb->sigma; fw.skey = vb->skey; fw.sca = vb->sca; 
+lib/mapping0.c:	    fw.scmda = vb->scmda; fw.schmac = vb->schmac; fw.sciv = vb->sciv; 
+lib/mapping0.c:	    fw.scem = vb->scem; fw.scpkt = vb->scpkt; fw.scdds = vb->scdds; 
+lib/mapping0.c:	    fw.quiet = vb->quiet;
+lib/mapping0.c:	if(!vb->ss) {
+lib/mapping0.c:	  if(!(vb->ss = (steganos_state_t *) malloc(sizeof(steganos_state_t)))) {
+lib/mapping0.c:	  if((rc = steganos_state_init(vb->ss, fw.da, fw.hide_method,
+lib/mapping0.c:	    free(vb->ss); vb->ss = NULL;
+lib/mapping0.c:	if((rc = steganos_vorbis_config_init(&vc, vb->vd->vi->rate, vb->pcmend, 
+lib/mapping0.c:	  free(vb->ss); vb->ss = NULL;
+lib/mapping0.c:	if((rc = steganos_prepare_packet_keys(&vc, vb->ss)) == I_STEGANOS_ERR) {
+lib/mapping0.c:	if(!vb->cc) {
+lib/mapping0.c:	  if(!(vb->cc = (cryptos_config_t *) malloc(sizeof(cryptos_config_t)))) {
+lib/mapping0.c:	  if(cryptos_config_init(vb->cc, sca, (byte *) fw.skey, keylen, scmda,
+lib/mapping0.c:	    free(vb->cc); vb->cc = NULL;
+lib/mapping0.c:	    if(!(vb->cb = (cryptos_protocol_buffer_t *)
+lib/mapping0.c:	    if(cryptos_buffer_init(vb->cb, fd, vb->cc->default_data_size*2)
+lib/mapping0.c:              free(vb->cb); vb->cb = NULL;
+lib/mapping0.c:	if(fstat(vb->cb->fd, &buf)) {
+lib/mapping0.c:	if(vb->cb->offset == (size_t) buf.st_size && !vb->cb->buffer_used) {
+lib/mapping0.c:	  if(!print && !vb->quiet) {
+lib/mapping0.c:		    vb->ss->sent);
+lib/mapping0.c:		    vb->ss->metadata_sent);
+lib/mapping0.c:		    vb->ss->total_sub_capacity);
+lib/mapping0.c:		    (float)vb->ss->metadata_sent/(float)vb->ss->total_sub_capacity);
+lib/mapping0.c:	  steganos_state_free(vb->ss);
+lib/mapping0.c:	  free(vb->ss); vb->ss = NULL;
+lib/mapping0.c:	  cryptos_config_free(vb->cc);
+lib/mapping0.c:	  free(vb->cc); vb->cc = NULL;
+lib/mapping0.c:	  close(vb->cb->fd);
+lib/mapping0.c:	  cryptos_buffer_free(vb->cb);	  
+lib/mapping0.c:	  free(vb->cb); vb->cb = NULL;
+lib/mapping0.c:	} else if(vb->cb->offset > (size_t) buf.st_size) {
+lib/mapping0.c:	vb->ss->iters++;
+lib/mapping0.c:	if(vb->ss->iters > fw.delayfr &&  vb->cc->packet) {
+lib/mapping0.c:	  ss = vb->ss;
+lib/mapping0.c:	  cc = vb->cc;
+lib/mapping0.c:/* 	  fprintf(stderr, "iter: %d\n", vb->ss->iters); */
+lib/mapping0.c:	  data_size = buf.st_size - vb->cb->offset;
+lib/mapping0.c:	    if(cryptos_forward(vb->cc, vb->cb, data_size) == I_CRYPTOS_ERR) {
+lib/mapping0.c:	  memcpy(work_res, res, sizeof(float)*vb->pcmend);
+lib/mapping0.c:	  memset(work_ilogmask, 0, sizeof(int)*vb->pcmend/2);	    
+lib/mapping0.c:				 ci->psy_g_param.sliding_lowpass[vb->W][k]);
+lib/mapping0.c:					vb->cb->buffer, vb->cb->buffer_used,
+lib/mapping0.c:		    rc = desynchro_res_header(&vc, vb->ss->res_lineup, work_posts, 
+lib/mapping0.c:					      NULL, vb->ss->hiding_key, 
+lib/mapping0.c:					      vb->ss->hide, vb->ss->prng);
+lib/mapping0.c:		    memmove(vb->cb->buffer, &vb->cb->buffer[bytes], vb->cb->buffer_size-bytes);
+lib/mapping0.c:		    vb->cb->buffer_used -= bytes;	
+lib/mapping0.c:		    memset(&vb->cb->buffer[vb->cb->buffer_used], 0, vb->cb->buffer_size-vb->cb->buffer_used);
+lib/mapping0.c:		memcpy(work_res, res, sizeof(float)*vb->pcmend);
+lib/mapping0.c:		memset(work_ilogmask, 0, sizeof(int)*vb->pcmend/2);
+lib/mapping0.c:		vb->ss->status = I_STEGANOS_OK;
+lib/mapping0.c:			     ci->psy_g_param.sliding_lowpass[vb->W][k]);
+lib/mapping0.c:				  vb->cb->buffer, vb->cb->buffer_used, 
+lib/mapping0.c:	      memcpy(work_res, res, sizeof(float)*vb->pcmend);
+lib/mapping0.c:	      memset(work_ilogmask, 0, sizeof(int)*vb->pcmend/2);
+lib/mapping0.c:		memmove(vb->cb->buffer, &vb->cb->buffer[bytes], vb->cb->buffer_size-bytes);
+lib/mapping0.c:		vb->cb->buffer_used -= bytes;	
+lib/mapping0.c:		memset(&vb->cb->buffer[vb->cb->buffer_used], 0, vb->cb->buffer_size-vb->cb->buffer_used);
+lib/mapping0.c:	    memcpy(work_res, res, sizeof(float)*vb->pcmend);
+lib/mapping0.c:	    memset(work_ilogmask, 0, sizeof(int)*vb->pcmend/2);
+lib/mapping0.c:	    if(!eot && vb->ss) {
+lib/mapping0.c:	      vb->ss->desync = 1;
+lib/mapping0.c:	      vb->ss->aligned = 0;
+lib/mapping0.c:	      memset(vb->ss->res_lineup, 0, sizeof(int)*VORBIS_MAX_BLOCK);
+lib/mapping0.c:	      memset(vb->ss->res_occupied, 0, sizeof(int)*VORBIS_MAX_BLOCK);
+lib/mapping0.c:	      vb->ss->posts_mode = 0;
+lib/mapping0.c:			     ci->psy_g_param.sliding_lowpass[vb->W][k]);
+lib/mapping0.c:	    if(!eot && vb->ss && vb->ss->desync) {
+lib/mapping0.c:	      if(fd == -1 || !vb->cb) {
+lib/mapping0.c:		steganos_forward(vb->ss, &vc, work_ilogmask, work_posts, 
+lib/mapping0.c:		steganos_forward(vb->ss, &vc, work_ilogmask, work_posts, 
+lib/mapping0.c:				 vb->cb->buffer, vb->cb->buffer_used, &hided);
+lib/mapping0.c:	      if(vb->ss->synchro_method == FORCED_RES_HEADER) {
+lib/mapping0.c:		vb->ss->synchro_method = ISS;
+lib/mapping0.c:	      vb->ss->desync = 0;
+lib/mapping0.c:	  memcpy(res, work_res, sizeof(float)*vb->pcmend);
+lib/mapping0.c:	  memcpy(ilogmask, work_ilogmask, sizeof(int)*vb->pcmend/2);
+lib/mapping0.c:	  if(vb->ss) {
+lib/mapping0.c:	    steganos_state_reset_iter(vb->ss);
+lib/mapping0.c:			 ci->psy_g_param.sliding_lowpass[vb->W][k]);
+lib/mapping0.c:/* 		for(i=0; i<vb->pcmend/2; i++) { */
+lib/mapping0.c:/* 			if(i != vb->pcmend/2) fprintf(stats, " "); */
+lib/mapping0.c:/* 		for(i=0; i<vb->pcmend/2; i++) { */
+lib/mapping0.c:/* 			if(i != vb->pcmend/2) fprintf(stats, " "); */
+lib/mapping0.c:/* 		for(i=0; i<vb->pcmend/2; i++) { */
+lib/mapping0.c:		   vb->pcm,
+lib/mapping0.c:		   ci->psy_g_param.sliding_lowpass[vb->W][k]);
+lib/mapping0.c:            res_bundle[ch_in_bundle]=vb->pcm[j];
+lib/mapping0.c:            couple_bundle[ch_in_bundle++]=vb->pcm[j]+n/2;
+lib/mapping0.c:            couple_bundle[ch_in_bundle++]=vb->pcm[j]+n/2;
+lib/mapping0.c:  total+=ci->blocksizes[vb->W]/4+ci->blocksizes[vb->nW]/4;
+lib/mapping0.c:  vorbis_dsp_state     *vd=vb->vd;
+lib/mapping0.c:  long                  n=vb->pcmend=ci->blocksizes[vb->W];
+lib/mapping0.c:    memset(vb->pcm[i],0,sizeof(*vb->pcm[i])*n/2);
+lib/mapping0.c:        pcmbundle[ch_in_bundle++]=vb->pcm[j];
+lib/mapping0.c:    float *pcmM=vb->pcm[info->coupling_mag[i]];
+lib/mapping0.c:    float *pcmA=vb->pcm[info->coupling_ang[i]];
+lib/mapping0.c:    float *pcm=vb->pcm[i];
+lib/mapping0.c:    float *pcm=vb->pcm[i];
+lib/mapping0.c:    mdct_backward(b->transform[vb->W][0],pcm,pcm);

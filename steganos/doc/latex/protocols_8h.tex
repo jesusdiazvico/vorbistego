@@ -1,0 +1,135 @@
+\hypertarget{protocols_8h}{
+\section{lib/protocols.h File Reference}
+\label{protocols_8h}\index{lib/protocols.h@{lib/protocols.h}}
+}
+{\ttfamily \#include \char`\"{}vorbis/codec.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}steganos\_\-types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}cryptos\_\-types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}global\_\-types.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{protocols_8h_ad20a05b9b0de5ebf2dd210bd21373a78}{cryptos\_\-forward} (\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} $\ast$cc, \hyperlink{structcryptos__protocol__buffer__t}{cryptos\_\-protocol\_\-buffer\_\-t} $\ast$cb, uint64\_\-t data\_\-size)
+\begin{DoxyCompactList}\small\item\em Produces a new cryptographic packet when necessary. \item\end{DoxyCompactList}\item 
+int \hyperlink{protocols_8h_ab97773a143a1554f730ed0fdb593aa2b}{cryptos\_\-inverse} (\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} $\ast$cc, \hyperlink{structcryptos__protocol__buffer__t}{cryptos\_\-protocol\_\-buffer\_\-t} $\ast$clb)
+\begin{DoxyCompactList}\small\item\em Tries to recover a new crypto packet from the cryptographic layer buffer. \item\end{DoxyCompactList}\item 
+int \hyperlink{protocols_8h_adb8ddbc14d0bf98f07e0b5db321792c7}{steganos\_\-vorbis\_\-config\_\-init} (\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, int rate, int pcmend, int mult, int $\ast$postlist, int $\ast$forward\_\-index, int posts)
+\begin{DoxyCompactList}\small\item\em Initializes the structure containing basic vorbis codec info needed in the steganographic layer. \item\end{DoxyCompactList}\item 
+int \hyperlink{protocols_8h_a524ac47c2f8406ac6917f20136ca8855}{steganos\_\-vorbis\_\-config\_\-free} (\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc)
+\begin{DoxyCompactList}\small\item\em Frees the given \hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} structure. \item\end{DoxyCompactList}\item 
+int \hyperlink{protocols_8h_ab661b3cba987babb850a108f24c2e992}{steganos\_\-forward} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss, \hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, int $\ast$floor, int $\ast$posts, float $\ast$residue, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$buffer, size\_\-t buffer\_\-len, int $\ast$hided)
+\begin{DoxyCompactList}\small\item\em Interface to the sender's steganographic functionality. \item\end{DoxyCompactList}\item 
+int \hyperlink{protocols_8h_a90664aee23c6939eb794cd9b64c2737a}{steganos\_\-inverse} (\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} $\ast$ss, \hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, int $\ast$posts, int $\ast$floor, float $\ast$residue, float sigma, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$buffer, int buffer\_\-sz, int $\ast$sd\_\-read)
+\begin{DoxyCompactList}\small\item\em Interface to the receiver's steganographic functionality. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{protocols_8h_ad20a05b9b0de5ebf2dd210bd21373a78}{
+\index{protocols.h@{protocols.h}!cryptos\_\-forward@{cryptos\_\-forward}}
+\index{cryptos\_\-forward@{cryptos\_\-forward}!protocols.h@{protocols.h}}
+\subsubsection[{cryptos\_\-forward}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-forward ({\bf cryptos\_\-config\_\-t} $\ast$ {\em cc}, \/  {\bf cryptos\_\-protocol\_\-buffer\_\-t} $\ast$ {\em cb}, \/  uint64\_\-t {\em data\_\-size})}}
+\label{protocols_8h_ad20a05b9b0de5ebf2dd210bd21373a78}
+
+
+Produces a new cryptographic packet when necessary. When this function is called, and the cryptographic layer buffer is at risk of underflow (i.e., if it has less than MAX\_\-SUBLIMINAL\_\-SIZE bits stores), produces a new crypto packet, storing it in the cryptographic layer buffer. The data to include is read from the file descriptor stored in the cryptographic layer buffer.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em cc}]Cryptographic layer configuration structure. \item[\mbox{$\leftarrow$} {\em cb}]Cryptographic layer buffer. \item[\mbox{$\leftarrow$} {\em data\_\-size}]The number of bits of data to include in the current crypto-\/packet. If a value of 0 is passed, or it exceeds the maximum data size per packet specified in {\itshape cc\/}, the default data size will be used instead.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{protocols_8h_ab97773a143a1554f730ed0fdb593aa2b}{
+\index{protocols.h@{protocols.h}!cryptos\_\-inverse@{cryptos\_\-inverse}}
+\index{cryptos\_\-inverse@{cryptos\_\-inverse}!protocols.h@{protocols.h}}
+\subsubsection[{cryptos\_\-inverse}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-inverse ({\bf cryptos\_\-config\_\-t} $\ast$ {\em cc}, \/  {\bf cryptos\_\-protocol\_\-buffer\_\-t} $\ast$ {\em cb})}}
+\label{protocols_8h_ab97773a143a1554f730ed0fdb593aa2b}
+
+
+Tries to recover a new crypto packet from the cryptographic layer buffer. When called, this function explores the cryptographic layer buffer, using the context defined by the cryptographic configuration structure {\itshape cc\/}, and if a complete new packet is successfully parsed, writes the recovered data in the file descriptor stored in the cryptographic layer buffer.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em cc}]Cryptographic layer configuration structure. \item[\mbox{$\leftarrow$} {\em cb}]Cryptographic layer buffer.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{protocols_8h_ab661b3cba987babb850a108f24c2e992}{
+\index{protocols.h@{protocols.h}!steganos\_\-forward@{steganos\_\-forward}}
+\index{steganos\_\-forward@{steganos\_\-forward}!protocols.h@{protocols.h}}
+\subsubsection[{steganos\_\-forward}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-forward ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss}, \/  {\bf vorbis\_\-config\_\-t} $\ast$ {\em vc}, \/  int $\ast$ {\em floor}, \/  int $\ast$ {\em posts}, \/  float $\ast$ {\em residue}, \/  {\bf byte} $\ast$ {\em buffer}, \/  size\_\-t {\em buffer\_\-len}, \/  int $\ast$ {\em hided})}}
+\label{protocols_8h_ab661b3cba987babb850a108f24c2e992}
+
+
+Interface to the sender's steganographic functionality. Through this interface, a sender program will be able to hide in the floor and residue received vectors, from a Vorbis audio stream, the bitstream stored in the field indicated by the {\itshape input\/} field within the 'steganos\_\-config.xml' file. The steganographic layer will try to hide as much data as possible, and will update {\itshape sent\/} with the number of bits successfully hided.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ss}]The steganographic protocol internal structure \item[\mbox{$\leftarrow$} {\em vc}]Vorbis block and look info. \item[\mbox{$\leftarrow$} {\em floor}]The Vorbis audio floor vector. \item[\mbox{$\leftrightarrow$} {\em posts}]The Vorbis posts vector. \item[\mbox{$\leftrightarrow$} {\em residue}]The Vorbis audio residue vector. \item[\mbox{$\leftarrow$} {\em buffer}]Buffer containing the data to send. \item[\mbox{$\leftarrow$} {\em buffer\_\-len}]Length of buffer, in bytes, containing initialized data. \item[\mbox{$\leftrightarrow$} {\em hided}]Pure data successfully hided, in bits.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{protocols_8h_a90664aee23c6939eb794cd9b64c2737a}{
+\index{protocols.h@{protocols.h}!steganos\_\-inverse@{steganos\_\-inverse}}
+\index{steganos\_\-inverse@{steganos\_\-inverse}!protocols.h@{protocols.h}}
+\subsubsection[{steganos\_\-inverse}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-inverse ({\bf steganos\_\-state\_\-t} $\ast$ {\em ss}, \/  {\bf vorbis\_\-config\_\-t} $\ast$ {\em vc}, \/  int $\ast$ {\em posts}, \/  int $\ast$ {\em floor}, \/  float $\ast$ {\em residue}, \/  float {\em sigma}, \/  {\bf byte} $\ast$ {\em buffer}, \/  int {\em buffer\_\-sz}, \/  int $\ast$ {\em sd\_\-read})}}
+\label{protocols_8h_a90664aee23c6939eb794cd9b64c2737a}
+
+
+Interface to the receiver's steganographic functionality. Through this interface, a receiver program can unhide as much subliminal data as may had been hidden in the Vorbis audio {\itshape floor\/} and/or {\itshape residue\/} vectors, if any.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ss}]The steganographic protocol internal structure \item[\mbox{$\leftarrow$} {\em vc}]Vorbis block and look info. \item[\mbox{$\leftarrow$} {\em posts}]The Vorbis audio floor posts vector. \item[\mbox{$\leftarrow$} {\em floor}]The Vorbis audio floor vector. \item[\mbox{$\leftarrow$} {\em residue}]The Vorbis audio residue vector. \item[\mbox{$\leftarrow$} {\em sigma}]Sigma parameter if ISS. \item[\mbox{$\leftrightarrow$} {\em buffer}]Buffer to store the subliminal data. \item[\mbox{$\leftarrow$} {\em buffer\_\-sz}]Size of {\itshape buffer\/}, in bytes. \item[\mbox{$\rightarrow$} {\em sd\_\-read}]Number of bytes recovered\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{protocols_8h_a524ac47c2f8406ac6917f20136ca8855}{
+\index{protocols.h@{protocols.h}!steganos\_\-vorbis\_\-config\_\-free@{steganos\_\-vorbis\_\-config\_\-free}}
+\index{steganos\_\-vorbis\_\-config\_\-free@{steganos\_\-vorbis\_\-config\_\-free}!protocols.h@{protocols.h}}
+\subsubsection[{steganos\_\-vorbis\_\-config\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-vorbis\_\-config\_\-free ({\bf vorbis\_\-config\_\-t} $\ast$ {\em vc})}}
+\label{protocols_8h_a524ac47c2f8406ac6917f20136ca8855}
+
+
+Frees the given \hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} structure. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vc}]Structure to free\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \end{DoxyRetVals}
+\hypertarget{protocols_8h_adb8ddbc14d0bf98f07e0b5db321792c7}{
+\index{protocols.h@{protocols.h}!steganos\_\-vorbis\_\-config\_\-init@{steganos\_\-vorbis\_\-config\_\-init}}
+\index{steganos\_\-vorbis\_\-config\_\-init@{steganos\_\-vorbis\_\-config\_\-init}!protocols.h@{protocols.h}}
+\subsubsection[{steganos\_\-vorbis\_\-config\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int steganos\_\-vorbis\_\-config\_\-init ({\bf vorbis\_\-config\_\-t} $\ast$ {\em vc}, \/  int {\em rate}, \/  int {\em pcmend}, \/  int {\em mult}, \/  int $\ast$ {\em postlist}, \/  int $\ast$ {\em forward\_\-index}, \/  int {\em posts})}}
+\label{protocols_8h_adb8ddbc14d0bf98f07e0b5db321792c7}
+
+
+Initializes the structure containing basic vorbis codec info needed in the steganographic layer. Initializes the structure containing basic vorbis codec info needed in the steganographic layer. It is very important to note that, unless the other $\ast$\_\-init functions, this one DOES NOT allocate memory for the internal arrays, as they are just make point the Vorbis ones. Therefore, there exists no respective $\ast$\_\-free function, as the inner variables are supposed to be freed by Vorbis code.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em vc}]Structure that whil group all the essential Vorbis variables \item[\mbox{$\leftarrow$} {\em rate}]Sampling rate \item[\mbox{$\leftarrow$} {\em pcmend}]Length of the floor and residue vectors \item[\mbox{$\leftarrow$} {\em mult}]Multiplier used in the posts calculation \item[\mbox{$\leftarrow$} {\em postlist}]Array of posts \item[\mbox{$\leftarrow$} {\em forward\_\-index}]Array of posts X axis ordering \item[\mbox{$\leftarrow$} {\em posts}]Number of elements in the postlist array\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}

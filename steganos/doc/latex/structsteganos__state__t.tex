@@ -1,0 +1,246 @@
+\hypertarget{structsteganos__state__t}{
+\section{steganos\_\-state\_\-t Struct Reference}
+\label{structsteganos__state__t}\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}}
+}
+
+
+Defines the global internal state of the steganosgraphic protocol.  
+
+
+{\ttfamily \#include $<$include/steganos\_\-types.h$>$}\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$ \hyperlink{structsteganos__state__t_ade7b06cf61e74c7684a3eb9822e51ada}{vc}
+\item 
+\hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$ \hyperlink{structsteganos__state__t_aa0d2cbc935164c4627d9960c97c2e466}{master\_\-key}
+\item 
+\hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$ \hyperlink{structsteganos__state__t_a0c48742bec665d03c8f6b19b6adf69c2}{synchro\_\-key}
+\item 
+\hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$ \hyperlink{structsteganos__state__t_a962efb329a129c32e8a1a08731bd81ba}{hiding\_\-key}
+\item 
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{synchro\_\-method\_\-et} \hyperlink{structsteganos__state__t_ad4393617819cf79697d9b126ad6142ba}{synchro\_\-method}
+\item 
+\hyperlink{steganos__types_8h_ac758d5077b8857eb7a2059be7f6b2e03}{sync\_\-method} \hyperlink{structsteganos__state__t_ab83b4da83ea658612368de71cf25ab3b}{synchronize}
+\item 
+\hyperlink{steganos__types_8h_a3423b8602d2248745bfd5ff836dafe31}{desync\_\-method} \hyperlink{structsteganos__state__t_a038d9b8c4d75e1e2cf047b0d89e7a07a}{desynchronize}
+\item 
+int \hyperlink{structsteganos__state__t_ac771d3a52f60267c41251f183578a873}{desync}
+\item 
+\hyperlink{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbd}{hide\_\-method\_\-et} \hyperlink{structsteganos__state__t_ad48f948c5024ec76b3a9bece54124d66}{hide\_\-method}
+\item 
+\hyperlink{structsteganos__state__t_ad48f948c5024ec76b3a9bece54124d66}{hide\_\-method} \hyperlink{structsteganos__state__t_a8f4d58596c9f13fabefc97efb5d2d301}{hide}
+\item 
+unsigned int \hyperlink{structsteganos__state__t_a3838589e5ef92d6293c6e7a7f40ba491}{da}
+\item 
+float \hyperlink{structsteganos__state__t_a35b6704fbd31ab23984a713fdcef43a8}{ra}
+\item 
+float \hyperlink{structsteganos__state__t_a5382346902b6d6567614b77d9a0c6de3}{variation\_\-limit} \mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}\mbox{[}2\mbox{]}
+\item 
+float \hyperlink{structsteganos__state__t_a5c33ee391f0074f8df354314ffd65c96}{max\_\-fc\_\-capacity}
+\item 
+float \hyperlink{structsteganos__state__t_a30506b9be18bd2a58856d6ba5a3fd15f}{min\_\-fc\_\-capacity}
+\item 
+int \hyperlink{structsteganos__state__t_afc33131ff2db5dc8a1f31a6ba5f1c724}{res\_\-max\_\-capacity} \mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}
+\item 
+int \hyperlink{structsteganos__state__t_a2bbaeab1769db3e7021791701f05a929}{res\_\-min\_\-capacity} \mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}
+\item 
+int \hyperlink{structsteganos__state__t_ae9b6a306ba7eda4266782af5429b097c}{res\_\-lineup} \mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}
+\item 
+int \hyperlink{structsteganos__state__t_add02079c2fba135c27eca945cd6fdd53}{res\_\-occupied} \mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}
+\item 
+unsigned long int \hyperlink{structsteganos__state__t_af5f22c44dbdd3ffe809f6dee20ec2343}{sent}
+\item 
+unsigned long int \hyperlink{structsteganos__state__t_a0a1685f67dade1dc4c5f23458d9abdd9}{read}
+\item 
+long int \hyperlink{structsteganos__state__t_a2e6797670afeb03e81514e1b8e5b53b7}{metadata\_\-sent}
+\item 
+long int \hyperlink{structsteganos__state__t_a17f9b729e28f08375fd0ae7679f98436}{remaining}
+\item 
+int \hyperlink{structsteganos__state__t_ac2ef43fc18298daa20ecfc6357f93e5b}{out} \mbox{[}VIF\_\-POSIT+2\mbox{]}
+\item 
+int \hyperlink{structsteganos__state__t_a5065391aa062854d0b9ce9eefe3a9509}{status}
+\item 
+int \hyperlink{structsteganos__state__t_ab843be033e7bfc4839814d751ba3f0b7}{posts\_\-mode}
+\item 
+int \hyperlink{structsteganos__state__t_a045c8296b2a0d027a5bfe22b187340b2}{aligned}
+\item 
+long int \hyperlink{structsteganos__state__t_ae8215dc4cb883543dd4bd7a47a475d74}{total\_\-sub\_\-capacity}
+\item 
+int \hyperlink{structsteganos__state__t_aa220ce82394bee0330d0de96586a9f38}{iters}
+\item 
+\hyperlink{structprng__t}{prng\_\-t} $\ast$ \hyperlink{structsteganos__state__t_a8572fc70a201b28fe897eaa304caf400}{prng}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the global internal state of the steganosgraphic protocol. \begin{DoxySeeAlso}{See also}
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{synchro\_\-method\_\-et} 
+
+\hyperlink{steganos__types_8h_ac758d5077b8857eb7a2059be7f6b2e03}{sync\_\-method} 
+
+\hyperlink{steganos__types_8h_a3423b8602d2248745bfd5ff836dafe31}{desync\_\-method} 
+
+\hyperlink{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbd}{hide\_\-method\_\-et} 
+
+\hyperlink{structsteganos__state__t_ad48f948c5024ec76b3a9bece54124d66}{hide\_\-method} 
+
+\hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structsteganos__state__t_a045c8296b2a0d027a5bfe22b187340b2}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!aligned@{aligned}}
+\index{aligned@{aligned}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{aligned}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::aligned}}}
+\label{structsteganos__state__t_a045c8296b2a0d027a5bfe22b187340b2}
+Boolean signaling that we've already calculated the residue lineup. Avoids recalculating it when considering several different stego-\/frame-\/channels. \hypertarget{structsteganos__state__t_a3838589e5ef92d6293c6e7a7f40ba491}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!da@{da}}
+\index{da@{da}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{da}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf steganos\_\-state\_\-t::da}}}
+\label{structsteganos__state__t_a3838589e5ef92d6293c6e7a7f40ba491}
+Desired aggressiveness of the protocol. Remains the same through the whole process. Ranges from 1 to 10, meaning we want to use the 10,20, ... 100\% of the total subliminal capacity. \hypertarget{structsteganos__state__t_ac771d3a52f60267c41251f183578a873}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!desync@{desync}}
+\index{desync@{desync}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{desync}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::desync}}}
+\label{structsteganos__state__t_ac771d3a52f60267c41251f183578a873}
+Boolean. Active when desynchronization must be done. \hypertarget{structsteganos__state__t_a038d9b8c4d75e1e2cf047b0d89e7a07a}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!desynchronize@{desynchronize}}
+\index{desynchronize@{desynchronize}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{desynchronize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf desync\_\-method} {\bf steganos\_\-state\_\-t::desynchronize}}}
+\label{structsteganos__state__t_a038d9b8c4d75e1e2cf047b0d89e7a07a}
+Desynchronization method (pointer to function) \hypertarget{structsteganos__state__t_a8f4d58596c9f13fabefc97efb5d2d301}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!hide@{hide}}
+\index{hide@{hide}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{hide}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hide\_\-method} {\bf steganos\_\-state\_\-t::hide}}}
+\label{structsteganos__state__t_a8f4d58596c9f13fabefc97efb5d2d301}
+Hiding method (pointer to function) to use in the current frame and channel. \hypertarget{structsteganos__state__t_ad48f948c5024ec76b3a9bece54124d66}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!hide\_\-method@{hide\_\-method}}
+\index{hide\_\-method@{hide\_\-method}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{hide\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hide\_\-method\_\-et} {\bf steganos\_\-state\_\-t::hide\_\-method}}}
+\label{structsteganos__state__t_ad48f948c5024ec76b3a9bece54124d66}
+Hiding method (enum type) to use in the current frame and channel residue vectors. \hypertarget{structsteganos__state__t_a962efb329a129c32e8a1a08731bd81ba}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!hiding\_\-key@{hiding\_\-key}}
+\index{hiding\_\-key@{hiding\_\-key}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{hiding\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf steganos\_\-key\_\-t}$\ast$ {\bf steganos\_\-state\_\-t::hiding\_\-key}}}
+\label{structsteganos__state__t_a962efb329a129c32e8a1a08731bd81ba}
+Key to use for hiding the data in the residues. \hypertarget{structsteganos__state__t_aa220ce82394bee0330d0de96586a9f38}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!iters@{iters}}
+\index{iters@{iters}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{iters}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::iters}}}
+\label{structsteganos__state__t_aa220ce82394bee0330d0de96586a9f38}
+Usefull when debugging and printing statistics, stores how many iterations of the steganographic protocol has been run at a given instant. \hypertarget{structsteganos__state__t_aa0d2cbc935164c4627d9960c97c2e466}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!master\_\-key@{master\_\-key}}
+\index{master\_\-key@{master\_\-key}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{master\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf steganos\_\-key\_\-t}$\ast$ {\bf steganos\_\-state\_\-t::master\_\-key}}}
+\label{structsteganos__state__t_aa0d2cbc935164c4627d9960c97c2e466}
+Master key used to derive the subkeys. \hypertarget{structsteganos__state__t_a5c33ee391f0074f8df354314ffd65c96}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!max\_\-fc\_\-capacity@{max\_\-fc\_\-capacity}}
+\index{max\_\-fc\_\-capacity@{max\_\-fc\_\-capacity}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{max\_\-fc\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf steganos\_\-state\_\-t::max\_\-fc\_\-capacity}}}
+\label{structsteganos__state__t_a5c33ee391f0074f8df354314ffd65c96}
+Stores the maximum subliminal capacity for the current frame and channel residue, in bits. \hypertarget{structsteganos__state__t_a2e6797670afeb03e81514e1b8e5b53b7}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!metadata\_\-sent@{metadata\_\-sent}}
+\index{metadata\_\-sent@{metadata\_\-sent}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{metadata\_\-sent}]{\setlength{\rightskip}{0pt plus 5cm}long int {\bf steganos\_\-state\_\-t::metadata\_\-sent}}}
+\label{structsteganos__state__t_a2e6797670afeb03e81514e1b8e5b53b7}
+The same as sent, but including metadata \hypertarget{structsteganos__state__t_a30506b9be18bd2a58856d6ba5a3fd15f}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!min\_\-fc\_\-capacity@{min\_\-fc\_\-capacity}}
+\index{min\_\-fc\_\-capacity@{min\_\-fc\_\-capacity}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{min\_\-fc\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf steganos\_\-state\_\-t::min\_\-fc\_\-capacity}}}
+\label{structsteganos__state__t_a30506b9be18bd2a58856d6ba5a3fd15f}
+Stores the minimum subliminal capacity for the current frame and channel residue, in bits. \hypertarget{structsteganos__state__t_ac2ef43fc18298daa20ecfc6357f93e5b}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!out@{out}}
+\index{out@{out}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{out}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::out}\mbox{[}VIF\_\-POSIT+2\mbox{]}}}
+\label{structsteganos__state__t_ac2ef43fc18298daa20ecfc6357f93e5b}
+Vector with the posts values to write in the ogg packet when using ISS. \hypertarget{structsteganos__state__t_ab843be033e7bfc4839814d751ba3f0b7}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!posts\_\-mode@{posts\_\-mode}}
+\index{posts\_\-mode@{posts\_\-mode}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{posts\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::posts\_\-mode}}}
+\label{structsteganos__state__t_ab843be033e7bfc4839814d751ba3f0b7}
+With ISS, this variable indicates the way we're trying to mark the floor posts. 1 means we're trying to mark it with a 1 bit, 0 means we're using the original posts, and -\/1 means we're trying to mark it with a 0 bit. \hypertarget{structsteganos__state__t_a8572fc70a201b28fe897eaa304caf400}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!prng@{prng}}
+\index{prng@{prng}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{prng}]{\setlength{\rightskip}{0pt plus 5cm}{\bf prng\_\-t}$\ast$ {\bf steganos\_\-state\_\-t::prng}}}
+\label{structsteganos__state__t_a8572fc70a201b28fe897eaa304caf400}
+PRNG abstraction \hypertarget{structsteganos__state__t_a35b6704fbd31ab23984a713fdcef43a8}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!ra@{ra}}
+\index{ra@{ra}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{ra}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf steganos\_\-state\_\-t::ra}}}
+\label{structsteganos__state__t_a35b6704fbd31ab23984a713fdcef43a8}
+The aggressiveness is used as a guide to the global share of the subliminal channel we desire to use, but due to the stochastic nature of the method, we shall use it as a guide rather than a strict quantity. The {\itshape real aggressiveness\/} will change from channel to channel and will be used as a correction indicator. \hypertarget{structsteganos__state__t_a0a1685f67dade1dc4c5f23458d9abdd9}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!read@{read}}
+\index{read@{read}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int {\bf steganos\_\-state\_\-t::read}}}
+\label{structsteganos__state__t_a0a1685f67dade1dc4c5f23458d9abdd9}
+Total amount of \_\-pure\_\- data (excluding metadata) already recoverred from the stego-\/audio stream. \hypertarget{structsteganos__state__t_a17f9b729e28f08375fd0ae7679f98436}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!remaining@{remaining}}
+\index{remaining@{remaining}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{remaining}]{\setlength{\rightskip}{0pt plus 5cm}long int {\bf steganos\_\-state\_\-t::remaining}}}
+\label{structsteganos__state__t_a17f9b729e28f08375fd0ae7679f98436}
+Total amount of \_\-pure\_\- data to send/receive. \hypertarget{structsteganos__state__t_ae9b6a306ba7eda4266782af5429b097c}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!res\_\-lineup@{res\_\-lineup}}
+\index{res\_\-lineup@{res\_\-lineup}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{res\_\-lineup}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::res\_\-lineup}\mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}}}
+\label{structsteganos__state__t_ae9b6a306ba7eda4266782af5429b097c}
+Will store the ordering of the residual elements for hiding/unhiding purposes. \hypertarget{structsteganos__state__t_afc33131ff2db5dc8a1f31a6ba5f1c724}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!res\_\-max\_\-capacity@{res\_\-max\_\-capacity}}
+\index{res\_\-max\_\-capacity@{res\_\-max\_\-capacity}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{res\_\-max\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::res\_\-max\_\-capacity}\mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}}}
+\label{structsteganos__state__t_afc33131ff2db5dc8a1f31a6ba5f1c724}
+Will store the maximum number of subliminal bits a given residual element should shelter. This value should be seen also as a guide. \hypertarget{structsteganos__state__t_a2bbaeab1769db3e7021791701f05a929}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!res\_\-min\_\-capacity@{res\_\-min\_\-capacity}}
+\index{res\_\-min\_\-capacity@{res\_\-min\_\-capacity}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{res\_\-min\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::res\_\-min\_\-capacity}\mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}}}
+\label{structsteganos__state__t_a2bbaeab1769db3e7021791701f05a929}
+Will store the minimum number of subliminal bits a given residual element should shelter. This value should be seen also as a guide. \hypertarget{structsteganos__state__t_add02079c2fba135c27eca945cd6fdd53}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!res\_\-occupied@{res\_\-occupied}}
+\index{res\_\-occupied@{res\_\-occupied}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{res\_\-occupied}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::res\_\-occupied}\mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}}}
+\label{structsteganos__state__t_add02079c2fba135c27eca945cd6fdd53}
+Will be used to mark the residual values which will be used to write in or read from whithin the same frame. This array will prevent from writing/ reading in/from the same residual value more than once. \hypertarget{structsteganos__state__t_af5f22c44dbdd3ffe809f6dee20ec2343}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!sent@{sent}}
+\index{sent@{sent}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{sent}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int {\bf steganos\_\-state\_\-t::sent}}}
+\label{structsteganos__state__t_af5f22c44dbdd3ffe809f6dee20ec2343}
+Total amount of \_\-pure\_\- data (excluding metadata) already hided in the audio stream. \hypertarget{structsteganos__state__t_a5065391aa062854d0b9ce9eefe3a9509}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!status@{status}}
+\index{status@{status}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf steganos\_\-state\_\-t::status}}}
+\label{structsteganos__state__t_a5065391aa062854d0b9ce9eefe3a9509}
+Status code. Used to control \char`\"{}inter fucntion\char`\"{} errors \hypertarget{structsteganos__state__t_a0c48742bec665d03c8f6b19b6adf69c2}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!synchro\_\-key@{synchro\_\-key}}
+\index{synchro\_\-key@{synchro\_\-key}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{synchro\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf steganos\_\-key\_\-t}$\ast$ {\bf steganos\_\-state\_\-t::synchro\_\-key}}}
+\label{structsteganos__state__t_a0c48742bec665d03c8f6b19b6adf69c2}
+Key to use for synchronization. \hypertarget{structsteganos__state__t_ad4393617819cf79697d9b126ad6142ba}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!synchro\_\-method@{synchro\_\-method}}
+\index{synchro\_\-method@{synchro\_\-method}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{synchro\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}{\bf synchro\_\-method\_\-et} {\bf steganos\_\-state\_\-t::synchro\_\-method}}}
+\label{structsteganos__state__t_ad4393617819cf79697d9b126ad6142ba}
+Synchronization method (enum type). Can change from one frame and channel to another. \hypertarget{structsteganos__state__t_ab83b4da83ea658612368de71cf25ab3b}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!synchronize@{synchronize}}
+\index{synchronize@{synchronize}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{synchronize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sync\_\-method} {\bf steganos\_\-state\_\-t::synchronize}}}
+\label{structsteganos__state__t_ab83b4da83ea658612368de71cf25ab3b}
+Synchronization method (pointer to function) to use in the current frame and channel. \hypertarget{structsteganos__state__t_ae8215dc4cb883543dd4bd7a47a475d74}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!total\_\-sub\_\-capacity@{total\_\-sub\_\-capacity}}
+\index{total\_\-sub\_\-capacity@{total\_\-sub\_\-capacity}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{total\_\-sub\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}long int {\bf steganos\_\-state\_\-t::total\_\-sub\_\-capacity}}}
+\label{structsteganos__state__t_ae8215dc4cb883543dd4bd7a47a475d74}
+The total subliminal capacity at a given instant. Useful for statistics and debugging. Only meaningful when encoding. \hypertarget{structsteganos__state__t_a5382346902b6d6567614b77d9a0c6de3}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!variation\_\-limit@{variation\_\-limit}}
+\index{variation\_\-limit@{variation\_\-limit}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{variation\_\-limit}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf steganos\_\-state\_\-t::variation\_\-limit}\mbox{[}VORBIS\_\-MAX\_\-BLOCK\mbox{]}\mbox{[}2\mbox{]}}}
+\label{structsteganos__state__t_a5382346902b6d6567614b77d9a0c6de3}
+Variation limit per residual line. Stores the \mbox{[}-\/, +\mbox{]} maximum variations to introduce in each residual value. Changes from one frame and channel to another. \hypertarget{structsteganos__state__t_ade7b06cf61e74c7684a3eb9822e51ada}{
+\index{steganos\_\-state\_\-t@{steganos\_\-state\_\-t}!vc@{vc}}
+\index{vc@{vc}!steganos_state_t@{steganos\_\-state\_\-t}}
+\subsubsection[{vc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vorbis\_\-config\_\-t}$\ast$ {\bf steganos\_\-state\_\-t::vc}}}
+\label{structsteganos__state__t_ade7b06cf61e74c7684a3eb9822e51ada}
+Vorbis configuration data needed during the steganographic protocol. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{steganos__types_8h}{steganos\_\-types.h}\end{DoxyCompactItemize}

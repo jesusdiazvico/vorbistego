@@ -1,0 +1,366 @@
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{5}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!chd@{chd}|hyperpage}{5}
+\indexentry{chd@{chd}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{5}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!cipher\_\discretionary {-}{}{}algo@{cipher\_\discretionary {-}{}{}algo}|hyperpage}{5}
+\indexentry{cipher\_\discretionary {-}{}{}algo@{cipher\_\discretionary {-}{}{}algo}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{5}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!default\_\discretionary {-}{}{}data\_\discretionary {-}{}{}size@{default\_\discretionary {-}{}{}data\_\discretionary {-}{}{}size}|hyperpage}{6}
+\indexentry{default\_\discretionary {-}{}{}data\_\discretionary {-}{}{}size@{default\_\discretionary {-}{}{}data\_\discretionary {-}{}{}size}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!emission@{emission}|hyperpage}{6}
+\indexentry{emission@{emission}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!hmac@{hmac}|hyperpage}{6}
+\indexentry{hmac@{hmac}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!iv@{iv}|hyperpage}{6}
+\indexentry{iv@{iv}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!key@{key}|hyperpage}{6}
+\indexentry{key@{key}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!max\_\discretionary {-}{}{}data@{max\_\discretionary {-}{}{}data}|hyperpage}{6}
+\indexentry{max\_\discretionary {-}{}{}data@{max\_\discretionary {-}{}{}data}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!md\_\discretionary {-}{}{}algo@{md\_\discretionary {-}{}{}algo}|hyperpage}{6}
+\indexentry{md\_\discretionary {-}{}{}algo@{md\_\discretionary {-}{}{}algo}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!md\_\discretionary {-}{}{}len@{md\_\discretionary {-}{}{}len}|hyperpage}{6}
+\indexentry{md\_\discretionary {-}{}{}len@{md\_\discretionary {-}{}{}len}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!mdhd@{mdhd}|hyperpage}{6}
+\indexentry{mdhd@{mdhd}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!packet@{packet}|hyperpage}{6}
+\indexentry{packet@{packet}!cryptos_config_t@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{6}
+\indexentry{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}|hyperpage}{7}
+\indexentry{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}!key@{key}|hyperpage}{7}
+\indexentry{key@{key}!cryptos_key_t@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}|hyperpage}{7}
+\indexentry{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}!length@{length}|hyperpage}{7}
+\indexentry{length@{length}!cryptos_key_t@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}|hyperpage}{7}
+\indexentry{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer}|hyperpage}{8}
+\indexentry{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}|hyperpage}{9}
+\indexentry{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}!buffer@{buffer}|hyperpage}{9}
+\indexentry{buffer@{buffer}!cryptos_protocol_buffer_t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}|hyperpage}{9}
+\indexentry{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}!buffer\_\discretionary {-}{}{}size@{buffer\_\discretionary {-}{}{}size}|hyperpage}{9}
+\indexentry{buffer\_\discretionary {-}{}{}size@{buffer\_\discretionary {-}{}{}size}!cryptos_protocol_buffer_t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}|hyperpage}{9}
+\indexentry{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}!buffer\_\discretionary {-}{}{}used@{buffer\_\discretionary {-}{}{}used}|hyperpage}{9}
+\indexentry{buffer\_\discretionary {-}{}{}used@{buffer\_\discretionary {-}{}{}used}!cryptos_protocol_buffer_t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}|hyperpage}{9}
+\indexentry{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}!fd@{fd}|hyperpage}{9}
+\indexentry{fd@{fd}!cryptos_protocol_buffer_t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}|hyperpage}{9}
+\indexentry{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}!offset@{offset}|hyperpage}{9}
+\indexentry{offset@{offset}!cryptos_protocol_buffer_t@{cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}|hyperpage}{9}
+\indexentry{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}|hyperpage}{10}
+\indexentry{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}!alpha@{alpha}|hyperpage}{10}
+\indexentry{alpha@{alpha}!iss_cfg_t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}|hyperpage}{10}
+\indexentry{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}!lambda@{lambda}|hyperpage}{10}
+\indexentry{lambda@{lambda}!iss_cfg_t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}|hyperpage}{10}
+\indexentry{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}!sigma@{sigma}|hyperpage}{10}
+\indexentry{sigma@{sigma}!iss_cfg_t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}|hyperpage}{10}
+\indexentry{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}!u@{u}|hyperpage}{10}
+\indexentry{u@{u}!iss_cfg_t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}|hyperpage}{10}
+\indexentry{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}!u\_\discretionary {-}{}{}norm@{u\_\discretionary {-}{}{}norm}|hyperpage}{10}
+\indexentry{u\_\discretionary {-}{}{}norm@{u\_\discretionary {-}{}{}norm}!iss_cfg_t@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}|hyperpage}{10}
+\indexentry{prng\_\discretionary {-}{}{}t@{prng\_\discretionary {-}{}{}t}|hyperpage}{11}
+\indexentry{prng\_\discretionary {-}{}{}t@{prng\_\discretionary {-}{}{}t}!iters@{iters}|hyperpage}{11}
+\indexentry{iters@{iters}!prng_t@{prng\_\discretionary {-}{}{}t}|hyperpage}{11}
+\indexentry{prng\_\discretionary {-}{}{}t@{prng\_\discretionary {-}{}{}t}!seed@{seed}|hyperpage}{11}
+\indexentry{seed@{seed}!prng_t@{prng\_\discretionary {-}{}{}t}|hyperpage}{11}
+\indexentry{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}|hyperpage}{12}
+\indexentry{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}!key@{key}|hyperpage}{12}
+\indexentry{key@{key}!steganos_key_t@{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}|hyperpage}{12}
+\indexentry{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}!length@{length}|hyperpage}{12}
+\indexentry{length@{length}!steganos_key_t@{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}|hyperpage}{12}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{13}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!aligned@{aligned}|hyperpage}{14}
+\indexentry{aligned@{aligned}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!da@{da}|hyperpage}{14}
+\indexentry{da@{da}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!desync@{desync}|hyperpage}{14}
+\indexentry{desync@{desync}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!desynchronize@{desynchronize}|hyperpage}{14}
+\indexentry{desynchronize@{desynchronize}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!hide@{hide}|hyperpage}{14}
+\indexentry{hide@{hide}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!hide\_\discretionary {-}{}{}method@{hide\_\discretionary {-}{}{}method}|hyperpage}{14}
+\indexentry{hide\_\discretionary {-}{}{}method@{hide\_\discretionary {-}{}{}method}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!hiding\_\discretionary {-}{}{}key@{hiding\_\discretionary {-}{}{}key}|hyperpage}{14}
+\indexentry{hiding\_\discretionary {-}{}{}key@{hiding\_\discretionary {-}{}{}key}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!iters@{iters}|hyperpage}{14}
+\indexentry{iters@{iters}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!master\_\discretionary {-}{}{}key@{master\_\discretionary {-}{}{}key}|hyperpage}{14}
+\indexentry{master\_\discretionary {-}{}{}key@{master\_\discretionary {-}{}{}key}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!max\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity@{max\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}|hyperpage}{14}
+\indexentry{max\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity@{max\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!metadata\_\discretionary {-}{}{}sent@{metadata\_\discretionary {-}{}{}sent}|hyperpage}{14}
+\indexentry{metadata\_\discretionary {-}{}{}sent@{metadata\_\discretionary {-}{}{}sent}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{14}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!min\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity@{min\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}|hyperpage}{15}
+\indexentry{min\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity@{min\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!out@{out}|hyperpage}{15}
+\indexentry{out@{out}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!posts\_\discretionary {-}{}{}mode@{posts\_\discretionary {-}{}{}mode}|hyperpage}{15}
+\indexentry{posts\_\discretionary {-}{}{}mode@{posts\_\discretionary {-}{}{}mode}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!prng@{prng}|hyperpage}{15}
+\indexentry{prng@{prng}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!ra@{ra}|hyperpage}{15}
+\indexentry{ra@{ra}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!read@{read}|hyperpage}{15}
+\indexentry{read@{read}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!remaining@{remaining}|hyperpage}{15}
+\indexentry{remaining@{remaining}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!res\_\discretionary {-}{}{}lineup@{res\_\discretionary {-}{}{}lineup}|hyperpage}{15}
+\indexentry{res\_\discretionary {-}{}{}lineup@{res\_\discretionary {-}{}{}lineup}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!res\_\discretionary {-}{}{}max\_\discretionary {-}{}{}capacity@{res\_\discretionary {-}{}{}max\_\discretionary {-}{}{}capacity}|hyperpage}{15}
+\indexentry{res\_\discretionary {-}{}{}max\_\discretionary {-}{}{}capacity@{res\_\discretionary {-}{}{}max\_\discretionary {-}{}{}capacity}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!res\_\discretionary {-}{}{}min\_\discretionary {-}{}{}capacity@{res\_\discretionary {-}{}{}min\_\discretionary {-}{}{}capacity}|hyperpage}{15}
+\indexentry{res\_\discretionary {-}{}{}min\_\discretionary {-}{}{}capacity@{res\_\discretionary {-}{}{}min\_\discretionary {-}{}{}capacity}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{15}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!res\_\discretionary {-}{}{}occupied@{res\_\discretionary {-}{}{}occupied}|hyperpage}{16}
+\indexentry{res\_\discretionary {-}{}{}occupied@{res\_\discretionary {-}{}{}occupied}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!sent@{sent}|hyperpage}{16}
+\indexentry{sent@{sent}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!status@{status}|hyperpage}{16}
+\indexentry{status@{status}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!synchro\_\discretionary {-}{}{}key@{synchro\_\discretionary {-}{}{}key}|hyperpage}{16}
+\indexentry{synchro\_\discretionary {-}{}{}key@{synchro\_\discretionary {-}{}{}key}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!synchro\_\discretionary {-}{}{}method@{synchro\_\discretionary {-}{}{}method}|hyperpage}{16}
+\indexentry{synchro\_\discretionary {-}{}{}method@{synchro\_\discretionary {-}{}{}method}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!synchronize@{synchronize}|hyperpage}{16}
+\indexentry{synchronize@{synchronize}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!total\_\discretionary {-}{}{}sub\_\discretionary {-}{}{}capacity@{total\_\discretionary {-}{}{}sub\_\discretionary {-}{}{}capacity}|hyperpage}{16}
+\indexentry{total\_\discretionary {-}{}{}sub\_\discretionary {-}{}{}capacity@{total\_\discretionary {-}{}{}sub\_\discretionary {-}{}{}capacity}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!variation\_\discretionary {-}{}{}limit@{variation\_\discretionary {-}{}{}limit}|hyperpage}{16}
+\indexentry{variation\_\discretionary {-}{}{}limit@{variation\_\discretionary {-}{}{}limit}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}!vc@{vc}|hyperpage}{16}
+\indexentry{vc@{vc}!steganos_state_t@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}|hyperpage}{16}
+\indexentry{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{17}
+\indexentry{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!forward\_\discretionary {-}{}{}index@{forward\_\discretionary {-}{}{}index}|hyperpage}{17}
+\indexentry{forward\_\discretionary {-}{}{}index@{forward\_\discretionary {-}{}{}index}!vorbis_config_t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{17}
+\indexentry{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!mult@{mult}|hyperpage}{17}
+\indexentry{mult@{mult}!vorbis_config_t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{17}
+\indexentry{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!pcmend@{pcmend}|hyperpage}{17}
+\indexentry{pcmend@{pcmend}!vorbis_config_t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{17}
+\indexentry{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!postlist@{postlist}|hyperpage}{17}
+\indexentry{postlist@{postlist}!vorbis_config_t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{17}
+\indexentry{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!posts\_\discretionary {-}{}{}len@{posts\_\discretionary {-}{}{}len}|hyperpage}{17}
+\indexentry{posts\_\discretionary {-}{}{}len@{posts\_\discretionary {-}{}{}len}!vorbis_config_t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{17}
+\indexentry{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}!rate@{rate}|hyperpage}{17}
+\indexentry{rate@{rate}!vorbis_config_t@{vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}|hyperpage}{17}
+\indexentry{include/cryptos\_\discretionary {-}{}{}types.h@{include/cryptos\_\discretionary {-}{}{}types.h}|hyperpage}{19}
+\indexentry{cryptos\_\discretionary {-}{}{}types.h@{cryptos\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}CHECK\_\discretionary {-}{}{}FAIL@{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}CHECK\_\discretionary {-}{}{}FAIL}|hyperpage}{19}
+\indexentry{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}CHECK\_\discretionary {-}{}{}FAIL@{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}CHECK\_\discretionary {-}{}{}FAIL}!cryptos_types.h@{cryptos\_\discretionary {-}{}{}types.h}|hyperpage}{19}
+\indexentry{cryptos\_\discretionary {-}{}{}types.h@{cryptos\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}ERR@{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}ERR}|hyperpage}{19}
+\indexentry{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}ERR@{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}ERR}!cryptos_types.h@{cryptos\_\discretionary {-}{}{}types.h}|hyperpage}{19}
+\indexentry{cryptos\_\discretionary {-}{}{}types.h@{cryptos\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}OK@{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}OK}|hyperpage}{20}
+\indexentry{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}OK@{I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}OK}!cryptos_types.h@{cryptos\_\discretionary {-}{}{}types.h}|hyperpage}{20}
+\indexentry{include/global\_\discretionary {-}{}{}types.h@{include/global\_\discretionary {-}{}{}types.h}|hyperpage}{21}
+\indexentry{global\_\discretionary {-}{}{}types.h@{global\_\discretionary {-}{}{}types.h}!BITS\_\discretionary {-}{}{}PER\_\discretionary {-}{}{}BYTE@{BITS\_\discretionary {-}{}{}PER\_\discretionary {-}{}{}BYTE}|hyperpage}{21}
+\indexentry{BITS\_\discretionary {-}{}{}PER\_\discretionary {-}{}{}BYTE@{BITS\_\discretionary {-}{}{}PER\_\discretionary {-}{}{}BYTE}!global_types.h@{global\_\discretionary {-}{}{}types.h}|hyperpage}{21}
+\indexentry{global\_\discretionary {-}{}{}types.h@{global\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}ERR@{I\_\discretionary {-}{}{}ERR}|hyperpage}{21}
+\indexentry{I\_\discretionary {-}{}{}ERR@{I\_\discretionary {-}{}{}ERR}!global_types.h@{global\_\discretionary {-}{}{}types.h}|hyperpage}{21}
+\indexentry{global\_\discretionary {-}{}{}types.h@{global\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}OK@{I\_\discretionary {-}{}{}OK}|hyperpage}{21}
+\indexentry{I\_\discretionary {-}{}{}OK@{I\_\discretionary {-}{}{}OK}!global_types.h@{global\_\discretionary {-}{}{}types.h}|hyperpage}{21}
+\indexentry{global\_\discretionary {-}{}{}types.h@{global\_\discretionary {-}{}{}types.h}!byte@{byte}|hyperpage}{21}
+\indexentry{byte@{byte}!global_types.h@{global\_\discretionary {-}{}{}types.h}|hyperpage}{21}
+\indexentry{include/numbers.h@{include/numbers.h}|hyperpage}{22}
+\indexentry{numbers.h@{numbers.h}!linear\_\discretionary {-}{}{}interpolation\_\discretionary {-}{}{}y@{linear\_\discretionary {-}{}{}interpolation\_\discretionary {-}{}{}y}|hyperpage}{22}
+\indexentry{linear\_\discretionary {-}{}{}interpolation\_\discretionary {-}{}{}y@{linear\_\discretionary {-}{}{}interpolation\_\discretionary {-}{}{}y}!numbers.h@{numbers.h}|hyperpage}{22}
+\indexentry{numbers.h@{numbers.h}!prng\_\discretionary {-}{}{}free@{prng\_\discretionary {-}{}{}free}|hyperpage}{23}
+\indexentry{prng\_\discretionary {-}{}{}free@{prng\_\discretionary {-}{}{}free}!numbers.h@{numbers.h}|hyperpage}{23}
+\indexentry{numbers.h@{numbers.h}!prng\_\discretionary {-}{}{}get\_\discretionary {-}{}{}random\_\discretionary {-}{}{}int@{prng\_\discretionary {-}{}{}get\_\discretionary {-}{}{}random\_\discretionary {-}{}{}int}|hyperpage}{23}
+\indexentry{prng\_\discretionary {-}{}{}get\_\discretionary {-}{}{}random\_\discretionary {-}{}{}int@{prng\_\discretionary {-}{}{}get\_\discretionary {-}{}{}random\_\discretionary {-}{}{}int}!numbers.h@{numbers.h}|hyperpage}{23}
+\indexentry{numbers.h@{numbers.h}!prng\_\discretionary {-}{}{}init@{prng\_\discretionary {-}{}{}init}|hyperpage}{23}
+\indexentry{prng\_\discretionary {-}{}{}init@{prng\_\discretionary {-}{}{}init}!numbers.h@{numbers.h}|hyperpage}{23}
+\indexentry{numbers.h@{numbers.h}!prng\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}byte@{prng\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}byte}|hyperpage}{24}
+\indexentry{prng\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}byte@{prng\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}byte}!numbers.h@{numbers.h}|hyperpage}{24}
+\indexentry{numbers.h@{numbers.h}!prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}byte@{prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}byte}|hyperpage}{24}
+\indexentry{prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}byte@{prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}byte}!numbers.h@{numbers.h}|hyperpage}{24}
+\indexentry{numbers.h@{numbers.h}!prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}int@{prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}int}|hyperpage}{25}
+\indexentry{prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}int@{prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}int}!numbers.h@{numbers.h}|hyperpage}{25}
+\indexentry{numbers.h@{numbers.h}!seek@{seek}|hyperpage}{25}
+\indexentry{seek@{seek}!numbers.h@{numbers.h}|hyperpage}{25}
+\indexentry{numbers.h@{numbers.h}!seek\_\discretionary {-}{}{}interval@{seek\_\discretionary {-}{}{}interval}|hyperpage}{25}
+\indexentry{seek\_\discretionary {-}{}{}interval@{seek\_\discretionary {-}{}{}interval}!numbers.h@{numbers.h}|hyperpage}{25}
+\indexentry{include/steganos\_\discretionary {-}{}{}types.h@{include/steganos\_\discretionary {-}{}{}types.h}|hyperpage}{27}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}ERR@{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}ERR}|hyperpage}{28}
+\indexentry{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}ERR@{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}ERR}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{28}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}FRAME\_\discretionary {-}{}{}SKIP@{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}FRAME\_\discretionary {-}{}{}SKIP}|hyperpage}{28}
+\indexentry{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}FRAME\_\discretionary {-}{}{}SKIP@{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}FRAME\_\discretionary {-}{}{}SKIP}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{28}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}OK@{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}OK}|hyperpage}{28}
+\indexentry{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}OK@{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}OK}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{28}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}FAIL@{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}FAIL}|hyperpage}{28}
+\indexentry{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}FAIL@{I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}FAIL}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{28}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!INDETERMINATE\_\discretionary {-}{}{}MARK@{INDETERMINATE\_\discretionary {-}{}{}MARK}|hyperpage}{28}
+\indexentry{INDETERMINATE\_\discretionary {-}{}{}MARK@{INDETERMINATE\_\discretionary {-}{}{}MARK}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{28}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!VIF\_\discretionary {-}{}{}POSIT@{VIF\_\discretionary {-}{}{}POSIT}|hyperpage}{28}
+\indexentry{VIF\_\discretionary {-}{}{}POSIT@{VIF\_\discretionary {-}{}{}POSIT}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{28}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!VORBIS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}BLOCK@{VORBIS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}BLOCK}|hyperpage}{28}
+\indexentry{VORBIS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}BLOCK@{VORBIS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}BLOCK}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{28}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!desync\_\discretionary {-}{}{}method@{desync\_\discretionary {-}{}{}method}|hyperpage}{29}
+\indexentry{desync\_\discretionary {-}{}{}method@{desync\_\discretionary {-}{}{}method}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{29}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!hide\_\discretionary {-}{}{}method@{hide\_\discretionary {-}{}{}method}|hyperpage}{29}
+\indexentry{hide\_\discretionary {-}{}{}method@{hide\_\discretionary {-}{}{}method}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{29}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!sync\_\discretionary {-}{}{}method@{sync\_\discretionary {-}{}{}method}|hyperpage}{30}
+\indexentry{sync\_\discretionary {-}{}{}method@{sync\_\discretionary {-}{}{}method}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{30}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!hide\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et@{hide\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}|hyperpage}{31}
+\indexentry{hide\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et@{hide\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{31}
+\indexentry{DIRECT\_\-HIDING@{DIRECT\_\-HIDING}!steganos\_\-types.h@{steganos\_\-types.h}|hyperpage}{31}
+\indexentry{steganos\_\-types.h@{steganos\_\-types.h}!DIRECT\_\-HIDING@{DIRECT\_\-HIDING}|hyperpage}{31}
+\indexentry{PARITY\_\-BITS@{PARITY\_\-BITS}!steganos\_\-types.h@{steganos\_\-types.h}|hyperpage}{31}
+\indexentry{steganos\_\-types.h@{steganos\_\-types.h}!PARITY\_\-BITS@{PARITY\_\-BITS}|hyperpage}{31}
+\indexentry{steganos\_\discretionary {-}{}{}types.h@{steganos\_\discretionary {-}{}{}types.h}!synchro\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et@{synchro\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}|hyperpage}{31}
+\indexentry{synchro\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et@{synchro\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}!steganos_types.h@{steganos\_\discretionary {-}{}{}types.h}|hyperpage}{31}
+\indexentry{RES\_\-HEADER@{RES\_\-HEADER}!steganos\_\-types.h@{steganos\_\-types.h}|hyperpage}{31}
+\indexentry{steganos\_\-types.h@{steganos\_\-types.h}!RES\_\-HEADER@{RES\_\-HEADER}|hyperpage}{31}
+\indexentry{ISS@{ISS}!steganos\_\-types.h@{steganos\_\-types.h}|hyperpage}{31}
+\indexentry{steganos\_\-types.h@{steganos\_\-types.h}!ISS@{ISS}|hyperpage}{31}
+\indexentry{FORCED\_\-RES\_\-HEADER@{FORCED\_\-RES\_\-HEADER}!steganos\_\-types.h@{steganos\_\-types.h}|hyperpage}{31}
+\indexentry{steganos\_\-types.h@{steganos\_\-types.h}!FORCED\_\-RES\_\-HEADER@{FORCED\_\-RES\_\-HEADER}|hyperpage}{31}
+\indexentry{lib/cryptos\_\discretionary {-}{}{}channel.c@{lib/cryptos\_\discretionary {-}{}{}channel.c}|hyperpage}{32}
+\indexentry{lib/cryptos\_\discretionary {-}{}{}channel.h@{lib/cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{33}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}BUFFER\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}SIZE@{CRYPTOS\_\discretionary {-}{}{}BUFFER\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}SIZE}|hyperpage}{34}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}BUFFER\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}SIZE@{CRYPTOS\_\discretionary {-}{}{}BUFFER\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}SIZE}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{34}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}DEFAULT\_\discretionary {-}{}{}DATA\_\discretionary {-}{}{}SIZE@{CRYPTOS\_\discretionary {-}{}{}DEFAULT\_\discretionary {-}{}{}DATA\_\discretionary {-}{}{}SIZE}|hyperpage}{34}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}DEFAULT\_\discretionary {-}{}{}DATA\_\discretionary {-}{}{}SIZE@{CRYPTOS\_\discretionary {-}{}{}DEFAULT\_\discretionary {-}{}{}DATA\_\discretionary {-}{}{}SIZE}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{34}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}EMISSION\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}EMISSION\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}|hyperpage}{34}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}EMISSION\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}EMISSION\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{34}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}IV\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}IV\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}|hyperpage}{35}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}IV\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}IV\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}LENGTH\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}LENGTH\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}|hyperpage}{35}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}LENGTH\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}LENGTH\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DATA@{CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DATA}|hyperpage}{35}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DATA@{CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DATA}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}|hyperpage}{35}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}MIN\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}MIN\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}|hyperpage}{35}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}MIN\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}MIN\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}PACKET\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}PACKET\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}|hyperpage}{35}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}PACKET\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}PACKET\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!CRYPTOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}|hyperpage}{35}
+\indexentry{CRYPTOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN@{CRYPTOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!RATIO\_\discretionary {-}{}{}DD@{RATIO\_\discretionary {-}{}{}DD}|hyperpage}{35}
+\indexentry{RATIO\_\discretionary {-}{}{}DD@{RATIO\_\discretionary {-}{}{}DD}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}free@{cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}free}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}free@{cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}free}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{35}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}init@{cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}init}|hyperpage}{36}
+\indexentry{cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}init@{cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}init}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{36}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}cipher\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code@{cryptos\_\discretionary {-}{}{}cipher\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}|hyperpage}{36}
+\indexentry{cryptos\_\discretionary {-}{}{}cipher\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code@{cryptos\_\discretionary {-}{}{}cipher\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{36}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}|hyperpage}{36}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{36}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}|hyperpage}{37}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{37}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}iv@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}iv}|hyperpage}{37}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}iv@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}iv}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{37}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}key@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}key}|hyperpage}{38}
+\indexentry{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}key@{cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}key}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{38}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}free@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}free}|hyperpage}{38}
+\indexentry{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}free@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}free}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{38}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}|hyperpage}{38}
+\indexentry{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init@{cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{38}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!cryptos\_\discretionary {-}{}{}md\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code@{cryptos\_\discretionary {-}{}{}md\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}|hyperpage}{39}
+\indexentry{cryptos\_\discretionary {-}{}{}md\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code@{cryptos\_\discretionary {-}{}{}md\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{39}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!parse\_\discretionary {-}{}{}packet@{parse\_\discretionary {-}{}{}packet}|hyperpage}{39}
+\indexentry{parse\_\discretionary {-}{}{}packet@{parse\_\discretionary {-}{}{}packet}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{39}
+\indexentry{cryptos\_\discretionary {-}{}{}channel.h@{cryptos\_\discretionary {-}{}{}channel.h}!produce\_\discretionary {-}{}{}packet@{produce\_\discretionary {-}{}{}packet}|hyperpage}{40}
+\indexentry{produce\_\discretionary {-}{}{}packet@{produce\_\discretionary {-}{}{}packet}!cryptos_channel.h@{cryptos\_\discretionary {-}{}{}channel.h}|hyperpage}{40}
+\indexentry{lib/miscellaneous.c@{lib/miscellaneous.c}|hyperpage}{42}
+\indexentry{lib/miscellaneous.h@{lib/miscellaneous.h}|hyperpage}{43}
+\indexentry{miscellaneous.h@{miscellaneous.h}!I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}ERR@{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}ERR}|hyperpage}{44}
+\indexentry{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}ERR@{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}ERR}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}INVALID\_\discretionary {-}{}{}XML@{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}INVALID\_\discretionary {-}{}{}XML}|hyperpage}{44}
+\indexentry{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}INVALID\_\discretionary {-}{}{}XML@{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}INVALID\_\discretionary {-}{}{}XML}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}OK@{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}OK}|hyperpage}{44}
+\indexentry{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}OK@{I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}OK}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!XML\_\discretionary {-}{}{}AGGRESS@{XML\_\discretionary {-}{}{}AGGRESS}|hyperpage}{44}
+\indexentry{XML\_\discretionary {-}{}{}AGGRESS@{XML\_\discretionary {-}{}{}AGGRESS}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!XML\_\discretionary {-}{}{}HIDEMETHOD@{XML\_\discretionary {-}{}{}HIDEMETHOD}|hyperpage}{44}
+\indexentry{XML\_\discretionary {-}{}{}HIDEMETHOD@{XML\_\discretionary {-}{}{}HIDEMETHOD}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!XML\_\discretionary {-}{}{}KEY@{XML\_\discretionary {-}{}{}KEY}|hyperpage}{44}
+\indexentry{XML\_\discretionary {-}{}{}KEY@{XML\_\discretionary {-}{}{}KEY}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}BITSTREAM@{XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}BITSTREAM}|hyperpage}{44}
+\indexentry{XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}BITSTREAM@{XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}BITSTREAM}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}LENGTH@{XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}LENGTH}|hyperpage}{44}
+\indexentry{XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}LENGTH@{XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}LENGTH}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!XML\_\discretionary {-}{}{}LEAFS@{XML\_\discretionary {-}{}{}LEAFS}|hyperpage}{44}
+\indexentry{XML\_\discretionary {-}{}{}LEAFS@{XML\_\discretionary {-}{}{}LEAFS}!miscellaneous.h@{miscellaneous.h}|hyperpage}{44}
+\indexentry{miscellaneous.h@{miscellaneous.h}!XML\_\discretionary {-}{}{}SYNCHROMODE@{XML\_\discretionary {-}{}{}SYNCHROMODE}|hyperpage}{45}
+\indexentry{XML\_\discretionary {-}{}{}SYNCHROMODE@{XML\_\discretionary {-}{}{}SYNCHROMODE}!miscellaneous.h@{miscellaneous.h}|hyperpage}{45}
+\indexentry{miscellaneous.h@{miscellaneous.h}!bitstream\_\discretionary {-}{}{}rol@{bitstream\_\discretionary {-}{}{}rol}|hyperpage}{45}
+\indexentry{bitstream\_\discretionary {-}{}{}rol@{bitstream\_\discretionary {-}{}{}rol}!miscellaneous.h@{miscellaneous.h}|hyperpage}{45}
+\indexentry{miscellaneous.h@{miscellaneous.h}!bitstream\_\discretionary {-}{}{}ror@{bitstream\_\discretionary {-}{}{}ror}|hyperpage}{45}
+\indexentry{bitstream\_\discretionary {-}{}{}ror@{bitstream\_\discretionary {-}{}{}ror}!miscellaneous.h@{miscellaneous.h}|hyperpage}{45}
+\indexentry{miscellaneous.h@{miscellaneous.h}!message\_\discretionary {-}{}{}log@{message\_\discretionary {-}{}{}log}|hyperpage}{45}
+\indexentry{message\_\discretionary {-}{}{}log@{message\_\discretionary {-}{}{}log}!miscellaneous.h@{miscellaneous.h}|hyperpage}{45}
+\indexentry{miscellaneous.h@{miscellaneous.h}!print\_\discretionary {-}{}{}bytestream@{print\_\discretionary {-}{}{}bytestream}|hyperpage}{46}
+\indexentry{print\_\discretionary {-}{}{}bytestream@{print\_\discretionary {-}{}{}bytestream}!miscellaneous.h@{miscellaneous.h}|hyperpage}{46}
+\indexentry{miscellaneous.h@{miscellaneous.h}!to\_\discretionary {-}{}{}byte@{to\_\discretionary {-}{}{}byte}|hyperpage}{46}
+\indexentry{to\_\discretionary {-}{}{}byte@{to\_\discretionary {-}{}{}byte}!miscellaneous.h@{miscellaneous.h}|hyperpage}{46}
+\indexentry{miscellaneous.h@{miscellaneous.h}!zlib\_\discretionary {-}{}{}def@{zlib\_\discretionary {-}{}{}def}|hyperpage}{47}
+\indexentry{zlib\_\discretionary {-}{}{}def@{zlib\_\discretionary {-}{}{}def}!miscellaneous.h@{miscellaneous.h}|hyperpage}{47}
+\indexentry{miscellaneous.h@{miscellaneous.h}!zlib\_\discretionary {-}{}{}inf@{zlib\_\discretionary {-}{}{}inf}|hyperpage}{47}
+\indexentry{zlib\_\discretionary {-}{}{}inf@{zlib\_\discretionary {-}{}{}inf}!miscellaneous.h@{miscellaneous.h}|hyperpage}{47}
+\indexentry{miscellaneous.h@{miscellaneous.h}!zlib\_\discretionary {-}{}{}zerr@{zlib\_\discretionary {-}{}{}zerr}|hyperpage}{47}
+\indexentry{zlib\_\discretionary {-}{}{}zerr@{zlib\_\discretionary {-}{}{}zerr}!miscellaneous.h@{miscellaneous.h}|hyperpage}{47}
+\indexentry{lib/numbers.c@{lib/numbers.c}|hyperpage}{48}
+\indexentry{lib/protocols.c@{lib/protocols.c}|hyperpage}{49}
+\indexentry{lib/protocols.h@{lib/protocols.h}|hyperpage}{50}
+\indexentry{protocols.h@{protocols.h}!cryptos\_\discretionary {-}{}{}forward@{cryptos\_\discretionary {-}{}{}forward}|hyperpage}{50}
+\indexentry{cryptos\_\discretionary {-}{}{}forward@{cryptos\_\discretionary {-}{}{}forward}!protocols.h@{protocols.h}|hyperpage}{50}
+\indexentry{protocols.h@{protocols.h}!cryptos\_\discretionary {-}{}{}inverse@{cryptos\_\discretionary {-}{}{}inverse}|hyperpage}{51}
+\indexentry{cryptos\_\discretionary {-}{}{}inverse@{cryptos\_\discretionary {-}{}{}inverse}!protocols.h@{protocols.h}|hyperpage}{51}
+\indexentry{protocols.h@{protocols.h}!steganos\_\discretionary {-}{}{}forward@{steganos\_\discretionary {-}{}{}forward}|hyperpage}{51}
+\indexentry{steganos\_\discretionary {-}{}{}forward@{steganos\_\discretionary {-}{}{}forward}!protocols.h@{protocols.h}|hyperpage}{51}
+\indexentry{protocols.h@{protocols.h}!steganos\_\discretionary {-}{}{}inverse@{steganos\_\discretionary {-}{}{}inverse}|hyperpage}{52}
+\indexentry{steganos\_\discretionary {-}{}{}inverse@{steganos\_\discretionary {-}{}{}inverse}!protocols.h@{protocols.h}|hyperpage}{52}
+\indexentry{protocols.h@{protocols.h}!steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free@{steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}|hyperpage}{52}
+\indexentry{steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free@{steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}!protocols.h@{protocols.h}|hyperpage}{52}
+\indexentry{protocols.h@{protocols.h}!steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init@{steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}|hyperpage}{53}
+\indexentry{steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init@{steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}!protocols.h@{protocols.h}|hyperpage}{53}
+\indexentry{lib/steganos\_\discretionary {-}{}{}channel.c@{lib/steganos\_\discretionary {-}{}{}channel.c}|hyperpage}{54}
+\indexentry{lib/steganos\_\discretionary {-}{}{}channel.h@{lib/steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{55}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!BITS\_\discretionary {-}{}{}PARITY@{BITS\_\discretionary {-}{}{}PARITY}|hyperpage}{57}
+\indexentry{BITS\_\discretionary {-}{}{}PARITY@{BITS\_\discretionary {-}{}{}PARITY}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BITS@{DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BITS}|hyperpage}{57}
+\indexentry{DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BITS@{DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BITS}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BYTES@{DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BYTES}|hyperpage}{57}
+\indexentry{DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BYTES@{DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BYTES}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BITS@{FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BITS}|hyperpage}{57}
+\indexentry{FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BITS@{FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BITS}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BYTES@{FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BYTES}|hyperpage}{57}
+\indexentry{FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BYTES@{FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BYTES}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!ITU\_\discretionary {-}{}{}R\_\discretionary {-}{}{}BS\_\discretionary {-}{}{}468\_\discretionary {-}{}{}SIZE@{ITU\_\discretionary {-}{}{}R\_\discretionary {-}{}{}BS\_\discretionary {-}{}{}468\_\discretionary {-}{}{}SIZE}|hyperpage}{57}
+\indexentry{ITU\_\discretionary {-}{}{}R\_\discretionary {-}{}{}BS\_\discretionary {-}{}{}468\_\discretionary {-}{}{}SIZE@{ITU\_\discretionary {-}{}{}R\_\discretionary {-}{}{}BS\_\discretionary {-}{}{}468\_\discretionary {-}{}{}SIZE}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!MAX\_\discretionary {-}{}{}SUBLIMINAL\_\discretionary {-}{}{}SIZE@{MAX\_\discretionary {-}{}{}SUBLIMINAL\_\discretionary {-}{}{}SIZE}|hyperpage}{57}
+\indexentry{MAX\_\discretionary {-}{}{}SUBLIMINAL\_\discretionary {-}{}{}SIZE@{MAX\_\discretionary {-}{}{}SUBLIMINAL\_\discretionary {-}{}{}SIZE}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!RES\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BITS@{RES\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BITS}|hyperpage}{57}
+\indexentry{RES\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BITS@{RES\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BITS}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!SIZE\_\discretionary {-}{}{}FIELD\_\discretionary {-}{}{}BITS@{SIZE\_\discretionary {-}{}{}FIELD\_\discretionary {-}{}{}BITS}|hyperpage}{57}
+\indexentry{SIZE\_\discretionary {-}{}{}FIELD\_\discretionary {-}{}{}BITS@{SIZE\_\discretionary {-}{}{}FIELD\_\discretionary {-}{}{}BITS}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{57}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!SYNCHRO\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BYTES\_\discretionary {-}{}{}RES@{SYNCHRO\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BYTES\_\discretionary {-}{}{}RES}|hyperpage}{58}
+\indexentry{SYNCHRO\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BYTES\_\discretionary {-}{}{}RES@{SYNCHRO\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BYTES\_\discretionary {-}{}{}RES}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{58}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!calculate\_\discretionary {-}{}{}residue\_\discretionary {-}{}{}lineup@{calculate\_\discretionary {-}{}{}residue\_\discretionary {-}{}{}lineup}|hyperpage}{58}
+\indexentry{calculate\_\discretionary {-}{}{}residue\_\discretionary {-}{}{}lineup@{calculate\_\discretionary {-}{}{}residue\_\discretionary {-}{}{}lineup}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{58}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!desynchro\_\discretionary {-}{}{}iss@{desynchro\_\discretionary {-}{}{}iss}|hyperpage}{58}
+\indexentry{desynchro\_\discretionary {-}{}{}iss@{desynchro\_\discretionary {-}{}{}iss}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{58}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!desynchro\_\discretionary {-}{}{}res\_\discretionary {-}{}{}header@{desynchro\_\discretionary {-}{}{}res\_\discretionary {-}{}{}header}|hyperpage}{59}
+\indexentry{desynchro\_\discretionary {-}{}{}res\_\discretionary {-}{}{}header@{desynchro\_\discretionary {-}{}{}res\_\discretionary {-}{}{}header}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{59}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!hide\_\discretionary {-}{}{}data@{hide\_\discretionary {-}{}{}data}|hyperpage}{59}
+\indexentry{hide\_\discretionary {-}{}{}data@{hide\_\discretionary {-}{}{}data}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{59}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}free@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}free}|hyperpage}{60}
+\indexentry{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}free@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}free}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{60}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}init@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}init}|hyperpage}{61}
+\indexentry{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}init@{iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}init}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{61}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!iss\_\discretionary {-}{}{}simulate\_\discretionary {-}{}{}floor@{iss\_\discretionary {-}{}{}simulate\_\discretionary {-}{}{}floor}|hyperpage}{61}
+\indexentry{iss\_\discretionary {-}{}{}simulate\_\discretionary {-}{}{}floor@{iss\_\discretionary {-}{}{}simulate\_\discretionary {-}{}{}floor}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{61}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!parity\_\discretionary {-}{}{}bits\_\discretionary {-}{}{}method@{parity\_\discretionary {-}{}{}bits\_\discretionary {-}{}{}method}|hyperpage}{61}
+\indexentry{parity\_\discretionary {-}{}{}bits\_\discretionary {-}{}{}method@{parity\_\discretionary {-}{}{}bits\_\discretionary {-}{}{}method}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{61}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!set\_\discretionary {-}{}{}subliminal\_\discretionary {-}{}{}capacity\_\discretionary {-}{}{}limit@{set\_\discretionary {-}{}{}subliminal\_\discretionary {-}{}{}capacity\_\discretionary {-}{}{}limit}|hyperpage}{62}
+\indexentry{set\_\discretionary {-}{}{}subliminal\_\discretionary {-}{}{}capacity\_\discretionary {-}{}{}limit@{set\_\discretionary {-}{}{}subliminal\_\discretionary {-}{}{}capacity\_\discretionary {-}{}{}limit}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{62}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!steganos\_\discretionary {-}{}{}free\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys@{steganos\_\discretionary {-}{}{}free\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}|hyperpage}{63}
+\indexentry{steganos\_\discretionary {-}{}{}free\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys@{steganos\_\discretionary {-}{}{}free\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{63}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init@{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}|hyperpage}{63}
+\indexentry{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init@{steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{63}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!steganos\_\discretionary {-}{}{}prepare\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys@{steganos\_\discretionary {-}{}{}prepare\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}|hyperpage}{63}
+\indexentry{steganos\_\discretionary {-}{}{}prepare\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys@{steganos\_\discretionary {-}{}{}prepare\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{63}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}free@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}free}|hyperpage}{64}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}free@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}free}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{64}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}init@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}init}|hyperpage}{64}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}init@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}init}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{64}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}iter@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}iter}|hyperpage}{65}
+\indexentry{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}iter@{steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}iter}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{65}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!synchro\_\discretionary {-}{}{}iss@{synchro\_\discretionary {-}{}{}iss}|hyperpage}{65}
+\indexentry{synchro\_\discretionary {-}{}{}iss@{synchro\_\discretionary {-}{}{}iss}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{65}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!unhide\_\discretionary {-}{}{}data@{unhide\_\discretionary {-}{}{}data}|hyperpage}{66}
+\indexentry{unhide\_\discretionary {-}{}{}data@{unhide\_\discretionary {-}{}{}data}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{66}
+\indexentry{steganos\_\discretionary {-}{}{}channel.h@{steganos\_\discretionary {-}{}{}channel.h}!void\_\discretionary {-}{}{}method@{void\_\discretionary {-}{}{}method}|hyperpage}{67}
+\indexentry{void\_\discretionary {-}{}{}method@{void\_\discretionary {-}{}{}method}!steganos_channel.h@{steganos\_\discretionary {-}{}{}channel.h}|hyperpage}{67}

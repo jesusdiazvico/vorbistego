@@ -1,0 +1,219 @@
+\hypertarget{steganos__types_8h}{
+\section{include/steganos\_\-types.h File Reference}
+\label{steganos__types_8h}\index{include/steganos\_\-types.h@{include/steganos\_\-types.h}}
+}
+{\ttfamily \#include \char`\"{}global\_\-types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}numbers.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t}
+\begin{DoxyCompactList}\small\item\em Defines the key structure to be used in the steganographic layer. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structiss__cfg__t}{iss\_\-cfg\_\-t}
+\item 
+struct \hyperlink{structsteganos__state__t}{steganos\_\-state\_\-t}
+\begin{DoxyCompactList}\small\item\em Defines the global internal state of the steganosgraphic protocol. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{steganos__types_8h_a8cb201f185050cb4d0aa6af3b977038b}{I\_\-STEGANOS\_\-OK}~I\_\-OK
+\begin{DoxyCompactList}\small\item\em Error code for 'No error' to use in functions of integer return type. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__types_8h_aaf6a606143af6d15c980a7d4dcc11642}{I\_\-STEGANOS\_\-ERR}~I\_\-ERR
+\begin{DoxyCompactList}\small\item\em Error code for 'Error occured' to use in functions of integer return type. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__types_8h_ac002010adaecd6e0a24f25ed9ed9de60}{I\_\-STEGANOS\_\-SYNC\_\-FAIL}~2
+\begin{DoxyCompactList}\small\item\em Error code for 'Unable to synchronize', used when a synhcornization method is unable to synchronize due to is own nature, i.e., there is no computation error. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__types_8h_a9d0ab4c70e6c820f794d7ebebc3a69a0}{I\_\-STEGANOS\_\-FRAME\_\-SKIP}~3
+\begin{DoxyCompactList}\small\item\em Return ocde used to specify we're not using the current frame to hide data. This can be due, for example, to a short subliminal capacity of the frame or to \char`\"{}imperceptibility\char`\"{} reasons. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__types_8h_a0f406cd57114ef2325e7b9fa43cb4818}{INDETERMINATE\_\-MARK}~-\/1
+\begin{DoxyCompactList}\small\item\em Value used when there is not enough statistical evidence of the mark hided in the Vorbis's posts vector being 0 or 1. Used only with ISS synchronization method. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__types_8h_a7d8ee646829ace11e860f25644d2685b}{VORBIS\_\-MAX\_\-BLOCK}~8192
+\begin{DoxyCompactList}\small\item\em Defines the Vorbis maximum number of samples per Vorbis block. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{steganos__types_8h_ad98f1819ef37fdc1ed097bf953ed41a9}{VIF\_\-POSIT}~63
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \hyperlink{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}{hide\_\-method} )(\hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$plain\_\-mess, int p\_\-m\_\-len, int $\ast$floor, float $\ast$res, int res\_\-len, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$key, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$sub\_\-mess, int $\ast$s\_\-m\_\-len, \hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Type definition for hiding functions to use in the residual subliminal channel. \item\end{DoxyCompactList}\item 
+typedef int($\ast$ \hyperlink{steganos__types_8h_ac758d5077b8857eb7a2059be7f6b2e03}{sync\_\-method} )(\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$key, int $\ast$posts, float $\ast$residue, void $\ast$cfg, int decoding, int $\ast$bit, \hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Type definition for synchronization functions to use in the protocol. \item\end{DoxyCompactList}\item 
+typedef int($\ast$ \hyperlink{steganos__types_8h_a3423b8602d2248745bfd5ff836dafe31}{desync\_\-method} )(\hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t} $\ast$vc, int $\ast$res\_\-lineup, int $\ast$posts, int $\ast$floor, float $\ast$residue, void $\ast$cfg, \hyperlink{structsteganos__key__t}{steganos\_\-key\_\-t} $\ast$hiding\_\-key, \hyperlink{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}{hide\_\-method} hide, \hyperlink{structprng__t}{prng\_\-t} $\ast$prng)
+\begin{DoxyCompactList}\small\item\em Type definition for desynchronization functions to use in the protocol. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{synchro\_\-method\_\-et} \{ \hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a166171c4e170b620a0d9678c5e600e92}{RES\_\-HEADER} =  0, 
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a87812ce01e8230e9cace10b16692bc33}{ISS} =  1, 
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a4d752ba721416fe4930d7ecd84106c7f}{FORCED\_\-RES\_\-HEADER} =  2
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the different synchronization modes available. \item\end{DoxyCompactList}\item 
+enum \hyperlink{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbd}{hide\_\-method\_\-et} \{ \hyperlink{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbda31e90fb43c555c230ceba2400958c734}{DIRECT\_\-HIDING} =  0, 
+\hyperlink{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbdaf4e00ef32609282d15b3e36d92e6fff5}{PARITY\_\-BITS} =  1
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the different methods of hiding data in the residues. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{steganos__types_8h_aaf6a606143af6d15c980a7d4dcc11642}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!I\_\-STEGANOS\_\-ERR@{I\_\-STEGANOS\_\-ERR}}
+\index{I\_\-STEGANOS\_\-ERR@{I\_\-STEGANOS\_\-ERR}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{I\_\-STEGANOS\_\-ERR}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\_\-STEGANOS\_\-ERR~I\_\-ERR}}
+\label{steganos__types_8h_aaf6a606143af6d15c980a7d4dcc11642}
+
+
+Error code for 'Error occured' to use in functions of integer return type. \hypertarget{steganos__types_8h_a9d0ab4c70e6c820f794d7ebebc3a69a0}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!I\_\-STEGANOS\_\-FRAME\_\-SKIP@{I\_\-STEGANOS\_\-FRAME\_\-SKIP}}
+\index{I\_\-STEGANOS\_\-FRAME\_\-SKIP@{I\_\-STEGANOS\_\-FRAME\_\-SKIP}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{I\_\-STEGANOS\_\-FRAME\_\-SKIP}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\_\-STEGANOS\_\-FRAME\_\-SKIP~3}}
+\label{steganos__types_8h_a9d0ab4c70e6c820f794d7ebebc3a69a0}
+
+
+Return ocde used to specify we're not using the current frame to hide data. This can be due, for example, to a short subliminal capacity of the frame or to \char`\"{}imperceptibility\char`\"{} reasons. \hypertarget{steganos__types_8h_a8cb201f185050cb4d0aa6af3b977038b}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!I\_\-STEGANOS\_\-OK@{I\_\-STEGANOS\_\-OK}}
+\index{I\_\-STEGANOS\_\-OK@{I\_\-STEGANOS\_\-OK}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{I\_\-STEGANOS\_\-OK}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\_\-STEGANOS\_\-OK~I\_\-OK}}
+\label{steganos__types_8h_a8cb201f185050cb4d0aa6af3b977038b}
+
+
+Error code for 'No error' to use in functions of integer return type. \hypertarget{steganos__types_8h_ac002010adaecd6e0a24f25ed9ed9de60}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!I\_\-STEGANOS\_\-SYNC\_\-FAIL@{I\_\-STEGANOS\_\-SYNC\_\-FAIL}}
+\index{I\_\-STEGANOS\_\-SYNC\_\-FAIL@{I\_\-STEGANOS\_\-SYNC\_\-FAIL}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{I\_\-STEGANOS\_\-SYNC\_\-FAIL}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\_\-STEGANOS\_\-SYNC\_\-FAIL~2}}
+\label{steganos__types_8h_ac002010adaecd6e0a24f25ed9ed9de60}
+
+
+Error code for 'Unable to synchronize', used when a synhcornization method is unable to synchronize due to is own nature, i.e., there is no computation error. \hypertarget{steganos__types_8h_a0f406cd57114ef2325e7b9fa43cb4818}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!INDETERMINATE\_\-MARK@{INDETERMINATE\_\-MARK}}
+\index{INDETERMINATE\_\-MARK@{INDETERMINATE\_\-MARK}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{INDETERMINATE\_\-MARK}]{\setlength{\rightskip}{0pt plus 5cm}\#define INDETERMINATE\_\-MARK~-\/1}}
+\label{steganos__types_8h_a0f406cd57114ef2325e7b9fa43cb4818}
+
+
+Value used when there is not enough statistical evidence of the mark hided in the Vorbis's posts vector being 0 or 1. Used only with ISS synchronization method. \hypertarget{steganos__types_8h_ad98f1819ef37fdc1ed097bf953ed41a9}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!VIF\_\-POSIT@{VIF\_\-POSIT}}
+\index{VIF\_\-POSIT@{VIF\_\-POSIT}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{VIF\_\-POSIT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VIF\_\-POSIT~63}}
+\label{steganos__types_8h_ad98f1819ef37fdc1ed097bf953ed41a9}
+\hypertarget{steganos__types_8h_a7d8ee646829ace11e860f25644d2685b}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!VORBIS\_\-MAX\_\-BLOCK@{VORBIS\_\-MAX\_\-BLOCK}}
+\index{VORBIS\_\-MAX\_\-BLOCK@{VORBIS\_\-MAX\_\-BLOCK}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{VORBIS\_\-MAX\_\-BLOCK}]{\setlength{\rightskip}{0pt plus 5cm}\#define VORBIS\_\-MAX\_\-BLOCK~8192}}
+\label{steganos__types_8h_a7d8ee646829ace11e860f25644d2685b}
+
+
+Defines the Vorbis maximum number of samples per Vorbis block. 
+
+\subsection{Typedef Documentation}
+\hypertarget{steganos__types_8h_a3423b8602d2248745bfd5ff836dafe31}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!desync\_\-method@{desync\_\-method}}
+\index{desync\_\-method@{desync\_\-method}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{desync\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf desync\_\-method})({\bf vorbis\_\-config\_\-t} $\ast$vc, int $\ast$res\_\-lineup, int $\ast$posts, int $\ast$floor, float $\ast$residue, void $\ast$cfg, {\bf steganos\_\-key\_\-t} $\ast$hiding\_\-key, {\bf hide\_\-method} hide, {\bf prng\_\-t} $\ast$prng)}}
+\label{steganos__types_8h_a3423b8602d2248745bfd5ff836dafe31}
+
+
+Type definition for desynchronization functions to use in the protocol. Functions of this type shall solve the false positive synchronization problem that may happen depending on the synchro\_\-method used. Depending on the specific method in use, the {\itshape floor\/} and {\itshape residue\/} vectors will or won't be used.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{structvorbis__config__t}{vorbis\_\-config\_\-t}}]Vorbis configuration data. \item[\mbox{$\leftarrow$} {\em res\_\-lineup}]Residue ordering \item[\mbox{$\leftrightarrow$} {\em posts}]Current floor posts vector. May be subject to changes depending on the concrete method used. See synchronization methods. \item[\mbox{$\leftrightarrow$} {\em floor}]Current floor vector. May be subject to changes depending on the concrete method used. See synchronization methods. \item[\mbox{$\leftrightarrow$} {\em residue}]Current residue vector. May be subject to changes depending on the concrete method used. See synchronization methods. \item[\mbox{$\leftarrow$} {\em cfg}]This parameter will be used to pass any argument needed in a concrete synchronization method. \item[\mbox{$\leftarrow$} {\em hiding\_\-key}]Key for hiding \item[\mbox{$\leftarrow$} {\em hide}]Hiding method (pointer to function) in use in the current frame and channel. \item[\mbox{$\leftarrow$} {\em prng}]PRNG in use\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{synchro\_\-method\_\-et} 
+
+iss\_\-synchronization 
+\end{DoxySeeAlso}
+\hypertarget{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!hide\_\-method@{hide\_\-method}}
+\index{hide\_\-method@{hide\_\-method}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{hide\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf hide\_\-method})({\bf byte} $\ast$plain\_\-mess, int p\_\-m\_\-len, int $\ast$floor, float $\ast$res, int res\_\-len, {\bf steganos\_\-key\_\-t} $\ast$key, {\bf byte} $\ast$sub\_\-mess, int $\ast$s\_\-m\_\-len, {\bf prng\_\-t} $\ast$prng)}}
+\label{steganos__types_8h_a9eaa53c27095cb94e3ae6fa409005cc6}
+
+
+Type definition for hiding functions to use in the residual subliminal channel. Functions of this type shall produce a stego message of the same length as the subliminal message, and may or may not use the cover object and/or the key during the process. In case the cover object and/or the key aren't necessary, the corresponding byte $\ast$ parameters representing them must be NULL and their corresponding int's be 0.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em plain\_\-mess}]Plain message to hide. \item[\mbox{$\leftarrow$} {\em p\_\-m\_\-len}]Length of plain message in bits. \item[\mbox{$\leftarrow$} {\em floor}]Floor vector. \item[\mbox{$\leftarrow$} {\em floor\_\-len}]The length of the floor vector (actually, the floor posts in Vorbis). \item[\mbox{$\leftarrow$} {\em res}]Residue vector. \item[\mbox{$\leftarrow$} {\em res\_\-len}]Number of elements in {\itshape floor\/} and {\itshape res\/} vectors. \item[\mbox{$\leftarrow$} {\em key}]Key to use. \item[\mbox{$\leftrightarrow$} {\em sub\_\-mess}]String in which the subliminal message will be stored. It has to be allocated previously to calling the function. \item[\mbox{$\leftrightarrow$} {\em s\_\-m\_\-len}]At the input, will store the allocated size (in bits) of {\itshape sub\_\-mess\/}. At the output, the length of the resulting sub\_\-message, in bits (it may be different than p\_\-m\_\-len as it may include de-\/synchronization bits). \item[\mbox{$\leftarrow$} {\em prng}]PRNG in use. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{steganos__types_8h_ac758d5077b8857eb7a2059be7f6b2e03}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!sync\_\-method@{sync\_\-method}}
+\index{sync\_\-method@{sync\_\-method}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{sync\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf sync\_\-method})({\bf vorbis\_\-config\_\-t} $\ast$vc, {\bf steganos\_\-key\_\-t} $\ast$key, int $\ast$posts, float $\ast$residue, void $\ast$cfg, int decoding, int $\ast$bit, {\bf prng\_\-t} $\ast$prng)}}
+\label{steganos__types_8h_ac758d5077b8857eb7a2059be7f6b2e03}
+
+
+Type definition for synchronization functions to use in the protocol. Functions of this type shall solve the synchronization problem between sender and receiver using the \char`\"{}both-\/known\char`\"{} data (stored in {\itshape ss\/} and the floor and residue vectors, both of length {\itshape res\_\-len\/}. Depending on the specific method use, the {\itshape floor\/} and {\itshape residue\/} vectors will or won't be used.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vc}]Vorbis block and look information. \item[\mbox{$\leftarrow$} {\em key}]Key to use \item[\mbox{$\leftrightarrow$} {\em posts}]Current floor posts vector. May be subject to changes depending on the concrete method used. See synchronization methods. \item[\mbox{$\leftrightarrow$} {\em residue}]Current residue vector. May be subject to changes depending on the concrete method used. See synchronization methods. \item[\mbox{$\leftarrow$} {\em cfg}]This parameter will be used to pass any argument needed in a concrete synchronization method. \item[\mbox{$\leftarrow$} {\em decoding}]Active if the function is called from the decoder's side, \item[\mbox{$\leftrightarrow$} {\em bit}]At the input, the desired bit to include if we are at the encoder's side; at the ouput, the received bit if we are at the decoder's side (i.e. 1 if we're telling the receiver there is hidden data and 0 if not). \item[\mbox{$\leftarrow$} {\em prng}]PRNG in use\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-STEGANOS\_\-OK if no error was present and I\_\-STEGANOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-STEGANOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-STEGANOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-STEGANOS\_\-SYNC\_\-FAIL}]with errno = 0 (Unable to synchronize).\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{synchro\_\-method\_\-et} 
+
+iss\_\-synchronization 
+\end{DoxySeeAlso}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbd}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!hide\_\-method\_\-et@{hide\_\-method\_\-et}}
+\index{hide\_\-method\_\-et@{hide\_\-method\_\-et}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{hide\_\-method\_\-et}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf hide\_\-method\_\-et}}}
+\label{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbd}
+
+
+Enumeration for the different methods of hiding data in the residues. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{DIRECT\_\-HIDING@{DIRECT\_\-HIDING}!steganos\_\-types.h@{steganos\_\-types.h}}\index{steganos\_\-types.h@{steganos\_\-types.h}!DIRECT\_\-HIDING@{DIRECT\_\-HIDING}}\item[{\em 
+\hypertarget{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbda31e90fb43c555c230ceba2400958c734}{
+DIRECT\_\-HIDING}
+\label{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbda31e90fb43c555c230ceba2400958c734}
+}]Just write the data in the given locations. \index{PARITY\_\-BITS@{PARITY\_\-BITS}!steganos\_\-types.h@{steganos\_\-types.h}}\index{steganos\_\-types.h@{steganos\_\-types.h}!PARITY\_\-BITS@{PARITY\_\-BITS}}\item[{\em 
+\hypertarget{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbdaf4e00ef32609282d15b3e36d92e6fff5}{
+PARITY\_\-BITS}
+\label{steganos__types_8h_af9031c1f060b0b2c34fcd5a3cc32ffbdaf4e00ef32609282d15b3e36d92e6fff5}
+}]Applies the parity method by Anderson and Petitcolas. \end{description}
+\end{Desc}
+
+\hypertarget{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}{
+\index{steganos\_\-types.h@{steganos\_\-types.h}!synchro\_\-method\_\-et@{synchro\_\-method\_\-et}}
+\index{synchro\_\-method\_\-et@{synchro\_\-method\_\-et}!steganos_types.h@{steganos\_\-types.h}}
+\subsubsection[{synchro\_\-method\_\-et}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf synchro\_\-method\_\-et}}}
+\label{steganos__types_8h_a1a1afa313dff1694d410bace75c29961}
+
+
+Enumeration for the different synchronization modes available. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{RES\_\-HEADER@{RES\_\-HEADER}!steganos\_\-types.h@{steganos\_\-types.h}}\index{steganos\_\-types.h@{steganos\_\-types.h}!RES\_\-HEADER@{RES\_\-HEADER}}\item[{\em 
+\hypertarget{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a166171c4e170b620a0d9678c5e600e92}{
+RES\_\-HEADER}
+\label{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a166171c4e170b620a0d9678c5e600e92}
+}]Classic mode: synchronization header in residue subliminal channel \index{ISS@{ISS}!steganos\_\-types.h@{steganos\_\-types.h}}\index{steganos\_\-types.h@{steganos\_\-types.h}!ISS@{ISS}}\item[{\em 
+\hypertarget{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a87812ce01e8230e9cace10b16692bc33}{
+ISS}
+\label{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a87812ce01e8230e9cace10b16692bc33}
+}]Improved Spread Spectrum algorithm within floor vector (uses synchro\_\-key) \index{FORCED\_\-RES\_\-HEADER@{FORCED\_\-RES\_\-HEADER}!steganos\_\-types.h@{steganos\_\-types.h}}\index{steganos\_\-types.h@{steganos\_\-types.h}!FORCED\_\-RES\_\-HEADER@{FORCED\_\-RES\_\-HEADER}}\item[{\em 
+\hypertarget{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a4d752ba721416fe4930d7ecd84106c7f}{
+FORCED\_\-RES\_\-HEADER}
+\label{steganos__types_8h_a1a1afa313dff1694d410bace75c29961a4d752ba721416fe4930d7ecd84106c7f}
+}]Used when ISS is the default option but for some reason we can't use it at a given moment, and also to prevent false negatives at the decoder's side. \end{description}
+\end{Desc}
+

@@ -1,0 +1,224 @@
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t Struct Reference}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Member Data Documentation}{5}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}chd}{5}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}cipher\_\discretionary {-}{}{}algo}{6}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}default\_\discretionary {-}{}{}data\_\discretionary {-}{}{}size}{6}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.4}emission}{6}{subsubsection.3.1.2.4}
+\contentsline {subsubsection}{\numberline {3.1.2.5}hmac}{6}{subsubsection.3.1.2.5}
+\contentsline {subsubsection}{\numberline {3.1.2.6}iv}{6}{subsubsection.3.1.2.6}
+\contentsline {subsubsection}{\numberline {3.1.2.7}key}{6}{subsubsection.3.1.2.7}
+\contentsline {subsubsection}{\numberline {3.1.2.8}max\_\discretionary {-}{}{}data}{6}{subsubsection.3.1.2.8}
+\contentsline {subsubsection}{\numberline {3.1.2.9}md\_\discretionary {-}{}{}algo}{6}{subsubsection.3.1.2.9}
+\contentsline {subsubsection}{\numberline {3.1.2.10}md\_\discretionary {-}{}{}len}{6}{subsubsection.3.1.2.10}
+\contentsline {subsubsection}{\numberline {3.1.2.11}mdhd}{6}{subsubsection.3.1.2.11}
+\contentsline {subsubsection}{\numberline {3.1.2.12}packet}{6}{subsubsection.3.1.2.12}
+\contentsline {section}{\numberline {3.2}cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t Struct Reference}{7}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{7}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Member Data Documentation}{7}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}key}{7}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}length}{7}{subsubsection.3.2.2.2}
+\contentsline {section}{\numberline {3.3}cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer Struct Reference}{8}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{8}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t Struct Reference}{9}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Member Data Documentation}{9}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}buffer}{9}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}buffer\_\discretionary {-}{}{}size}{9}{subsubsection.3.4.1.2}
+\contentsline {subsubsection}{\numberline {3.4.1.3}buffer\_\discretionary {-}{}{}used}{9}{subsubsection.3.4.1.3}
+\contentsline {subsubsection}{\numberline {3.4.1.4}fd}{9}{subsubsection.3.4.1.4}
+\contentsline {subsubsection}{\numberline {3.4.1.5}offset}{9}{subsubsection.3.4.1.5}
+\contentsline {section}{\numberline {3.5}iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t Struct Reference}{10}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Member Data Documentation}{10}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}alpha}{10}{subsubsection.3.5.1.1}
+\contentsline {subsubsection}{\numberline {3.5.1.2}lambda}{10}{subsubsection.3.5.1.2}
+\contentsline {subsubsection}{\numberline {3.5.1.3}sigma}{10}{subsubsection.3.5.1.3}
+\contentsline {subsubsection}{\numberline {3.5.1.4}u}{10}{subsubsection.3.5.1.4}
+\contentsline {subsubsection}{\numberline {3.5.1.5}u\_\discretionary {-}{}{}norm}{10}{subsubsection.3.5.1.5}
+\contentsline {section}{\numberline {3.6}prng\_\discretionary {-}{}{}t Struct Reference}{11}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{11}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Member Data Documentation}{11}{subsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.2.1}iters}{11}{subsubsection.3.6.2.1}
+\contentsline {subsubsection}{\numberline {3.6.2.2}seed}{11}{subsubsection.3.6.2.2}
+\contentsline {section}{\numberline {3.7}steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t Struct Reference}{12}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{12}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Member Data Documentation}{12}{subsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.2.1}key}{12}{subsubsection.3.7.2.1}
+\contentsline {subsubsection}{\numberline {3.7.2.2}length}{12}{subsubsection.3.7.2.2}
+\contentsline {section}{\numberline {3.8}steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t Struct Reference}{13}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{13}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Member Data Documentation}{14}{subsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.2.1}aligned}{14}{subsubsection.3.8.2.1}
+\contentsline {subsubsection}{\numberline {3.8.2.2}da}{14}{subsubsection.3.8.2.2}
+\contentsline {subsubsection}{\numberline {3.8.2.3}desync}{14}{subsubsection.3.8.2.3}
+\contentsline {subsubsection}{\numberline {3.8.2.4}desynchronize}{14}{subsubsection.3.8.2.4}
+\contentsline {subsubsection}{\numberline {3.8.2.5}hide}{14}{subsubsection.3.8.2.5}
+\contentsline {subsubsection}{\numberline {3.8.2.6}hide\_\discretionary {-}{}{}method}{14}{subsubsection.3.8.2.6}
+\contentsline {subsubsection}{\numberline {3.8.2.7}hiding\_\discretionary {-}{}{}key}{14}{subsubsection.3.8.2.7}
+\contentsline {subsubsection}{\numberline {3.8.2.8}iters}{14}{subsubsection.3.8.2.8}
+\contentsline {subsubsection}{\numberline {3.8.2.9}master\_\discretionary {-}{}{}key}{14}{subsubsection.3.8.2.9}
+\contentsline {subsubsection}{\numberline {3.8.2.10}max\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}{14}{subsubsection.3.8.2.10}
+\contentsline {subsubsection}{\numberline {3.8.2.11}metadata\_\discretionary {-}{}{}sent}{15}{subsubsection.3.8.2.11}
+\contentsline {subsubsection}{\numberline {3.8.2.12}min\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}{15}{subsubsection.3.8.2.12}
+\contentsline {subsubsection}{\numberline {3.8.2.13}out}{15}{subsubsection.3.8.2.13}
+\contentsline {subsubsection}{\numberline {3.8.2.14}posts\_\discretionary {-}{}{}mode}{15}{subsubsection.3.8.2.14}
+\contentsline {subsubsection}{\numberline {3.8.2.15}prng}{15}{subsubsection.3.8.2.15}
+\contentsline {subsubsection}{\numberline {3.8.2.16}ra}{15}{subsubsection.3.8.2.16}
+\contentsline {subsubsection}{\numberline {3.8.2.17}read}{15}{subsubsection.3.8.2.17}
+\contentsline {subsubsection}{\numberline {3.8.2.18}remaining}{15}{subsubsection.3.8.2.18}
+\contentsline {subsubsection}{\numberline {3.8.2.19}res\_\discretionary {-}{}{}lineup}{15}{subsubsection.3.8.2.19}
+\contentsline {subsubsection}{\numberline {3.8.2.20}res\_\discretionary {-}{}{}max\_\discretionary {-}{}{}capacity}{15}{subsubsection.3.8.2.20}
+\contentsline {subsubsection}{\numberline {3.8.2.21}res\_\discretionary {-}{}{}min\_\discretionary {-}{}{}capacity}{16}{subsubsection.3.8.2.21}
+\contentsline {subsubsection}{\numberline {3.8.2.22}res\_\discretionary {-}{}{}occupied}{16}{subsubsection.3.8.2.22}
+\contentsline {subsubsection}{\numberline {3.8.2.23}sent}{16}{subsubsection.3.8.2.23}
+\contentsline {subsubsection}{\numberline {3.8.2.24}status}{16}{subsubsection.3.8.2.24}
+\contentsline {subsubsection}{\numberline {3.8.2.25}synchro\_\discretionary {-}{}{}key}{16}{subsubsection.3.8.2.25}
+\contentsline {subsubsection}{\numberline {3.8.2.26}synchro\_\discretionary {-}{}{}method}{16}{subsubsection.3.8.2.26}
+\contentsline {subsubsection}{\numberline {3.8.2.27}synchronize}{16}{subsubsection.3.8.2.27}
+\contentsline {subsubsection}{\numberline {3.8.2.28}total\_\discretionary {-}{}{}sub\_\discretionary {-}{}{}capacity}{16}{subsubsection.3.8.2.28}
+\contentsline {subsubsection}{\numberline {3.8.2.29}variation\_\discretionary {-}{}{}limit}{16}{subsubsection.3.8.2.29}
+\contentsline {subsubsection}{\numberline {3.8.2.30}vc}{16}{subsubsection.3.8.2.30}
+\contentsline {section}{\numberline {3.9}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t Struct Reference}{17}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{17}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Member Data Documentation}{17}{subsection.3.9.2}
+\contentsline {subsubsection}{\numberline {3.9.2.1}forward\_\discretionary {-}{}{}index}{17}{subsubsection.3.9.2.1}
+\contentsline {subsubsection}{\numberline {3.9.2.2}mult}{17}{subsubsection.3.9.2.2}
+\contentsline {subsubsection}{\numberline {3.9.2.3}pcmend}{17}{subsubsection.3.9.2.3}
+\contentsline {subsubsection}{\numberline {3.9.2.4}postlist}{17}{subsubsection.3.9.2.4}
+\contentsline {subsubsection}{\numberline {3.9.2.5}posts\_\discretionary {-}{}{}len}{17}{subsubsection.3.9.2.5}
+\contentsline {subsubsection}{\numberline {3.9.2.6}rate}{17}{subsubsection.3.9.2.6}
+\contentsline {chapter}{\numberline {4}File Documentation}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}include/cryptos\_\discretionary {-}{}{}types.h File Reference}{19}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Define Documentation}{19}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}CHECK\_\discretionary {-}{}{}FAIL}{19}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}ERR}{20}{subsubsection.4.1.1.2}
+\contentsline {subsubsection}{\numberline {4.1.1.3}I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}OK}{20}{subsubsection.4.1.1.3}
+\contentsline {section}{\numberline {4.2}include/global\_\discretionary {-}{}{}types.h File Reference}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Define Documentation}{21}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}BITS\_\discretionary {-}{}{}PER\_\discretionary {-}{}{}BYTE}{21}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}I\_\discretionary {-}{}{}ERR}{21}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}I\_\discretionary {-}{}{}OK}{21}{subsubsection.4.2.1.3}
+\contentsline {subsection}{\numberline {4.2.2}Typedef Documentation}{21}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}byte}{21}{subsubsection.4.2.2.1}
+\contentsline {section}{\numberline {4.3}include/numbers.h File Reference}{22}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Function Documentation}{22}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}linear\_\discretionary {-}{}{}interpolation\_\discretionary {-}{}{}y}{22}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.2}prng\_\discretionary {-}{}{}free}{23}{subsubsection.4.3.1.2}
+\contentsline {subsubsection}{\numberline {4.3.1.3}prng\_\discretionary {-}{}{}get\_\discretionary {-}{}{}random\_\discretionary {-}{}{}int}{23}{subsubsection.4.3.1.3}
+\contentsline {subsubsection}{\numberline {4.3.1.4}prng\_\discretionary {-}{}{}init}{24}{subsubsection.4.3.1.4}
+\contentsline {subsubsection}{\numberline {4.3.1.5}prng\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}byte}{24}{subsubsection.4.3.1.5}
+\contentsline {subsubsection}{\numberline {4.3.1.6}prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}byte}{24}{subsubsection.4.3.1.6}
+\contentsline {subsubsection}{\numberline {4.3.1.7}prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}int}{25}{subsubsection.4.3.1.7}
+\contentsline {subsubsection}{\numberline {4.3.1.8}seek}{25}{subsubsection.4.3.1.8}
+\contentsline {subsubsection}{\numberline {4.3.1.9}seek\_\discretionary {-}{}{}interval}{26}{subsubsection.4.3.1.9}
+\contentsline {section}{\numberline {4.4}include/steganos\_\discretionary {-}{}{}types.h File Reference}{27}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Define Documentation}{28}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}ERR}{28}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}FRAME\_\discretionary {-}{}{}SKIP}{28}{subsubsection.4.4.1.2}
+\contentsline {subsubsection}{\numberline {4.4.1.3}I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}OK}{28}{subsubsection.4.4.1.3}
+\contentsline {subsubsection}{\numberline {4.4.1.4}I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}FAIL}{28}{subsubsection.4.4.1.4}
+\contentsline {subsubsection}{\numberline {4.4.1.5}INDETERMINATE\_\discretionary {-}{}{}MARK}{28}{subsubsection.4.4.1.5}
+\contentsline {subsubsection}{\numberline {4.4.1.6}VIF\_\discretionary {-}{}{}POSIT}{28}{subsubsection.4.4.1.6}
+\contentsline {subsubsection}{\numberline {4.4.1.7}VORBIS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}BLOCK}{28}{subsubsection.4.4.1.7}
+\contentsline {subsection}{\numberline {4.4.2}Typedef Documentation}{29}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}desync\_\discretionary {-}{}{}method}{29}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}hide\_\discretionary {-}{}{}method}{29}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.3}sync\_\discretionary {-}{}{}method}{30}{subsubsection.4.4.2.3}
+\contentsline {subsection}{\numberline {4.4.3}Enumeration Type Documentation}{31}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}hide\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}{31}{subsubsection.4.4.3.1}
+\contentsline {subsubsection}{\numberline {4.4.3.2}synchro\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}{31}{subsubsection.4.4.3.2}
+\contentsline {section}{\numberline {4.5}lib/cryptos\_\discretionary {-}{}{}channel.c File Reference}{32}{section.4.5}
+\contentsline {section}{\numberline {4.6}lib/cryptos\_\discretionary {-}{}{}channel.h File Reference}{33}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Define Documentation}{34}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}CRYPTOS\_\discretionary {-}{}{}BUFFER\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}SIZE}{34}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}CRYPTOS\_\discretionary {-}{}{}DEFAULT\_\discretionary {-}{}{}DATA\_\discretionary {-}{}{}SIZE}{34}{subsubsection.4.6.1.2}
+\contentsline {subsubsection}{\numberline {4.6.1.3}CRYPTOS\_\discretionary {-}{}{}EMISSION\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}{35}{subsubsection.4.6.1.3}
+\contentsline {subsubsection}{\numberline {4.6.1.4}CRYPTOS\_\discretionary {-}{}{}IV\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}{35}{subsubsection.4.6.1.4}
+\contentsline {subsubsection}{\numberline {4.6.1.5}CRYPTOS\_\discretionary {-}{}{}LENGTH\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}{35}{subsubsection.4.6.1.5}
+\contentsline {subsubsection}{\numberline {4.6.1.6}CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DATA}{35}{subsubsection.4.6.1.6}
+\contentsline {subsubsection}{\numberline {4.6.1.7}CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}{35}{subsubsection.4.6.1.7}
+\contentsline {subsubsection}{\numberline {4.6.1.8}CRYPTOS\_\discretionary {-}{}{}MIN\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}{35}{subsubsection.4.6.1.8}
+\contentsline {subsubsection}{\numberline {4.6.1.9}CRYPTOS\_\discretionary {-}{}{}PACKET\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}{35}{subsubsection.4.6.1.9}
+\contentsline {subsubsection}{\numberline {4.6.1.10}CRYPTOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}{35}{subsubsection.4.6.1.10}
+\contentsline {subsubsection}{\numberline {4.6.1.11}RATIO\_\discretionary {-}{}{}DD}{35}{subsubsection.4.6.1.11}
+\contentsline {subsection}{\numberline {4.6.2}Function Documentation}{35}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}free}{35}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}init}{36}{subsubsection.4.6.2.2}
+\contentsline {subsubsection}{\numberline {4.6.2.3}cryptos\_\discretionary {-}{}{}cipher\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}{36}{subsubsection.4.6.2.3}
+\contentsline {subsubsection}{\numberline {4.6.2.4}cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}{37}{subsubsection.4.6.2.4}
+\contentsline {subsubsection}{\numberline {4.6.2.5}cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}{37}{subsubsection.4.6.2.5}
+\contentsline {subsubsection}{\numberline {4.6.2.6}cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}iv}{38}{subsubsection.4.6.2.6}
+\contentsline {subsubsection}{\numberline {4.6.2.7}cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}key}{38}{subsubsection.4.6.2.7}
+\contentsline {subsubsection}{\numberline {4.6.2.8}cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}free}{38}{subsubsection.4.6.2.8}
+\contentsline {subsubsection}{\numberline {4.6.2.9}cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}{39}{subsubsection.4.6.2.9}
+\contentsline {subsubsection}{\numberline {4.6.2.10}cryptos\_\discretionary {-}{}{}md\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}{39}{subsubsection.4.6.2.10}
+\contentsline {subsubsection}{\numberline {4.6.2.11}parse\_\discretionary {-}{}{}packet}{39}{subsubsection.4.6.2.11}
+\contentsline {subsubsection}{\numberline {4.6.2.12}produce\_\discretionary {-}{}{}packet}{40}{subsubsection.4.6.2.12}
+\contentsline {section}{\numberline {4.7}lib/miscellaneous.c File Reference}{42}{section.4.7}
+\contentsline {section}{\numberline {4.8}lib/miscellaneous.h File Reference}{43}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Define Documentation}{44}{subsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.1.1}I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}ERR}{44}{subsubsection.4.8.1.1}
+\contentsline {subsubsection}{\numberline {4.8.1.2}I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}INVALID\_\discretionary {-}{}{}XML}{44}{subsubsection.4.8.1.2}
+\contentsline {subsubsection}{\numberline {4.8.1.3}I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}OK}{44}{subsubsection.4.8.1.3}
+\contentsline {subsubsection}{\numberline {4.8.1.4}XML\_\discretionary {-}{}{}AGGRESS}{44}{subsubsection.4.8.1.4}
+\contentsline {subsubsection}{\numberline {4.8.1.5}XML\_\discretionary {-}{}{}HIDEMETHOD}{44}{subsubsection.4.8.1.5}
+\contentsline {subsubsection}{\numberline {4.8.1.6}XML\_\discretionary {-}{}{}KEY}{44}{subsubsection.4.8.1.6}
+\contentsline {subsubsection}{\numberline {4.8.1.7}XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}BITSTREAM}{44}{subsubsection.4.8.1.7}
+\contentsline {subsubsection}{\numberline {4.8.1.8}XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}LENGTH}{44}{subsubsection.4.8.1.8}
+\contentsline {subsubsection}{\numberline {4.8.1.9}XML\_\discretionary {-}{}{}LEAFS}{45}{subsubsection.4.8.1.9}
+\contentsline {subsubsection}{\numberline {4.8.1.10}XML\_\discretionary {-}{}{}SYNCHROMODE}{45}{subsubsection.4.8.1.10}
+\contentsline {subsection}{\numberline {4.8.2}Function Documentation}{45}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}bitstream\_\discretionary {-}{}{}rol}{45}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}bitstream\_\discretionary {-}{}{}ror}{45}{subsubsection.4.8.2.2}
+\contentsline {subsubsection}{\numberline {4.8.2.3}message\_\discretionary {-}{}{}log}{46}{subsubsection.4.8.2.3}
+\contentsline {subsubsection}{\numberline {4.8.2.4}print\_\discretionary {-}{}{}bytestream}{46}{subsubsection.4.8.2.4}
+\contentsline {subsubsection}{\numberline {4.8.2.5}to\_\discretionary {-}{}{}byte}{46}{subsubsection.4.8.2.5}
+\contentsline {subsubsection}{\numberline {4.8.2.6}zlib\_\discretionary {-}{}{}def}{47}{subsubsection.4.8.2.6}
+\contentsline {subsubsection}{\numberline {4.8.2.7}zlib\_\discretionary {-}{}{}inf}{47}{subsubsection.4.8.2.7}
+\contentsline {subsubsection}{\numberline {4.8.2.8}zlib\_\discretionary {-}{}{}zerr}{47}{subsubsection.4.8.2.8}
+\contentsline {section}{\numberline {4.9}lib/numbers.c File Reference}{48}{section.4.9}
+\contentsline {section}{\numberline {4.10}lib/protocols.c File Reference}{49}{section.4.10}
+\contentsline {section}{\numberline {4.11}lib/protocols.h File Reference}{50}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Function Documentation}{50}{subsection.4.11.1}
+\contentsline {subsubsection}{\numberline {4.11.1.1}cryptos\_\discretionary {-}{}{}forward}{50}{subsubsection.4.11.1.1}
+\contentsline {subsubsection}{\numberline {4.11.1.2}cryptos\_\discretionary {-}{}{}inverse}{51}{subsubsection.4.11.1.2}
+\contentsline {subsubsection}{\numberline {4.11.1.3}steganos\_\discretionary {-}{}{}forward}{51}{subsubsection.4.11.1.3}
+\contentsline {subsubsection}{\numberline {4.11.1.4}steganos\_\discretionary {-}{}{}inverse}{52}{subsubsection.4.11.1.4}
+\contentsline {subsubsection}{\numberline {4.11.1.5}steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}{52}{subsubsection.4.11.1.5}
+\contentsline {subsubsection}{\numberline {4.11.1.6}steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}{53}{subsubsection.4.11.1.6}
+\contentsline {section}{\numberline {4.12}lib/steganos\_\discretionary {-}{}{}channel.c File Reference}{54}{section.4.12}
+\contentsline {section}{\numberline {4.13}lib/steganos\_\discretionary {-}{}{}channel.h File Reference}{55}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Define Documentation}{57}{subsection.4.13.1}
+\contentsline {subsubsection}{\numberline {4.13.1.1}BITS\_\discretionary {-}{}{}PARITY}{57}{subsubsection.4.13.1.1}
+\contentsline {subsubsection}{\numberline {4.13.1.2}DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BITS}{57}{subsubsection.4.13.1.2}
+\contentsline {subsubsection}{\numberline {4.13.1.3}DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BYTES}{57}{subsubsection.4.13.1.3}
+\contentsline {subsubsection}{\numberline {4.13.1.4}FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BITS}{57}{subsubsection.4.13.1.4}
+\contentsline {subsubsection}{\numberline {4.13.1.5}FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BYTES}{57}{subsubsection.4.13.1.5}
+\contentsline {subsubsection}{\numberline {4.13.1.6}ITU\_\discretionary {-}{}{}R\_\discretionary {-}{}{}BS\_\discretionary {-}{}{}468\_\discretionary {-}{}{}SIZE}{57}{subsubsection.4.13.1.6}
+\contentsline {subsubsection}{\numberline {4.13.1.7}MAX\_\discretionary {-}{}{}SUBLIMINAL\_\discretionary {-}{}{}SIZE}{57}{subsubsection.4.13.1.7}
+\contentsline {subsubsection}{\numberline {4.13.1.8}RES\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BITS}{57}{subsubsection.4.13.1.8}
+\contentsline {subsubsection}{\numberline {4.13.1.9}SIZE\_\discretionary {-}{}{}FIELD\_\discretionary {-}{}{}BITS}{58}{subsubsection.4.13.1.9}
+\contentsline {subsubsection}{\numberline {4.13.1.10}SYNCHRO\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BYTES\_\discretionary {-}{}{}RES}{58}{subsubsection.4.13.1.10}
+\contentsline {subsection}{\numberline {4.13.2}Function Documentation}{58}{subsection.4.13.2}
+\contentsline {subsubsection}{\numberline {4.13.2.1}calculate\_\discretionary {-}{}{}residue\_\discretionary {-}{}{}lineup}{58}{subsubsection.4.13.2.1}
+\contentsline {subsubsection}{\numberline {4.13.2.2}desynchro\_\discretionary {-}{}{}iss}{58}{subsubsection.4.13.2.2}
+\contentsline {subsubsection}{\numberline {4.13.2.3}desynchro\_\discretionary {-}{}{}res\_\discretionary {-}{}{}header}{59}{subsubsection.4.13.2.3}
+\contentsline {subsubsection}{\numberline {4.13.2.4}hide\_\discretionary {-}{}{}data}{60}{subsubsection.4.13.2.4}
+\contentsline {subsubsection}{\numberline {4.13.2.5}iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}free}{60}{subsubsection.4.13.2.5}
+\contentsline {subsubsection}{\numberline {4.13.2.6}iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}init}{61}{subsubsection.4.13.2.6}
+\contentsline {subsubsection}{\numberline {4.13.2.7}iss\_\discretionary {-}{}{}simulate\_\discretionary {-}{}{}floor}{61}{subsubsection.4.13.2.7}
+\contentsline {subsubsection}{\numberline {4.13.2.8}parity\_\discretionary {-}{}{}bits\_\discretionary {-}{}{}method}{62}{subsubsection.4.13.2.8}
+\contentsline {subsubsection}{\numberline {4.13.2.9}set\_\discretionary {-}{}{}subliminal\_\discretionary {-}{}{}capacity\_\discretionary {-}{}{}limit}{62}{subsubsection.4.13.2.9}
+\contentsline {subsubsection}{\numberline {4.13.2.10}steganos\_\discretionary {-}{}{}free\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}{63}{subsubsection.4.13.2.10}
+\contentsline {subsubsection}{\numberline {4.13.2.11}steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}{63}{subsubsection.4.13.2.11}
+\contentsline {subsubsection}{\numberline {4.13.2.12}steganos\_\discretionary {-}{}{}prepare\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}{64}{subsubsection.4.13.2.12}
+\contentsline {subsubsection}{\numberline {4.13.2.13}steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}free}{64}{subsubsection.4.13.2.13}
+\contentsline {subsubsection}{\numberline {4.13.2.14}steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}init}{64}{subsubsection.4.13.2.14}
+\contentsline {subsubsection}{\numberline {4.13.2.15}steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}iter}{65}{subsubsection.4.13.2.15}
+\contentsline {subsubsection}{\numberline {4.13.2.16}synchro\_\discretionary {-}{}{}iss}{65}{subsubsection.4.13.2.16}
+\contentsline {subsubsection}{\numberline {4.13.2.17}unhide\_\discretionary {-}{}{}data}{66}{subsubsection.4.13.2.17}
+\contentsline {subsubsection}{\numberline {4.13.2.18}void\_\discretionary {-}{}{}method}{67}{subsubsection.4.13.2.18}

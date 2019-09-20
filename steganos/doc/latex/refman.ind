@@ -1,0 +1,781 @@
+\begin{theindex}
+
+  \item {aligned}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {alpha}
+    \subitem {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}, 
+		\hyperpage{10}
+
+  \indexspace
+
+  \item {BITS\_\discretionary {-}{}{}PARITY}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+  \item {BITS\_\discretionary {-}{}{}PER\_\discretionary {-}{}{}BYTE}
+    \subitem {global\_\discretionary {-}{}{}types.h}, \hyperpage{21}
+  \item {bitstream\_\discretionary {-}{}{}rol}
+    \subitem {miscellaneous.h}, \hyperpage{45}
+  \item {bitstream\_\discretionary {-}{}{}ror}
+    \subitem {miscellaneous.h}, \hyperpage{45}
+  \item {buffer}
+    \subitem {cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}, 
+		\hyperpage{9}
+  \item {buffer\_\discretionary {-}{}{}size}
+    \subitem {cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}, 
+		\hyperpage{9}
+  \item {buffer\_\discretionary {-}{}{}used}
+    \subitem {cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}, 
+		\hyperpage{9}
+  \item {byte}
+    \subitem {global\_\discretionary {-}{}{}types.h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {calculate\_\discretionary {-}{}{}residue\_\discretionary {-}{}{}lineup}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{58}
+  \item {chd}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{5}
+  \item {cipher\_\discretionary {-}{}{}algo}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{5}
+  \item {cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}free}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}init}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{36}
+  \item {CRYPTOS\_\discretionary {-}{}{}BUFFER\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}SIZE}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{34}
+  \item {cryptos\_\discretionary {-}{}{}channel.h}
+    \subitem {cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}free}, 
+		\hyperpage{35}
+    \subitem {cryptos\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}init}, 
+		\hyperpage{36}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}BUFFER\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}SIZE}, 
+		\hyperpage{34}
+    \subitem {cryptos\_\discretionary {-}{}{}cipher\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}, 
+		\hyperpage{36}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}, 
+		\hyperpage{36}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}, 
+		\hyperpage{37}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}iv}, 
+		\hyperpage{37}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}key}, 
+		\hyperpage{38}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}DEFAULT\_\discretionary {-}{}{}DATA\_\discretionary {-}{}{}SIZE}, 
+		\hyperpage{34}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}EMISSION\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{34}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}IV\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{35}
+    \subitem {cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}free}, 
+		\hyperpage{38}
+    \subitem {cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}, 
+		\hyperpage{38}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}LENGTH\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{35}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DATA}, 
+		\hyperpage{35}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{35}
+    \subitem {cryptos\_\discretionary {-}{}{}md\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}, 
+		\hyperpage{39}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}MIN\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{35}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}PACKET\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{35}
+    \subitem {CRYPTOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{35}
+    \subitem {parse\_\discretionary {-}{}{}packet}, \hyperpage{39}
+    \subitem {produce\_\discretionary {-}{}{}packet}, \hyperpage{40}
+    \subitem {RATIO\_\discretionary {-}{}{}DD}, \hyperpage{35}
+  \item {cryptos\_\discretionary {-}{}{}cipher\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{36}
+  \item {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{36}
+  \item {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{37}
+  \item {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}iv}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{37}
+  \item {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}set\_\discretionary {-}{}{}key}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{38}
+  \item {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{5}
+    \subitem {chd}, \hyperpage{5}
+    \subitem {cipher\_\discretionary {-}{}{}algo}, \hyperpage{5}
+    \subitem {default\_\discretionary {-}{}{}data\_\discretionary {-}{}{}size}, 
+		\hyperpage{6}
+    \subitem {emission}, \hyperpage{6}
+    \subitem {hmac}, \hyperpage{6}
+    \subitem {iv}, \hyperpage{6}
+    \subitem {key}, \hyperpage{6}
+    \subitem {max\_\discretionary {-}{}{}data}, \hyperpage{6}
+    \subitem {md\_\discretionary {-}{}{}algo}, \hyperpage{6}
+    \subitem {md\_\discretionary {-}{}{}len}, \hyperpage{6}
+    \subitem {mdhd}, \hyperpage{6}
+    \subitem {packet}, \hyperpage{6}
+  \item {CRYPTOS\_\discretionary {-}{}{}DEFAULT\_\discretionary {-}{}{}DATA\_\discretionary {-}{}{}SIZE}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{34}
+  \item {CRYPTOS\_\discretionary {-}{}{}EMISSION\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{34}
+  \item {cryptos\_\discretionary {-}{}{}forward}
+    \subitem {protocols.h}, \hyperpage{50}
+  \item {cryptos\_\discretionary {-}{}{}inverse}
+    \subitem {protocols.h}, \hyperpage{51}
+  \item {CRYPTOS\_\discretionary {-}{}{}IV\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}free}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{38}
+  \item {cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{38}
+  \item {cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}, 
+		\hyperpage{7}
+    \subitem {key}, \hyperpage{7}
+    \subitem {length}, \hyperpage{7}
+  \item {CRYPTOS\_\discretionary {-}{}{}LENGTH\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DATA}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {CRYPTOS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {cryptos\_\discretionary {-}{}{}md\_\discretionary {-}{}{}algo\_\discretionary {-}{}{}code}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{39}
+  \item {CRYPTOS\_\discretionary {-}{}{}MIN\_\discretionary {-}{}{}DIGEST\_\discretionary {-}{}{}LEN}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {CRYPTOS\_\discretionary {-}{}{}PACKET\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer}, 
+		\hyperpage{8}
+  \item {cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}, 
+		\hyperpage{9}
+    \subitem {buffer}, \hyperpage{9}
+    \subitem {buffer\_\discretionary {-}{}{}size}, \hyperpage{9}
+    \subitem {buffer\_\discretionary {-}{}{}used}, \hyperpage{9}
+    \subitem {fd}, \hyperpage{9}
+    \subitem {offset}, \hyperpage{9}
+  \item {CRYPTOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}LEN}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {cryptos\_\discretionary {-}{}{}types.h}
+    \subitem {I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}CHECK\_\discretionary {-}{}{}FAIL}, 
+		\hyperpage{19}
+    \subitem {I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}ERR}, 
+		\hyperpage{19}
+    \subitem {I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}OK}, 
+		\hyperpage{20}
+
+  \indexspace
+
+  \item {da}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {default\_\discretionary {-}{}{}data\_\discretionary {-}{}{}size}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+  \item {desync}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {desync\_\discretionary {-}{}{}method}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{29}
+  \item {desynchro\_\discretionary {-}{}{}iss}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{58}
+  \item {desynchro\_\discretionary {-}{}{}res\_\discretionary {-}{}{}header}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{59}
+  \item {desynchronize}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {DIRECT\_\-HIDING}
+    \subitem {steganos\_\-types.h}, \hyperpage{31}
+  \item {DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BITS}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+  \item {DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BYTES}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+
+  \indexspace
+
+  \item {emission}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {fd}
+    \subitem {cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}, 
+		\hyperpage{9}
+  \item {FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BITS}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+  \item {FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BYTES}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+  \item {FORCED\_\-RES\_\-HEADER}
+    \subitem {steganos\_\-types.h}, \hyperpage{31}
+  \item {forward\_\discretionary {-}{}{}index}
+    \subitem {vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {global\_\discretionary {-}{}{}types.h}
+    \subitem {BITS\_\discretionary {-}{}{}PER\_\discretionary {-}{}{}BYTE}, 
+		\hyperpage{21}
+    \subitem {byte}, \hyperpage{21}
+    \subitem {I\_\discretionary {-}{}{}ERR}, \hyperpage{21}
+    \subitem {I\_\discretionary {-}{}{}OK}, \hyperpage{21}
+
+  \indexspace
+
+  \item {hide}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {hide\_\discretionary {-}{}{}data}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{59}
+  \item {hide\_\discretionary {-}{}{}method}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{29}
+  \item {hide\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{31}
+  \item {hiding\_\discretionary {-}{}{}key}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {hmac}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}CHECK\_\discretionary {-}{}{}FAIL}
+    \subitem {cryptos\_\discretionary {-}{}{}types.h}, \hyperpage{19}
+  \item {I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}ERR}
+    \subitem {cryptos\_\discretionary {-}{}{}types.h}, \hyperpage{19}
+  \item {I\_\discretionary {-}{}{}CRYPTOS\_\discretionary {-}{}{}OK}
+    \subitem {cryptos\_\discretionary {-}{}{}types.h}, \hyperpage{20}
+  \item {I\_\discretionary {-}{}{}ERR}
+    \subitem {global\_\discretionary {-}{}{}types.h}, \hyperpage{21}
+  \item {I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}ERR}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}INVALID\_\discretionary {-}{}{}XML}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}OK}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {I\_\discretionary {-}{}{}OK}
+    \subitem {global\_\discretionary {-}{}{}types.h}, \hyperpage{21}
+  \item {I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}ERR}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{28}
+  \item {I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}FRAME\_\discretionary {-}{}{}SKIP}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{28}
+  \item {I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}OK}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{28}
+  \item {I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}FAIL}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{28}
+  \item {include/cryptos\_\discretionary {-}{}{}types.h}, 
+		\hyperpage{19}
+  \item {include/global\_\discretionary {-}{}{}types.h}, \hyperpage{21}
+  \item {include/numbers.h}, \hyperpage{22}
+  \item {include/steganos\_\discretionary {-}{}{}types.h}, 
+		\hyperpage{27}
+  \item {INDETERMINATE\_\discretionary {-}{}{}MARK}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{28}
+  \item {ISS}
+    \subitem {steganos\_\-types.h}, \hyperpage{31}
+  \item {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}free}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{60}
+  \item {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}init}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{61}
+  \item {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}, 
+		\hyperpage{10}
+    \subitem {alpha}, \hyperpage{10}
+    \subitem {lambda}, \hyperpage{10}
+    \subitem {sigma}, \hyperpage{10}
+    \subitem {u}, \hyperpage{10}
+    \subitem {u\_\discretionary {-}{}{}norm}, \hyperpage{10}
+  \item {iss\_\discretionary {-}{}{}simulate\_\discretionary {-}{}{}floor}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{61}
+  \item {iters}
+    \subitem {prng\_\discretionary {-}{}{}t}, \hyperpage{11}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {ITU\_\discretionary {-}{}{}R\_\discretionary {-}{}{}BS\_\discretionary {-}{}{}468\_\discretionary {-}{}{}SIZE}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+  \item {iv}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {key}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+    \subitem {cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}, 
+		\hyperpage{7}
+    \subitem {steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}, 
+		\hyperpage{12}
+
+  \indexspace
+
+  \item {lambda}
+    \subitem {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}, 
+		\hyperpage{10}
+  \item {length}
+    \subitem {cryptos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}, 
+		\hyperpage{7}
+    \subitem {steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}, 
+		\hyperpage{12}
+  \item {lib/cryptos\_\discretionary {-}{}{}channel.c}, \hyperpage{32}
+  \item {lib/cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{33}
+  \item {lib/miscellaneous.c}, \hyperpage{42}
+  \item {lib/miscellaneous.h}, \hyperpage{43}
+  \item {lib/numbers.c}, \hyperpage{48}
+  \item {lib/protocols.c}, \hyperpage{49}
+  \item {lib/protocols.h}, \hyperpage{50}
+  \item {lib/steganos\_\discretionary {-}{}{}channel.c}, \hyperpage{54}
+  \item {lib/steganos\_\discretionary {-}{}{}channel.h}, \hyperpage{55}
+  \item {linear\_\discretionary {-}{}{}interpolation\_\discretionary {-}{}{}y}
+    \subitem {numbers.h}, \hyperpage{22}
+
+  \indexspace
+
+  \item {master\_\discretionary {-}{}{}key}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {max\_\discretionary {-}{}{}data}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+  \item {max\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {MAX\_\discretionary {-}{}{}SUBLIMINAL\_\discretionary {-}{}{}SIZE}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+  \item {md\_\discretionary {-}{}{}algo}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+  \item {md\_\discretionary {-}{}{}len}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+  \item {mdhd}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+  \item {message\_\discretionary {-}{}{}log}
+    \subitem {miscellaneous.h}, \hyperpage{45}
+  \item {metadata\_\discretionary {-}{}{}sent}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+  \item {min\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {miscellaneous.h}
+    \subitem {bitstream\_\discretionary {-}{}{}rol}, \hyperpage{45}
+    \subitem {bitstream\_\discretionary {-}{}{}ror}, \hyperpage{45}
+    \subitem {I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}ERR}, 
+		\hyperpage{44}
+    \subitem {I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}INVALID\_\discretionary {-}{}{}XML}, 
+		\hyperpage{44}
+    \subitem {I\_\discretionary {-}{}{}MISC\_\discretionary {-}{}{}OK}, 
+		\hyperpage{44}
+    \subitem {message\_\discretionary {-}{}{}log}, \hyperpage{45}
+    \subitem {print\_\discretionary {-}{}{}bytestream}, \hyperpage{46}
+    \subitem {to\_\discretionary {-}{}{}byte}, \hyperpage{46}
+    \subitem {XML\_\discretionary {-}{}{}AGGRESS}, \hyperpage{44}
+    \subitem {XML\_\discretionary {-}{}{}HIDEMETHOD}, \hyperpage{44}
+    \subitem {XML\_\discretionary {-}{}{}KEY}, \hyperpage{44}
+    \subitem {XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}BITSTREAM}, 
+		\hyperpage{44}
+    \subitem {XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}LENGTH}, 
+		\hyperpage{44}
+    \subitem {XML\_\discretionary {-}{}{}LEAFS}, \hyperpage{44}
+    \subitem {XML\_\discretionary {-}{}{}SYNCHROMODE}, \hyperpage{45}
+    \subitem {zlib\_\discretionary {-}{}{}def}, \hyperpage{47}
+    \subitem {zlib\_\discretionary {-}{}{}inf}, \hyperpage{47}
+    \subitem {zlib\_\discretionary {-}{}{}zerr}, \hyperpage{47}
+  \item {mult}
+    \subitem {vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {numbers.h}
+    \subitem {linear\_\discretionary {-}{}{}interpolation\_\discretionary {-}{}{}y}, 
+		\hyperpage{22}
+    \subitem {prng\_\discretionary {-}{}{}free}, \hyperpage{23}
+    \subitem {prng\_\discretionary {-}{}{}get\_\discretionary {-}{}{}random\_\discretionary {-}{}{}int}, 
+		\hyperpage{23}
+    \subitem {prng\_\discretionary {-}{}{}init}, \hyperpage{23}
+    \subitem {prng\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}byte}, 
+		\hyperpage{24}
+    \subitem {prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}byte}, 
+		\hyperpage{24}
+    \subitem {prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}int}, 
+		\hyperpage{25}
+    \subitem {seek}, \hyperpage{25}
+    \subitem {seek\_\discretionary {-}{}{}interval}, \hyperpage{25}
+
+  \indexspace
+
+  \item {offset}
+    \subitem {cryptos\_\discretionary {-}{}{}protocol\_\discretionary {-}{}{}buffer\_\discretionary {-}{}{}t}, 
+		\hyperpage{9}
+  \item {out}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+
+  \indexspace
+
+  \item {packet}
+    \subitem {cryptos\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+  \item {PARITY\_\-BITS}
+    \subitem {steganos\_\-types.h}, \hyperpage{31}
+  \item {parity\_\discretionary {-}{}{}bits\_\discretionary {-}{}{}method}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{61}
+  \item {parse\_\discretionary {-}{}{}packet}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{39}
+  \item {pcmend}
+    \subitem {vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{17}
+  \item {postlist}
+    \subitem {vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{17}
+  \item {posts\_\discretionary {-}{}{}len}
+    \subitem {vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{17}
+  \item {posts\_\discretionary {-}{}{}mode}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {print\_\discretionary {-}{}{}bytestream}
+    \subitem {miscellaneous.h}, \hyperpage{46}
+  \item {prng}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {prng\_\discretionary {-}{}{}free}
+    \subitem {numbers.h}, \hyperpage{23}
+  \item {prng\_\discretionary {-}{}{}get\_\discretionary {-}{}{}random\_\discretionary {-}{}{}int}
+    \subitem {numbers.h}, \hyperpage{23}
+  \item {prng\_\discretionary {-}{}{}init}
+    \subitem {numbers.h}, \hyperpage{23}
+  \item {prng\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}byte}
+    \subitem {numbers.h}, \hyperpage{24}
+  \item {prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}byte}
+    \subitem {numbers.h}, \hyperpage{24}
+  \item {prng\_\discretionary {-}{}{}set\_\discretionary {-}{}{}seed\_\discretionary {-}{}{}int}
+    \subitem {numbers.h}, \hyperpage{25}
+  \item {prng\_\discretionary {-}{}{}t}, \hyperpage{11}
+    \subitem {iters}, \hyperpage{11}
+    \subitem {seed}, \hyperpage{11}
+  \item {produce\_\discretionary {-}{}{}packet}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{40}
+  \item {protocols.h}
+    \subitem {cryptos\_\discretionary {-}{}{}forward}, \hyperpage{50}
+    \subitem {cryptos\_\discretionary {-}{}{}inverse}, \hyperpage{51}
+    \subitem {steganos\_\discretionary {-}{}{}forward}, \hyperpage{51}
+    \subitem {steganos\_\discretionary {-}{}{}inverse}, \hyperpage{52}
+    \subitem {steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}, 
+		\hyperpage{52}
+    \subitem {steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}, 
+		\hyperpage{53}
+
+  \indexspace
+
+  \item {ra}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {rate}
+    \subitem {vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{17}
+  \item {RATIO\_\discretionary {-}{}{}DD}
+    \subitem {cryptos\_\discretionary {-}{}{}channel.h}, \hyperpage{35}
+  \item {read}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {remaining}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {RES\_\-HEADER}
+    \subitem {steganos\_\-types.h}, \hyperpage{31}
+  \item {RES\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BITS}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+  \item {res\_\discretionary {-}{}{}lineup}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {res\_\discretionary {-}{}{}max\_\discretionary {-}{}{}capacity}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {res\_\discretionary {-}{}{}min\_\discretionary {-}{}{}capacity}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {res\_\discretionary {-}{}{}occupied}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {seed}
+    \subitem {prng\_\discretionary {-}{}{}t}, \hyperpage{11}
+  \item {seek}
+    \subitem {numbers.h}, \hyperpage{25}
+  \item {seek\_\discretionary {-}{}{}interval}
+    \subitem {numbers.h}, \hyperpage{25}
+  \item {sent}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+  \item {set\_\discretionary {-}{}{}subliminal\_\discretionary {-}{}{}capacity\_\discretionary {-}{}{}limit}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{62}
+  \item {sigma}
+    \subitem {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}, 
+		\hyperpage{10}
+  \item {SIZE\_\discretionary {-}{}{}FIELD\_\discretionary {-}{}{}BITS}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{57}
+  \item {status}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+  \item {steganos\_\-types.h}
+    \subitem {DIRECT\_\-HIDING}, \hyperpage{31}
+    \subitem {FORCED\_\-RES\_\-HEADER}, \hyperpage{31}
+    \subitem {ISS}, \hyperpage{31}
+    \subitem {PARITY\_\-BITS}, \hyperpage{31}
+    \subitem {RES\_\-HEADER}, \hyperpage{31}
+  \item {steganos\_\discretionary {-}{}{}channel.h}
+    \subitem {BITS\_\discretionary {-}{}{}PARITY}, \hyperpage{57}
+    \subitem {calculate\_\discretionary {-}{}{}residue\_\discretionary {-}{}{}lineup}, 
+		\hyperpage{58}
+    \subitem {desynchro\_\discretionary {-}{}{}iss}, \hyperpage{58}
+    \subitem {desynchro\_\discretionary {-}{}{}res\_\discretionary {-}{}{}header}, 
+		\hyperpage{59}
+    \subitem {DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BITS}, 
+		\hyperpage{57}
+    \subitem {DISTRESS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}BYTES}, 
+		\hyperpage{57}
+    \subitem {FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BITS}, 
+		\hyperpage{57}
+    \subitem {FILE\_\discretionary {-}{}{}SIZE\_\discretionary {-}{}{}BYTES}, 
+		\hyperpage{57}
+    \subitem {hide\_\discretionary {-}{}{}data}, \hyperpage{59}
+    \subitem {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}free}, 
+		\hyperpage{60}
+    \subitem {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}init}, 
+		\hyperpage{61}
+    \subitem {iss\_\discretionary {-}{}{}simulate\_\discretionary {-}{}{}floor}, 
+		\hyperpage{61}
+    \subitem {ITU\_\discretionary {-}{}{}R\_\discretionary {-}{}{}BS\_\discretionary {-}{}{}468\_\discretionary {-}{}{}SIZE}, 
+		\hyperpage{57}
+    \subitem {MAX\_\discretionary {-}{}{}SUBLIMINAL\_\discretionary {-}{}{}SIZE}, 
+		\hyperpage{57}
+    \subitem {parity\_\discretionary {-}{}{}bits\_\discretionary {-}{}{}method}, 
+		\hyperpage{61}
+    \subitem {RES\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BITS}, 
+		\hyperpage{57}
+    \subitem {set\_\discretionary {-}{}{}subliminal\_\discretionary {-}{}{}capacity\_\discretionary {-}{}{}limit}, 
+		\hyperpage{62}
+    \subitem {SIZE\_\discretionary {-}{}{}FIELD\_\discretionary {-}{}{}BITS}, 
+		\hyperpage{57}
+    \subitem {steganos\_\discretionary {-}{}{}free\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}, 
+		\hyperpage{63}
+    \subitem {steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}, 
+		\hyperpage{63}
+    \subitem {steganos\_\discretionary {-}{}{}prepare\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}, 
+		\hyperpage{63}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}free}, 
+		\hyperpage{64}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}init}, 
+		\hyperpage{64}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}iter}, 
+		\hyperpage{65}
+    \subitem {SYNCHRO\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BYTES\_\discretionary {-}{}{}RES}, 
+		\hyperpage{58}
+    \subitem {synchro\_\discretionary {-}{}{}iss}, \hyperpage{65}
+    \subitem {unhide\_\discretionary {-}{}{}data}, \hyperpage{66}
+    \subitem {void\_\discretionary {-}{}{}method}, \hyperpage{67}
+  \item {steganos\_\discretionary {-}{}{}forward}
+    \subitem {protocols.h}, \hyperpage{51}
+  \item {steganos\_\discretionary {-}{}{}free\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{63}
+  \item {steganos\_\discretionary {-}{}{}inverse}
+    \subitem {protocols.h}, \hyperpage{52}
+  \item {steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}init}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{63}
+  \item {steganos\_\discretionary {-}{}{}key\_\discretionary {-}{}{}t}, 
+		\hyperpage{12}
+    \subitem {key}, \hyperpage{12}
+    \subitem {length}, \hyperpage{12}
+  \item {steganos\_\discretionary {-}{}{}prepare\_\discretionary {-}{}{}packet\_\discretionary {-}{}{}keys}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{63}
+  \item {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}free}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{64}
+  \item {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}init}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{64}
+  \item {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}reset\_\discretionary {-}{}{}iter}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{65}
+  \item {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{13}
+    \subitem {aligned}, \hyperpage{14}
+    \subitem {da}, \hyperpage{14}
+    \subitem {desync}, \hyperpage{14}
+    \subitem {desynchronize}, \hyperpage{14}
+    \subitem {hide}, \hyperpage{14}
+    \subitem {hide\_\discretionary {-}{}{}method}, \hyperpage{14}
+    \subitem {hiding\_\discretionary {-}{}{}key}, \hyperpage{14}
+    \subitem {iters}, \hyperpage{14}
+    \subitem {master\_\discretionary {-}{}{}key}, \hyperpage{14}
+    \subitem {max\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}, 
+		\hyperpage{14}
+    \subitem {metadata\_\discretionary {-}{}{}sent}, \hyperpage{14}
+    \subitem {min\_\discretionary {-}{}{}fc\_\discretionary {-}{}{}capacity}, 
+		\hyperpage{15}
+    \subitem {out}, \hyperpage{15}
+    \subitem {posts\_\discretionary {-}{}{}mode}, \hyperpage{15}
+    \subitem {prng}, \hyperpage{15}
+    \subitem {ra}, \hyperpage{15}
+    \subitem {read}, \hyperpage{15}
+    \subitem {remaining}, \hyperpage{15}
+    \subitem {res\_\discretionary {-}{}{}lineup}, \hyperpage{15}
+    \subitem {res\_\discretionary {-}{}{}max\_\discretionary {-}{}{}capacity}, 
+		\hyperpage{15}
+    \subitem {res\_\discretionary {-}{}{}min\_\discretionary {-}{}{}capacity}, 
+		\hyperpage{15}
+    \subitem {res\_\discretionary {-}{}{}occupied}, \hyperpage{16}
+    \subitem {sent}, \hyperpage{16}
+    \subitem {status}, \hyperpage{16}
+    \subitem {synchro\_\discretionary {-}{}{}key}, \hyperpage{16}
+    \subitem {synchro\_\discretionary {-}{}{}method}, \hyperpage{16}
+    \subitem {synchronize}, \hyperpage{16}
+    \subitem {total\_\discretionary {-}{}{}sub\_\discretionary {-}{}{}capacity}, 
+		\hyperpage{16}
+    \subitem {variation\_\discretionary {-}{}{}limit}, \hyperpage{16}
+    \subitem {vc}, \hyperpage{16}
+  \item {steganos\_\discretionary {-}{}{}types.h}
+    \subitem {desync\_\discretionary {-}{}{}method}, \hyperpage{29}
+    \subitem {hide\_\discretionary {-}{}{}method}, \hyperpage{29}
+    \subitem {hide\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}, 
+		\hyperpage{31}
+    \subitem {I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}ERR}, 
+		\hyperpage{28}
+    \subitem {I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}FRAME\_\discretionary {-}{}{}SKIP}, 
+		\hyperpage{28}
+    \subitem {I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}OK}, 
+		\hyperpage{28}
+    \subitem {I\_\discretionary {-}{}{}STEGANOS\_\discretionary {-}{}{}SYNC\_\discretionary {-}{}{}FAIL}, 
+		\hyperpage{28}
+    \subitem {INDETERMINATE\_\discretionary {-}{}{}MARK}, 
+		\hyperpage{28}
+    \subitem {sync\_\discretionary {-}{}{}method}, \hyperpage{30}
+    \subitem {synchro\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}, 
+		\hyperpage{31}
+    \subitem {VIF\_\discretionary {-}{}{}POSIT}, \hyperpage{28}
+    \subitem {VORBIS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}BLOCK}, 
+		\hyperpage{28}
+  \item {steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}free}
+    \subitem {protocols.h}, \hyperpage{52}
+  \item {steganos\_\discretionary {-}{}{}vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}init}
+    \subitem {protocols.h}, \hyperpage{53}
+  \item {sync\_\discretionary {-}{}{}method}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{30}
+  \item {SYNCHRO\_\discretionary {-}{}{}HEADER\_\discretionary {-}{}{}BYTES\_\discretionary {-}{}{}RES}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{58}
+  \item {synchro\_\discretionary {-}{}{}iss}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{65}
+  \item {synchro\_\discretionary {-}{}{}key}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+  \item {synchro\_\discretionary {-}{}{}method}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+  \item {synchro\_\discretionary {-}{}{}method\_\discretionary {-}{}{}et}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{31}
+  \item {synchronize}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {to\_\discretionary {-}{}{}byte}
+    \subitem {miscellaneous.h}, \hyperpage{46}
+  \item {total\_\discretionary {-}{}{}sub\_\discretionary {-}{}{}capacity}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {u}
+    \subitem {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}, 
+		\hyperpage{10}
+  \item {u\_\discretionary {-}{}{}norm}
+    \subitem {iss\_\discretionary {-}{}{}cfg\_\discretionary {-}{}{}t}, 
+		\hyperpage{10}
+  \item {unhide\_\discretionary {-}{}{}data}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{66}
+
+  \indexspace
+
+  \item {variation\_\discretionary {-}{}{}limit}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+  \item {vc}
+    \subitem {steganos\_\discretionary {-}{}{}state\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+  \item {VIF\_\discretionary {-}{}{}POSIT}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{28}
+  \item {void\_\discretionary {-}{}{}method}
+    \subitem {steganos\_\discretionary {-}{}{}channel.h}, 
+		\hyperpage{67}
+  \item {vorbis\_\discretionary {-}{}{}config\_\discretionary {-}{}{}t}, 
+		\hyperpage{17}
+    \subitem {forward\_\discretionary {-}{}{}index}, \hyperpage{17}
+    \subitem {mult}, \hyperpage{17}
+    \subitem {pcmend}, \hyperpage{17}
+    \subitem {postlist}, \hyperpage{17}
+    \subitem {posts\_\discretionary {-}{}{}len}, \hyperpage{17}
+    \subitem {rate}, \hyperpage{17}
+  \item {VORBIS\_\discretionary {-}{}{}MAX\_\discretionary {-}{}{}BLOCK}
+    \subitem {steganos\_\discretionary {-}{}{}types.h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {XML\_\discretionary {-}{}{}AGGRESS}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {XML\_\discretionary {-}{}{}HIDEMETHOD}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {XML\_\discretionary {-}{}{}KEY}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}BITSTREAM}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {XML\_\discretionary {-}{}{}KEY\_\discretionary {-}{}{}LENGTH}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {XML\_\discretionary {-}{}{}LEAFS}
+    \subitem {miscellaneous.h}, \hyperpage{44}
+  \item {XML\_\discretionary {-}{}{}SYNCHROMODE}
+    \subitem {miscellaneous.h}, \hyperpage{45}
+
+  \indexspace
+
+  \item {zlib\_\discretionary {-}{}{}def}
+    \subitem {miscellaneous.h}, \hyperpage{47}
+  \item {zlib\_\discretionary {-}{}{}inf}
+    \subitem {miscellaneous.h}, \hyperpage{47}
+  \item {zlib\_\discretionary {-}{}{}zerr}
+    \subitem {miscellaneous.h}, \hyperpage{47}
+
+\end{theindex}

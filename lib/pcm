@@ -1,0 +1,253 @@
+analysis.c:  vorbis_block_internal *vbi=vb->internal;
+analysis.c:  vb->glue_bits=0;
+analysis.c:  vb->time_bits=0;
+analysis.c:  vb->floor_bits=0;
+analysis.c:  vb->res_bits=0;
+analysis.c:    op->packet=oggpack_get_buffer(&vb->opb);
+analysis.c:    op->bytes=oggpack_bytes(&vb->opb);
+analysis.c:    op->e_o_s=vb->eofflag;
+analysis.c:    op->granulepos=vb->granulepos;
+analysis.c:    op->packetno=vb->sequence; /* for sake of completeness */
+bitrate.c:  vorbis_dsp_state      *vd=vb->vd;
+bitrate.c:  vorbis_block_internal *vbi=vb->internal;
+bitrate.c:  vorbis_dsp_state      *vd=vb->vd;
+bitrate.c:  long min_target_bits=(vb->W?bm->min_bitsper*bm->short_per_long:bm->min_bitsper);
+bitrate.c:  long max_target_bits=(vb->W?bm->max_bitsper*bm->short_per_long:bm->max_bitsper);
+bitrate.c:  int  samples=ci->blocksizes[vb->W]>>1;
+bitrate.c:    long avg_target_bits=(vb->W?bm->avg_bitsper*bm->short_per_long:bm->avg_bitsper);
+bitrate.c:    long avg_target_bits=(vb->W?bm->avg_bitsper*bm->short_per_long:bm->avg_bitsper);
+bitrate.c:    vorbis_block_internal *vbi=vb->internal;
+bitrate.c:    op->e_o_s=vb->eofflag;
+bitrate.c:    op->granulepos=vb->granulepos;
+bitrate.c:    op->packetno=vb->sequence; /* for sake of completeness */
+block.c:  vb->vd=v;
+block.c:  vb->localalloc=0;
+block.c:  vb->localstore=NULL;
+block.c:      vb->internal=_ogg_calloc(1,sizeof(vorbis_block_internal));
+block.c:        vbi->packetblob[i]=&vb->opb;
+block.c:  if(bytes+vb->localtop>vb->localalloc){
+block.c:    if(vb->localstore){
+block.c:      vb->totaluse+=vb->localtop;
+block.c:      link->next=vb->reap;
+block.c:      link->ptr=vb->localstore;
+block.c:      vb->reap=link;
+block.c:    vb->localalloc=bytes;
+block.c:    vb->localstore=_ogg_malloc(vb->localalloc);
+block.c:    vb->localtop=0;
+block.c:    void *ret=(void *)(((char *)vb->localstore)+vb->localtop);
+block.c:    vb->localtop+=bytes;
+block.c:  struct alloc_chain *reap=vb->reap;
+block.c:  if(vb->totaluse){
+block.c:    vb->localstore=_ogg_realloc(vb->localstore,vb->totaluse+vb->localalloc);
+block.c:    vb->localalloc+=vb->totaluse;
+block.c:    vb->totaluse=0;
+block.c:  vb->localtop=0;
+block.c:  vb->reap=NULL;
+block.c:  vorbis_block_internal *vbi=vb->internal;
+block.c:  if(vb->localstore)_ogg_free(vb->localstore);
+block.c:  vorbis_block_internal *vbi=(vorbis_block_internal *)vb->internal;
+block.c:  vb->lW=v->lW;
+block.c:  vb->W=v->W;
+block.c:  vb->nW=v->nW;
+block.c:  vb->vd=v;
+block.c:  vb->sequence=v->sequence++;
+block.c:  vb->granulepos=v->granulepos;
+block.c:  vb->pcmend=ci->blocksizes[v->W];
+block.c:  vb->pcm=_vorbis_block_alloc(vb,sizeof(*vb->pcm)*vi->channels);
+block.c:      _vorbis_block_alloc(vb,(vb->pcmend+beginW)*sizeof(*vbi->pcmdelay[i]));
+block.c:    memcpy(vbi->pcmdelay[i],v->pcm[i],(vb->pcmend+beginW)*sizeof(*vbi->pcmdelay[i]));
+block.c:    vb->pcm[i]=vbi->pcmdelay[i]+beginW;
+block.c:       vb->pcm[i]=_vorbis_block_alloc(vb,vb->pcmend*sizeof(*vb->pcm[i]));
+block.c:       memcpy(vb->pcm[i],v->pcm[i]+beginW,ci->blocksizes[v->W]*sizeof(*vb->pcm[i]));
+block.c:      vb->eofflag=1;
+block.c:  v->W=vb->W;
+block.c:     (v->sequence+1 != vb->sequence)){
+block.c:  v->sequence=vb->sequence;
+block.c:  if(vb->pcm){  /* no pcm to process if vorbis_synthesis_trackonly
+block.c:    v->glue_bits+=vb->glue_bits;
+block.c:    v->time_bits+=vb->time_bits;
+block.c:    v->floor_bits+=vb->floor_bits;
+block.c:    v->res_bits+=vb->res_bits;
+block.c:          float *p=vb->pcm[j];
+block.c:          float *p=vb->pcm[j];
+block.c:          float *p=vb->pcm[j]+n1/2-n0/2;
+block.c:          float *p=vb->pcm[j];
+block.c:        float *p=vb->pcm[j]+n;
+block.c:     return will be past the vb->granulepos.
+block.c:    if(vb->granulepos!=-1){ /* only set if we have a position to set to */
+block.c:      v->granulepos=vb->granulepos;
+block.c:        if(vb->eofflag){
+block.c:    if(vb->granulepos!=-1 && v->granulepos!=vb->granulepos){
+block.c:      if(v->granulepos>vb->granulepos){
+block.c:        long extra=v->granulepos-vb->granulepos;
+block.c:          if(vb->eofflag){
+block.c:      v->granulepos=vb->granulepos;
+block.c:  if(vb->eofflag)v->eofflag=1;
+floor0.c:  if(!look->linearmap[vb->W]){
+floor0.c:    vorbis_dsp_state   *vd=vb->vd;
+floor0.c:    int W=vb->W;
+floor0.c:  int ampraw=oggpack_read(&vb->opb,info->ampbits);
+floor0.c:    int booknum=oggpack_read(&vb->opb,_ilog(info->numbooks));
+floor0.c:      codec_setup_info  *ci=vb->vd->vi->codec_setup;
+floor0.c:        if(vorbis_book_decodev_set(b,lsp+j,&vb->opb,b->dim)==-1)goto eop;
+floor0.c:                        look->linearmap[vb->W],
+floor0.c:                        look->n[vb->W],
+floor0.c:  memset(out,0,sizeof(*out)*look->n[vb->W]);
+floor1.c:  codec_setup_info *ci=vb->vd->vi->codec_setup;
+floor1.c:                  vb->pcmend/2,posts-2,class);
+floor1.c:                    vb->pcmend/2,posts-2,class,bookas[k]);
+floor1.c:      for(j=hx;j<vb->pcmend/2;j++) ilogmask[j]=ly; /* be certain */
+floor1.c:    memset(ilogmask,0,vb->pcmend/2*sizeof(*ilogmask));
+floor1.c:  codec_setup_info   *ci=vb->vd->vi->codec_setup;
+floor1.c:  if(oggpack_read(&vb->opb,1)==1){
+floor1.c:    fit_value[0]=oggpack_read(&vb->opb,ilog(look->quant_q-1));
+floor1.c:    fit_value[1]=oggpack_read(&vb->opb,ilog(look->quant_q-1));
+floor1.c:        cval=vorbis_book_decode(books+info->class_book[class],&vb->opb);
+floor1.c:          if((fit_value[j+k]=vorbis_book_decode(books+book,&vb->opb))==-1)
+floor1.c:  codec_setup_info   *ci=vb->vd->vi->codec_setup;
+floor1.c:  int                  n=ci->blocksizes[vb->W]/2;
+floor1.c~:  codec_setup_info *ci=vb->vd->vi->codec_setup;
+floor1.c~:                  vb->pcmend/2,posts-2,class);
+floor1.c~:                    vb->pcmend/2,posts-2,class,bookas[k]);
+floor1.c~:      for(j=hx;j<vb->pcmend/2;j++) ilogmask[j]=ly; /* be certain */
+floor1.c~:    memset(ilogmask,0,vb->pcmend/2*sizeof(*ilogmask));
+floor1.c~:  codec_setup_info   *ci=vb->vd->vi->codec_setup;
+floor1.c~:  if(oggpack_read(&vb->opb,1)==1){
+floor1.c~:    fit_value[0]=oggpack_read(&vb->opb,ilog(look->quant_q-1));
+floor1.c~:    fit_value[1]=oggpack_read(&vb->opb,ilog(look->quant_q-1));
+floor1.c~:        cval=vorbis_book_decode(books+info->class_book[class],&vb->opb);
+floor1.c~:          if((fit_value[j+k]=vorbis_book_decode(books+book,&vb->opb))==-1)
+floor1.c~:  codec_setup_info   *ci=vb->vd->vi->codec_setup;
+floor1.c~:  int                  n=ci->blocksizes[vb->W]/2;
+mapping0.c:  vorbis_dsp_state      *vd=vb->vd;
+mapping0.c:  private_state         *b=vb->vd->backend_state;
+mapping0.c:  vorbis_block_internal *vbi=(vorbis_block_internal *)vb->internal;
+mapping0.c:  int                    n=vb->pcmend;
+mapping0.c:  int modenumber=vb->W;
+mapping0.c:    b->psy+blocktype+(vb->W?2:0);
+mapping0.c:  vb->mode=modenumber;
+mapping0.c:    float *pcm     =vb->pcm[i];
+mapping0.c:    _vorbis_apply_window(pcm,b->window,ci->blocksizes,vb->lW,vb->W,vb->nW);
+mapping0.c:    mdct_forward(b->transform[vb->W][0],pcm,gmdct[i]);
+mapping0.c:    drft_forward(&b->fft_look[vb->W],pcm);
+mapping0.c:      float *logfft  =vb->pcm[i];
+mapping0.c:      vb->mode=modenumber;
+mapping0.c:      if(vb->W){
+mapping0.c:        oggpack_write(opb,vb->lW,1);
+mapping0.c:        oggpack_write(opb,vb->nW,1);
+mapping0.c:        float *res     =vb->pcm[i];
+mapping0.c:                         ci->psy_g_param.sliding_lowpass[vb->W][k]);
+mapping0.c:	  fprintf(fdd, "res[%d] = %d\n", kk, (int) rint(vb->pcm[i][kk]));
+mapping0.c:                   vb->pcm,
+mapping0.c:                   ci->psy_g_param.sliding_lowpass[vb->W][k]);
+mapping0.c:	  (vb->pcm[i]+psy_look->n/2)[j] += 1;
+mapping0.c:	  //	  fprintf(fdd2, "res[%d] = %d\n", j, (int) rint(vb->pcm[i][j]));
+mapping0.c:            res_bundle[ch_in_bundle]=vb->pcm[j];
+mapping0.c:            couple_bundle[ch_in_bundle++]=vb->pcm[j]+n/2;
+mapping0.c:            couple_bundle[ch_in_bundle++]=vb->pcm[j]+n/2;
+mapping0.c:  total+=ci->blocksizes[vb->W]/4+ci->blocksizes[vb->nW]/4;
+mapping0.c:  vorbis_dsp_state     *vd=vb->vd;
+mapping0.c:  long                  n=vb->pcmend=ci->blocksizes[vb->W];
+mapping0.c:    memset(vb->pcm[i],0,sizeof(*vb->pcm[i])*n/2);
+mapping0.c:        pcmbundle[ch_in_bundle++]=vb->pcm[j];
+mapping0.c:    float *pcmM=vb->pcm[info->coupling_mag[i]];
+mapping0.c:    float *pcmA=vb->pcm[info->coupling_ang[i]];
+mapping0.c:    float *pcm=vb->pcm[i];
+mapping0.c:    float *pcm=vb->pcm[i];
+mapping0.c:    mdct_backward(b->transform[vb->W][0],pcm,pcm);
+mapping0.c~:  vorbis_dsp_state      *vd=vb->vd;
+mapping0.c~:  private_state         *b=vb->vd->backend_state;
+mapping0.c~:  vorbis_block_internal *vbi=(vorbis_block_internal *)vb->internal;
+mapping0.c~:  int                    n=vb->pcmend;
+mapping0.c~:  int modenumber=vb->W;
+mapping0.c~:    b->psy+blocktype+(vb->W?2:0);
+mapping0.c~:  vb->mode=modenumber;
+mapping0.c~:    float *pcm     =vb->pcm[i];
+mapping0.c~:    _vorbis_apply_window(pcm,b->window,ci->blocksizes,vb->lW,vb->W,vb->nW);
+mapping0.c~:    mdct_forward(b->transform[vb->W][0],pcm,gmdct[i]);
+mapping0.c~:    drft_forward(&b->fft_look[vb->W],pcm);
+mapping0.c~:      float *logfft  =vb->pcm[i];
+mapping0.c~:      vb->mode=modenumber;
+mapping0.c~:      if(vb->W){
+mapping0.c~:        oggpack_write(opb,vb->lW,1);
+mapping0.c~:        oggpack_write(opb,vb->nW,1);
+mapping0.c~:        float *res     =vb->pcm[i];
+mapping0.c~:                         ci->psy_g_param.sliding_lowpass[vb->W][k]);
+mapping0.c~:                   vb->pcm,
+mapping0.c~:                   ci->psy_g_param.sliding_lowpass[vb->W][k]);
+mapping0.c~:/* 	      vb->pcm[0][32],  */
+mapping0.c~:/* 	      vb->pcm[1][32]); */
+mapping0.c~:            res_bundle[ch_in_bundle]=vb->pcm[j];
+mapping0.c~:            couple_bundle[ch_in_bundle++]=vb->pcm[j]+n/2;
+mapping0.c~:/* 		    vb->pcm[j][32], */
+mapping0.c~:/* 		    (vb->pcm[j]+n/2)[32]); */
+mapping0.c~:/* 		vb->pcm[0][32], */
+mapping0.c~:/* 		vb->pcm[1][32]); */
+mapping0.c~:            couple_bundle[ch_in_bundle++]=vb->pcm[j]+n/2;
+mapping0.c~:/* 		vb->pcm[0][32], */
+mapping0.c~:/* 		vb->pcm[1][32]); */
+mapping0.c~:  total+=ci->blocksizes[vb->W]/4+ci->blocksizes[vb->nW]/4;
+mapping0.c~:  vorbis_dsp_state     *vd=vb->vd;
+mapping0.c~:  long                  n=vb->pcmend=ci->blocksizes[vb->W];
+mapping0.c~:    memset(vb->pcm[i],0,sizeof(*vb->pcm[i])*n/2);
+mapping0.c~:        pcmbundle[ch_in_bundle++]=vb->pcm[j];
+mapping0.c~:	  vb->pcm[0][32],
+mapping0.c~:	  vb->pcm[1][32]);
+mapping0.c~:    float *pcmM=vb->pcm[info->coupling_mag[i]];
+mapping0.c~:    float *pcmA=vb->pcm[info->coupling_ang[i]];
+mapping0.c~:	  vb->pcm[0][32],
+mapping0.c~:	  vb->pcm[1][32]);
+mapping0.c~:    float *pcm=vb->pcm[i];
+mapping0.c~:    float *pcm=vb->pcm[i];
+mapping0.c~:    mdct_backward(b->transform[vb->W][0],pcm,pcm);
+res0.c:    fprintf(stderr,"%d :: ",vb->mode);
+res0.c:  int max=vb->pcmend>>1;
+res0.c:            int temp=vorbis_book_decode(look->phrasebook,&vb->opb);
+res0.c:                if(decodepart(stagebook,in[j]+offset,&vb->opb,
+res0.c:  int i,j,used=0,n=vb->pcmend/2;
+res0.c:  int i,j,used=0,n=vb->pcmend/2;
+res0.c:  long i,j,k,n=vb->pcmend/2,used=0;
+res0.c:  int max=(vb->pcmend*ch)>>1;
+res0.c:          int temp=vorbis_book_decode(look->phrasebook,&vb->opb);
+res0.c:                                          &vb->opb,samples_per_partition)==-1)
+res0.c~:    fprintf(stderr,"%d :: ",vb->mode);
+res0.c~:  int max=vb->pcmend>>1;
+res0.c~:            int temp=vorbis_book_decode(look->phrasebook,&vb->opb);
+res0.c~:                if(decodepart(stagebook,in[j]+offset,&vb->opb,
+res0.c~:  int i,j,used=0,n=vb->pcmend/2;
+res0.c~:  int i,j,used=0,n=vb->pcmend/2;
+res0.c~:  long i,j,k,n=vb->pcmend/2,used=0;
+res0.c~:  int max=(vb->pcmend*ch)>>1;
+res0.c~:          int temp=vorbis_book_decode(look->phrasebook,&vb->opb);
+res0.c~:                                          &vb->opb,samples_per_partition)==-1)
+synthesis.c:  vorbis_dsp_state     *vd=vb->vd;
+synthesis.c:  oggpack_buffer       *opb=&vb->opb;
+synthesis.c:  vb->mode=mode;
+synthesis.c:  vb->W=ci->mode_param[mode]->blockflag;
+synthesis.c:  if(vb->W){
+synthesis.c:    vb->lW=oggpack_read(opb,1);
+synthesis.c:    vb->nW=oggpack_read(opb,1);
+synthesis.c:    if(vb->nW==-1)   return(OV_EBADPACKET);
+synthesis.c:    vb->lW=0;
+synthesis.c:    vb->nW=0;
+synthesis.c:  vb->granulepos=op->granulepos;
+synthesis.c:  vb->sequence=op->packetno;
+synthesis.c:  vb->eofflag=op->e_o_s;
+synthesis.c:  vb->pcmend=ci->blocksizes[vb->W];
+synthesis.c:  vb->pcm=_vorbis_block_alloc(vb,sizeof(*vb->pcm)*vi->channels);
+synthesis.c:    vb->pcm[i]=_vorbis_block_alloc(vb,vb->pcmend*sizeof(*vb->pcm[i]));
+synthesis.c:  vorbis_dsp_state     *vd=vb->vd;
+synthesis.c:  oggpack_buffer       *opb=&vb->opb;
+synthesis.c:  vb->mode=mode;
+synthesis.c:  vb->W=ci->mode_param[mode]->blockflag;
+synthesis.c:  if(vb->W){
+synthesis.c:    vb->lW=oggpack_read(opb,1);
+synthesis.c:    vb->nW=oggpack_read(opb,1);
+synthesis.c:    if(vb->nW==-1)   return(OV_EBADPACKET);
+synthesis.c:    vb->lW=0;
+synthesis.c:    vb->nW=0;
+synthesis.c:  vb->granulepos=op->granulepos;
+synthesis.c:  vb->sequence=op->packetno;
+synthesis.c:  vb->eofflag=op->e_o_s;
+synthesis.c:  vb->pcmend=0;
+synthesis.c:  vb->pcm=NULL;

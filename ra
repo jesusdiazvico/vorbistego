@@ -1,0 +1,403 @@
+lib/protocols.c:/      (!posts && ss->synchro_method == ISS) ||  */
+lib/protocols.c:  fd = ss->fd;
+lib/protocols.c:     ss->min_fc_capacity bits, so if that limit isn't enough even to hide the
+lib/protocols.c:  if(ss->synchro_method == RES_HEADER) {
+lib/protocols.c:    if(ss->min_fc_capacity <= (SYNCHRO_HEADER_BYTES_RES*BITS_PER_BYTE
+lib/protocols.c:    if(ss->min_fc_capacity <= SIZE_FIELD_BITS) {
+lib/protocols.c:  /* ss->eot == -1 means there are no more data left to send but the EOT
+lib/protocols.c:  if(ss->eot == -1) {
+lib/protocols.c:    if(MAX_SUBLIMINAL_SIZE > ss->remaining) {
+lib/protocols.c:      d_len = ceilf((float)(ss->remaining)/(float)BITS_PER_BYTE);
+lib/protocols.c:    if(lseek(fd, ss->sent/BITS_PER_BYTE, SEEK_SET) == -1) {
+lib/protocols.c:    if(ss->sent % BITS_PER_BYTE) {
+lib/protocols.c:	data[i] <<= (ss->sent % BITS_PER_BYTE);
+lib/protocols.c:	data[i] |= (data[i+1] >> (BITS_PER_BYTE - (ss->sent % BITS_PER_BYTE)));
+lib/protocols.c:      data[d_len-1] <<= (ss->sent % BITS_PER_BYTE);
+lib/protocols.c:      d_len_bits = d_len*BITS_PER_BYTE - (ss->sent % BITS_PER_BYTE);
+lib/protocols.c:  if(set_seed(ss->hiding_key->key, ss->hiding_key->length) == I_STEGANOS_ERR) {
+lib/protocols.c:  if(!ss->aligned) {
+lib/protocols.c:      if(!ss->res_occupied[aux]) {
+lib/protocols.c:	ss->res_lineup[i] = aux;
+lib/protocols.c:	ss->res_occupied[aux] = 1;
+lib/protocols.c:    ss->aligned = 1;
+lib/protocols.c:  ss->sent += size;
+lib/protocols.c:  if(ss->synchro_method == RES_HEADER) {
+lib/protocols.c:    ss->protocol_recv_state = ANALYZED;
+lib/protocols.c:      ss->status = I_STEGANOS_SYNC_FAIL;
+lib/protocols.c:    if(ss->synchronize(vc, NULL, posts, residue, &iss_cfg, 1, &bit) ==
+lib/protocols.c:  if(ss->synchro_method == ISS && !bit) {
+lib/protocols.c:    ss->synchro_method = RES_HEADER;
+lib/protocols.c:  if(set_seed(ss->hiding_key->key, ss->hiding_key->length) == I_STEGANOS_ERR) {
+lib/protocols.c:    if(hack) ss->synchro_method = ISS;
+lib/protocols.c:  if(!ss->aligned) {
+lib/protocols.c:	if(hack) ss->synchro_method = ISS;
+lib/protocols.c:      if(!ss->res_occupied[aux]) {
+lib/protocols.c:	ss->res_lineup[i] = aux;
+lib/protocols.c:	ss->res_occupied[aux] = 1;
+lib/protocols.c:    ss->aligned = 1;
+lib/protocols.c:    if(hack) ss->synchro_method = ISS;
+lib/protocols.c:  if(hack) ss->synchro_method = ISS;
+lib/protocols.c:      ss->eot = 1;
+lib/protocols.c:    ss->sent += (read - carry_len);
+lib/protocols.c:  ss->synchro_key = NULL;
+lib/protocols.c:  ss->hiding_key = NULL;
+lib/protocols.c:/*   ss->variation_limit = NULL; */
+lib/protocols.c:/*   ss->res_max_capacity = NULL; */
+lib/protocols.c:/*   ss->res_min_capacity = NULL; */
+lib/protocols.c:  /* ss->synchro_key will be set to the value obtained by parsing the field 
+lib/protocols.c:  if(!(ss->synchro_key = (steganos_key_t *) realloc(ss->synchro_key, sizeof(steganos_key_t)))) {
+lib/protocols.c:	       ss->synchro_key) == I_STEGANOS_ERR) {
+lib/protocols.c:  /* ss->hiding_key will be set to the value obtained by parsing the field 
+lib/protocols.c:  if(!(ss->hiding_key = (steganos_key_t *) realloc(ss->hiding_key, sizeof(steganos_key_t)))) {
+lib/protocols.c:	       ss->hiding_key) == I_STEGANOS_ERR) {
+lib/protocols.c:    ss->protocol_send_state = SYNCHRONIZED;
+lib/protocols.c:    ss->protocol_send_state = IDLE;
+lib/protocols.c:  ss->protocol_recv_state = IDLE;
+lib/protocols.c:  /* ss->synchro_method will be set to the value obtained by parsing the field
+lib/protocols.c:  ss->synchro_method = ISS;//RES_HEADER;
+lib/protocols.c:  ss->desync = 0;
+lib/protocols.c:  /* ss->synchronize will be set in agreement with synchro_method_et */
+lib/protocols.c:  if(ss->synchro_method == ISS) {
+lib/protocols.c:    ss->synchronize = synchro_iss;
+lib/protocols.c:    ss->synchronize = NULL; /* Currently, just ISS or RES_HEADER */
+lib/protocols.c:  /* ss->hide_method will be set to the value obtained by parsing the field 
+lib/protocols.c:  //ss->hide_method = PARITY_BITS;
+lib/protocols.c:  ss->hide_method = DIRECT_HIDING;
+lib/protocols.c:  /* ss->hide will be set in agreement with hide_mode_et */
+lib/protocols.c:  if(ss->hide_method == PARITY_BITS) 
+lib/protocols.c:    ss->hide = parity_bits_method;
+lib/protocols.c:    ss->hide = void_method;
+lib/protocols.c:  /* ss->cipher will be set to the value obtained by parsing the field cipher
+lib/protocols.c:  ss->cipher = NONE;
+lib/protocols.c:  /* ss->da will be set to the value obtained by parsing the field aggressiveness
+lib/protocols.c:  ss->da = 5;
+lib/protocols.c:  ss->ra = ss->da;
+lib/protocols.c:  /* ss->variation_limit will be allocated and have [res_len][2] size, each
+lib/protocols.c:/*   if(!(ss->variation_limit = (float **)  */
+lib/protocols.c:/*        realloc(ss->variation_limit, sizeof(float *)*res_len))) { */
+lib/protocols.c:/*     if(!(ss->variation_limit[i] = (float *) malloc(sizeof(float)*2))) { */
+lib/protocols.c:  memset(ss->variation_limit, 0, sizeof(float)*(2*VORBIS_MAX_BLOCK));// TODO!!!! xxx
+lib/protocols.c:  ss->max_fc_capacity = 0.f;
+lib/protocols.c:  ss->min_fc_capacity = 0.f;
+lib/protocols.c:/*   if(!(ss->res_max_capacity = (int *)  */
+lib/protocols.c:/*        realloc(ss->res_max_capacity, sizeof(int)*res_len))) { */
+lib/protocols.c:/*   if(!(ss->res_min_capacity = (int *)  */
+lib/protocols.c:/*        realloc(ss->res_min_capacity, sizeof(int)*res_len))) { */
+lib/protocols.c:/*   memset(ss->res_max_capacity, 0, res_len*sizeof(*ss->res_max_capacity)); */
+lib/protocols.c:/*   memset(ss->res_min_capacity, 0, res_len*sizeof(*ss->res_min_capacity)); */
+lib/protocols.c:/*     ss->variation_limit[i][0] = 0.f; */
+lib/protocols.c:/*     ss->variation_limit[i][1] = 0.f; */
+lib/protocols.c:  memset(ss->res_max_capacity, 0, sizeof(int)*VORBIS_MAX_BLOCK);
+lib/protocols.c:  memset(ss->res_min_capacity, 0, sizeof(int)*VORBIS_MAX_BLOCK);
+lib/protocols.c:  memset(ss->res_lineup, 0, sizeof(int)*VORBIS_MAX_BLOCK); // TODO!! reservar memoria
+lib/protocols.c:  memset(ss->res_occupied, 0, sizeof(int)*VORBIS_MAX_BLOCK); // TODO!! reservar memoria
+lib/protocols.c:  ss->out = (int *) malloc(sizeof(int)*(VIF_POSIT+2));
+lib/protocols.c:  memset(ss->out, 0, sizeof(int)*(VIF_POSIT+2));
+lib/protocols.c:  ss->status = I_STEGANOS_OK;
+lib/protocols.c:  ss->eot = 0;
+lib/protocols.c:  ss->aligned = 0;
+lib/protocols.c:/*   if(ss->res_max_capacity) free(ss->res_max_capacity); */
+lib/protocols.c:/*   if(ss->res_min_capacity) free(ss->res_min_capacity); */
+lib/protocols.c:/*   if(ss->variation_limit) { */
+lib/protocols.c:/*       if(ss->variation_limit[i]) free(ss->variation_limit[i]); */
+lib/protocols.c:/*     free(ss->variation_limit[i]); */
+lib/protocols.c:  if(ss->synchro_key) {
+lib/protocols.c:    free(ss->synchro_key->key);
+lib/protocols.c:    free(ss->synchro_key);
+lib/protocols.c:  if(ss->hiding_key) {
+lib/protocols.c:    free(ss->hiding_key->key);
+lib/protocols.c:    free(ss->hiding_key);
+lib/protocols.c:/*   if(ss->variation_limit) { */
+lib/protocols.c:/*       if(ss->variation_limit[i]) free(ss->variation_limit[i]); */
+lib/protocols.c:/*     free(ss->variation_limit); */
+lib/protocols.c:/*   if(ss->res_max_capacity) free(ss->res_max_capacity); */
+lib/protocols.c:/*   if(ss->res_min_capacity) free(ss->res_min_capacity); */
+lib/protocols.c:/*   if(ss->res_lineup) free(ss->res_lineup); */
+lib/protocols.c:/*   if(ss->res_occupied) free(ss->res_occupied); */
+lib/protocols.c:  if(ss->out) free(ss->out);
+lib/protocols.c:  if(!vb || !look || !opb || !vb->ss || !vb->ss->out) {
+lib/protocols.c:  out = vb->ss->out;
+lib/floor1.c:	 vb->ss->posts_mode != 0 (what means 'use original posts'), we call the
+lib/floor1.c:      if(vb->ss->synchro_method == ISS && vb->ss->posts_mode != 0 && 
+lib/floor1.c:	 vb->ss->remaining) { /** @todo We should only take into account 
+lib/floor1.c:	if(vb->ss->posts_mode == 1) {
+lib/floor1.c:	  vb->ss->status = I_STEGANOS_SYNC_FAIL;
+lib/floor1.c:	  vb->ss->status = vb->ss->synchronize(&vc, NULL, post, NULL, 
+lib/floor1.c:    memcpy(vb->ss->out, out, sizeof(int)*posts);
+lib/channel.c: * after a successful execution. Also initializes the ss->res_mask variable, 
+lib/channel.c:  if(!ss /*||  ss->protocol_send_state != SYNCHRONIZED *//*IDLE*/ || !residue || res_len <= 0) {
+lib/channel.c:			  ss->variation_limit[i]) == I_STEGANOS_ERR) {
+lib/channel.c:    if(signbit(residue[i]) == signbit(ss->variation_limit[i][0])) {
+lib/channel.c:      esrv = ss->variation_limit[i][0];
+lib/channel.c:      osrv = ss->variation_limit[i][1];
+lib/channel.c:      osrv = ss->variation_limit[i][0];
+lib/channel.c:      esrv = ss->variation_limit[i][1];
+lib/channel.c:    /** <i> ss->res_max_capacity (MCRVC) </i> and <i>ss->res_min_capacity</i>
+lib/channel.c:      ss->res_max_capacity[i] = nbits; /* This means the nbits least significant bits
+lib/channel.c:      ss->res_min_capacity[i] = nbits; /* This means the nbits least significant bits
+lib/channel.c:  ss->protocol_send_state = MEASURED;
+lib/channel.c:  ss->max_fc_capacity = max_fc_capacity;
+lib/channel.c:  ss->min_fc_capacity = min_fc_capacity;
+lib/channel.c: * This function first retrieves the next 'ss->aggressiveness*ss->max_fc_capacity'
+lib/channel.c: * shouldn't be called if ss->aggressiveness*ss->max_fc_capacity is not big
+lib/channel.c: *  ss->protocol_send_state field, which must be SYNCHRONIZED at the input and
+lib/channel.c:  if(!ss /*|| ss->protocol_send_state != SYNCHRONIZED*/ || 
+lib/channel.c:     ((!data || !d_len) && ss->remaining != -1) ||
+lib/channel.c:  usage = ((float)((ss->da - ss->ra) + ss->da)*ss->max_fc_capacity)/(10.f);
+lib/channel.c:  sprintf(susage, "iter: %d => usage: %f, p: %.3f\n", ss->iters, usage, (ss->da - ss->ra) + ss->da);
+lib/channel.c:  /* TODO!! ss->ra must range from 0 to 10 */
+lib/channel.c:/*   kkk = ss->eot; */
+lib/channel.c:/*   if(ss->synchro_method == ISS && ss->eot != kkk) iusage += EOT_BYTES*BITS_PER_BYTE;   */
+lib/channel.c:/*   if(ss->synchro_method == RES_HEADER) iusage -= 32; */
+lib/channel.c:/*   if(ss->synchro_method == RES_HEADER) iusage += 32; */
+lib/channel.c:/*   if(ss->synchro_method == ISS && ss->eot != kkk) iusage -= EOT_BYTES*BITS_PER_BYTE; */
+lib/channel.c:/*   sprintf(&dsent[kk], "| iter %d", ss->iters); */
+lib/channel.c:  /** @todo The subliminal data must be ciphered here if ss->cipher != NONE */ 
+lib/channel.c:  if(ss->cipher == NONE) {
+lib/channel.c:    ss->protocol_send_state = CIPHERED;
+lib/channel.c:  if(ss->synchro_method == RES_HEADER) {
+lib/channel.c:  if(ss->eot == 1) {
+lib/channel.c:  ss->protocol_send_state = CONTROLLED;
+lib/channel.c:  if(!ss || /*ss->protocol_recv_state != ANALYZED ||*/ !floor || !residue || 
+lib/channel.c:/*     if(!ss->res_occupied[aux]) { */
+lib/channel.c:/*       ss->res_lineup[i] = aux; */
+lib/channel.c:/*       ss->res_occupied[aux] = 1; */
+lib/channel.c:  if(ss->synchro_method == RES_HEADER) {
+lib/channel.c:      if(_read_subliminal_residue(residue[ss->res_lineup[i]], 
+lib/channel.c:    if(ss->hide(bitstream, SYNCHRO_HEADER_BYTES_RES*BITS_PER_BYTE, floor, 
+lib/channel.c:		residue, res_len, ss->hiding_key, 1, 1,
+lib/channel.c:    if(_read_subliminal_residue(residue[ss->res_lineup[i]], 
+lib/channel.c:  if(ss->hide(bitstream, SIZE_FIELD_BITS, floor, residue, res_len,
+lib/channel.c:	      ss->hiding_key, 1, 1,
+lib/channel.c:    if(_read_subliminal_residue(residue[ss->res_lineup[i]], 
+lib/channel.c:  if(ss->hide(bitstream, sub_size, floor, residue, res_len,
+lib/channel.c:	      ss->hiding_key, ss->synchro_method, 1,
+lib/channel.c:  ss->protocol_recv_state = READ;
+lib/channel.c: *  the method specified in ss->hide_method.
+lib/channel.c: * applying the hiding method specified by ss->hide_method. In a successful 
+lib/channel.c:  if(!ss || /*ss->protocol_send_state != SYNCHRONIZED ||*/ 
+lib/channel.c:     ((!data || !d_len) && ss->eot != -1) ||
+lib/channel.c:  if(ss->synchro_method == RES_HEADER) {
+lib/channel.c:  if(!ss->desync) {
+lib/channel.c:      if(ss->synchro_method == ISS) {
+lib/channel.c:	  ss->eot = 1;
+lib/channel.c:	  ss->eot = -1; /* Serves as "pending EOT" */
+lib/channel.c:  if(ss->synchro_method == RES_HEADER) {
+lib/channel.c:    if(ss->desync) {
+lib/channel.c:    if(ss->synchro_method == RES_HEADER) {
+lib/channel.c:    wt = ss->remaining+header_bits;
+lib/channel.c:  if(ss->hide(meta_data, meta_data_bits, floor, residue, 
+lib/channel.c:	      res_len, ss->hiding_key, ss->synchro_method, 0,
+lib/channel.c:  if(!ss /*|| ss->protocol_send_state != CIPHERED*/ || !data || d_len < 0 || 
+lib/channel.c:    pos = ss->res_lineup[i];
+lib/channel.c:    max_bits = ss->res_max_capacity[pos];
+lib/channel.c:    min_bits = ss->res_min_capacity[pos];
+lib/channel.c:    if(signbit(residue[pos]) == signbit(ss->variation_limit[pos][0])) {
+lib/channel.c:      upper = ceil(residue[pos]+ss->variation_limit[pos][0]); // TODO!!!! check!!!
+lib/channel.c:      lower = floor(residue[pos]+ss->variation_limit[pos][1]); // TODO!!!! check!!!
+lib/channel.c:      lower = ceil(residue[pos]+ss->variation_limit[pos][0]); // TODO!!!! check!!!
+lib/channel.c:      upper = floor(residue[pos]+ss->variation_limit[pos][1]); // TODO!!!! check!!!
+lib/channel.c:  ss->protocol_send_state = HIDED;
+lib/channel.c:  if(!ss /*|| ss->protocol_send_state != HIDED*/ || !residue || !sub_residue || res_len <= 0) {
+lib/channel.c:  if(set_seed(ss->synchro_key->key, ss->synchro_key->length) == I_STEGANOS_ERR) {
+lib/sharedbook.c:   cross-platform, I simply want to be sure that special mapping cases
+lib/vorbisfile.c: /* Guard against cross-link changes; they're perfectly legal */
+lib/vorbisfile.c: /* Guard against cross-link changes; they're perfectly legal */
+lib/mapping0.c:		   vb->ss->status != I_STEGANOS_SYNC_FAIL */
+lib/mapping0.c:	      if(vb->ss->status == I_STEGANOS_SYNC_FAIL) {
+lib/mapping0.c:	  if(rc != I_STEGANOS_OK || vb->ss->status == I_STEGANOS_ERR || errno ||
+steganos/lib/protocols.c:/      (!posts && ss->synchro_method == ISS) ||  */
+steganos/lib/protocols.c:  fd = ss->fd;
+steganos/lib/protocols.c:     ss->min_fc_capacity bits, so if that limit isn't enough even to hide the
+steganos/lib/protocols.c:  if(ss->synchro_method == RES_HEADER) {
+steganos/lib/protocols.c:    if(ss->min_fc_capacity <= (SYNCHRO_HEADER_BYTES_RES*BITS_PER_BYTE
+steganos/lib/protocols.c:    if(ss->min_fc_capacity <= SIZE_FIELD_BITS) {
+steganos/lib/protocols.c:  /* ss->eot == -1 means there are no more data left to send but the EOT
+steganos/lib/protocols.c:  if(ss->eot == -1) {
+steganos/lib/protocols.c:    if(MAX_SUBLIMINAL_SIZE > ss->remaining) {
+steganos/lib/protocols.c:      d_len = ceilf((float)(ss->remaining)/(float)BITS_PER_BYTE);
+steganos/lib/protocols.c:    if(lseek(fd, ss->sent/BITS_PER_BYTE, SEEK_SET) == -1) {
+steganos/lib/protocols.c:    if(ss->sent % BITS_PER_BYTE) {
+steganos/lib/protocols.c:	data[i] <<= (ss->sent % BITS_PER_BYTE);
+steganos/lib/protocols.c:	data[i] |= (data[i+1] >> (BITS_PER_BYTE - (ss->sent % BITS_PER_BYTE)));
+steganos/lib/protocols.c:      data[d_len-1] <<= (ss->sent % BITS_PER_BYTE);
+steganos/lib/protocols.c:      d_len_bits = d_len*BITS_PER_BYTE - (ss->sent % BITS_PER_BYTE);
+steganos/lib/protocols.c:  if(set_seed(ss->hiding_key->key, ss->hiding_key->length) == I_STEGANOS_ERR) {
+steganos/lib/protocols.c:  if(!ss->aligned) {
+steganos/lib/protocols.c:      if(!ss->res_occupied[aux]) {
+steganos/lib/protocols.c:	ss->res_lineup[i] = aux;
+steganos/lib/protocols.c:	ss->res_occupied[aux] = 1;
+steganos/lib/protocols.c:    ss->aligned = 1;
+steganos/lib/protocols.c:  ss->sent += size;
+steganos/lib/protocols.c:  if(ss->synchro_method == RES_HEADER) {
+steganos/lib/protocols.c:    ss->protocol_recv_state = ANALYZED;
+steganos/lib/protocols.c:      ss->status = I_STEGANOS_SYNC_FAIL;
+steganos/lib/protocols.c:    if(ss->synchronize(vc, NULL, posts, residue, &iss_cfg, 1, &bit) ==
+steganos/lib/protocols.c:  if(ss->synchro_method == ISS && !bit) {
+steganos/lib/protocols.c:    ss->synchro_method = RES_HEADER;
+steganos/lib/protocols.c:  if(set_seed(ss->hiding_key->key, ss->hiding_key->length) == I_STEGANOS_ERR) {
+steganos/lib/protocols.c:    if(hack) ss->synchro_method = ISS;
+steganos/lib/protocols.c:  if(!ss->aligned) {
+steganos/lib/protocols.c:	if(hack) ss->synchro_method = ISS;
+steganos/lib/protocols.c:      if(!ss->res_occupied[aux]) {
+steganos/lib/protocols.c:	ss->res_lineup[i] = aux;
+steganos/lib/protocols.c:	ss->res_occupied[aux] = 1;
+steganos/lib/protocols.c:    ss->aligned = 1;
+steganos/lib/protocols.c:    if(hack) ss->synchro_method = ISS;
+steganos/lib/protocols.c:  if(hack) ss->synchro_method = ISS;
+steganos/lib/protocols.c:      ss->eot = 1;
+steganos/lib/protocols.c:    ss->sent += (read - carry_len);
+steganos/lib/protocols.c:  ss->synchro_key = NULL;
+steganos/lib/protocols.c:  ss->hiding_key = NULL;
+steganos/lib/protocols.c:/*   ss->variation_limit = NULL; */
+steganos/lib/protocols.c:/*   ss->res_max_capacity = NULL; */
+steganos/lib/protocols.c:/*   ss->res_min_capacity = NULL; */
+steganos/lib/protocols.c:  /* ss->synchro_key will be set to the value obtained by parsing the field 
+steganos/lib/protocols.c:  if(!(ss->synchro_key = (steganos_key_t *) realloc(ss->synchro_key, sizeof(steganos_key_t)))) {
+steganos/lib/protocols.c:	       ss->synchro_key) == I_STEGANOS_ERR) {
+steganos/lib/protocols.c:  /* ss->hiding_key will be set to the value obtained by parsing the field 
+steganos/lib/protocols.c:  if(!(ss->hiding_key = (steganos_key_t *) realloc(ss->hiding_key, sizeof(steganos_key_t)))) {
+steganos/lib/protocols.c:	       ss->hiding_key) == I_STEGANOS_ERR) {
+steganos/lib/protocols.c:    ss->protocol_send_state = SYNCHRONIZED;
+steganos/lib/protocols.c:    ss->protocol_send_state = IDLE;
+steganos/lib/protocols.c:  ss->protocol_recv_state = IDLE;
+steganos/lib/protocols.c:  /* ss->synchro_method will be set to the value obtained by parsing the field
+steganos/lib/protocols.c:  ss->synchro_method = ISS;//RES_HEADER;
+steganos/lib/protocols.c:  ss->desync = 0;
+steganos/lib/protocols.c:  /* ss->synchronize will be set in agreement with synchro_method_et */
+steganos/lib/protocols.c:  if(ss->synchro_method == ISS) {
+steganos/lib/protocols.c:    ss->synchronize = synchro_iss;
+steganos/lib/protocols.c:    ss->synchronize = NULL; /* Currently, just ISS or RES_HEADER */
+steganos/lib/protocols.c:  /* ss->hide_method will be set to the value obtained by parsing the field 
+steganos/lib/protocols.c:  //ss->hide_method = PARITY_BITS;
+steganos/lib/protocols.c:  ss->hide_method = DIRECT_HIDING;
+steganos/lib/protocols.c:  /* ss->hide will be set in agreement with hide_mode_et */
+steganos/lib/protocols.c:  if(ss->hide_method == PARITY_BITS) 
+steganos/lib/protocols.c:    ss->hide = parity_bits_method;
+steganos/lib/protocols.c:    ss->hide = void_method;
+steganos/lib/protocols.c:  /* ss->cipher will be set to the value obtained by parsing the field cipher
+steganos/lib/protocols.c:  ss->cipher = NONE;
+steganos/lib/protocols.c:  /* ss->da will be set to the value obtained by parsing the field aggressiveness
+steganos/lib/protocols.c:  ss->da = 5;
+steganos/lib/protocols.c:  ss->ra = ss->da;
+steganos/lib/protocols.c:  /* ss->variation_limit will be allocated and have [res_len][2] size, each
+steganos/lib/protocols.c:/*   if(!(ss->variation_limit = (float **)  */
+steganos/lib/protocols.c:/*        realloc(ss->variation_limit, sizeof(float *)*res_len))) { */
+steganos/lib/protocols.c:/*     if(!(ss->variation_limit[i] = (float *) malloc(sizeof(float)*2))) { */
+steganos/lib/protocols.c:  memset(ss->variation_limit, 0, sizeof(float)*(2*VORBIS_MAX_BLOCK));// TODO!!!! xxx
+steganos/lib/protocols.c:  ss->max_fc_capacity = 0.f;
+steganos/lib/protocols.c:  ss->min_fc_capacity = 0.f;
+steganos/lib/protocols.c:/*   if(!(ss->res_max_capacity = (int *)  */
+steganos/lib/protocols.c:/*        realloc(ss->res_max_capacity, sizeof(int)*res_len))) { */
+steganos/lib/protocols.c:/*   if(!(ss->res_min_capacity = (int *)  */
+steganos/lib/protocols.c:/*        realloc(ss->res_min_capacity, sizeof(int)*res_len))) { */
+steganos/lib/protocols.c:/*   memset(ss->res_max_capacity, 0, res_len*sizeof(*ss->res_max_capacity)); */
+steganos/lib/protocols.c:/*   memset(ss->res_min_capacity, 0, res_len*sizeof(*ss->res_min_capacity)); */
+steganos/lib/protocols.c:/*     ss->variation_limit[i][0] = 0.f; */
+steganos/lib/protocols.c:/*     ss->variation_limit[i][1] = 0.f; */
+steganos/lib/protocols.c:  memset(ss->res_max_capacity, 0, sizeof(int)*VORBIS_MAX_BLOCK);
+steganos/lib/protocols.c:  memset(ss->res_min_capacity, 0, sizeof(int)*VORBIS_MAX_BLOCK);
+steganos/lib/protocols.c:  memset(ss->res_lineup, 0, sizeof(int)*VORBIS_MAX_BLOCK); // TODO!! reservar memoria
+steganos/lib/protocols.c:  memset(ss->res_occupied, 0, sizeof(int)*VORBIS_MAX_BLOCK); // TODO!! reservar memoria
+steganos/lib/protocols.c:  ss->out = (int *) malloc(sizeof(int)*(VIF_POSIT+2));
+steganos/lib/protocols.c:  memset(ss->out, 0, sizeof(int)*(VIF_POSIT+2));
+steganos/lib/protocols.c:  ss->status = I_STEGANOS_OK;
+steganos/lib/protocols.c:  ss->eot = 0;
+steganos/lib/protocols.c:  ss->aligned = 0;
+steganos/lib/protocols.c:/*   if(ss->res_max_capacity) free(ss->res_max_capacity); */
+steganos/lib/protocols.c:/*   if(ss->res_min_capacity) free(ss->res_min_capacity); */
+steganos/lib/protocols.c:/*   if(ss->variation_limit) { */
+steganos/lib/protocols.c:/*       if(ss->variation_limit[i]) free(ss->variation_limit[i]); */
+steganos/lib/protocols.c:/*     free(ss->variation_limit[i]); */
+steganos/lib/protocols.c:  if(ss->synchro_key) {
+steganos/lib/protocols.c:    free(ss->synchro_key->key);
+steganos/lib/protocols.c:    free(ss->synchro_key);
+steganos/lib/protocols.c:  if(ss->hiding_key) {
+steganos/lib/protocols.c:    free(ss->hiding_key->key);
+steganos/lib/protocols.c:    free(ss->hiding_key);
+steganos/lib/protocols.c:/*   if(ss->variation_limit) { */
+steganos/lib/protocols.c:/*       if(ss->variation_limit[i]) free(ss->variation_limit[i]); */
+steganos/lib/protocols.c:/*     free(ss->variation_limit); */
+steganos/lib/protocols.c:/*   if(ss->res_max_capacity) free(ss->res_max_capacity); */
+steganos/lib/protocols.c:/*   if(ss->res_min_capacity) free(ss->res_min_capacity); */
+steganos/lib/protocols.c:/*   if(ss->res_lineup) free(ss->res_lineup); */
+steganos/lib/protocols.c:/*   if(ss->res_occupied) free(ss->res_occupied); */
+steganos/lib/protocols.c:  if(ss->out) free(ss->out);
+steganos/lib/protocols.c:  if(!vb || !look || !opb || !vb->ss || !vb->ss->out) {
+steganos/lib/protocols.c:  out = vb->ss->out;
+steganos/lib/channel.c: * after a successful execution. Also initializes the ss->res_mask variable, 
+steganos/lib/channel.c:  if(!ss /*||  ss->protocol_send_state != SYNCHRONIZED *//*IDLE*/ || !residue || res_len <= 0) {
+steganos/lib/channel.c:			  ss->variation_limit[i]) == I_STEGANOS_ERR) {
+steganos/lib/channel.c:    if(signbit(residue[i]) == signbit(ss->variation_limit[i][0])) {
+steganos/lib/channel.c:      esrv = ss->variation_limit[i][0];
+steganos/lib/channel.c:      osrv = ss->variation_limit[i][1];
+steganos/lib/channel.c:      osrv = ss->variation_limit[i][0];
+steganos/lib/channel.c:      esrv = ss->variation_limit[i][1];
+steganos/lib/channel.c:    /** <i> ss->res_max_capacity (MCRVC) </i> and <i>ss->res_min_capacity</i>
+steganos/lib/channel.c:      ss->res_max_capacity[i] = nbits; /* This means the nbits least significant bits
+steganos/lib/channel.c:      ss->res_min_capacity[i] = nbits; /* This means the nbits least significant bits
+steganos/lib/channel.c:  ss->protocol_send_state = MEASURED;
+steganos/lib/channel.c:  ss->max_fc_capacity = max_fc_capacity;
+steganos/lib/channel.c:  ss->min_fc_capacity = min_fc_capacity;
+steganos/lib/channel.c: * This function first retrieves the next 'ss->aggressiveness*ss->max_fc_capacity'
+steganos/lib/channel.c: * shouldn't be called if ss->aggressiveness*ss->max_fc_capacity is not big
+steganos/lib/channel.c: *  ss->protocol_send_state field, which must be SYNCHRONIZED at the input and
+steganos/lib/channel.c:  if(!ss /*|| ss->protocol_send_state != SYNCHRONIZED*/ || 
+steganos/lib/channel.c:     ((!data || !d_len) && ss->remaining != -1) ||
+steganos/lib/channel.c:  usage = ((float)((ss->da - ss->ra) + ss->da)*ss->max_fc_capacity)/(10.f);
+steganos/lib/channel.c:  sprintf(susage, "iter: %d => usage: %f, p: %.3f\n", ss->iters, usage, (ss->da - ss->ra) + ss->da);
+steganos/lib/channel.c:  /* TODO!! ss->ra must range from 0 to 10 */
+steganos/lib/channel.c:/*   kkk = ss->eot; */
+steganos/lib/channel.c:/*   if(ss->synchro_method == ISS && ss->eot != kkk) iusage += EOT_BYTES*BITS_PER_BYTE;   */
+steganos/lib/channel.c:/*   if(ss->synchro_method == RES_HEADER) iusage -= 32; */
+steganos/lib/channel.c:/*   if(ss->synchro_method == RES_HEADER) iusage += 32; */
+steganos/lib/channel.c:/*   if(ss->synchro_method == ISS && ss->eot != kkk) iusage -= EOT_BYTES*BITS_PER_BYTE; */
+steganos/lib/channel.c:/*   sprintf(&dsent[kk], "| iter %d", ss->iters); */
+steganos/lib/channel.c:  /** @todo The subliminal data must be ciphered here if ss->cipher != NONE */ 
+steganos/lib/channel.c:  if(ss->cipher == NONE) {
+steganos/lib/channel.c:    ss->protocol_send_state = CIPHERED;
+steganos/lib/channel.c:  if(ss->synchro_method == RES_HEADER) {
+steganos/lib/channel.c:  if(ss->eot == 1) {
+steganos/lib/channel.c:  ss->protocol_send_state = CONTROLLED;
+steganos/lib/channel.c:  if(!ss || /*ss->protocol_recv_state != ANALYZED ||*/ !floor || !residue || 
+steganos/lib/channel.c:/*     if(!ss->res_occupied[aux]) { */
+steganos/lib/channel.c:/*       ss->res_lineup[i] = aux; */
+steganos/lib/channel.c:/*       ss->res_occupied[aux] = 1; */
+steganos/lib/channel.c:  if(ss->synchro_method == RES_HEADER) {
+steganos/lib/channel.c:      if(_read_subliminal_residue(residue[ss->res_lineup[i]], 
+steganos/lib/channel.c:    if(ss->hide(bitstream, SYNCHRO_HEADER_BYTES_RES*BITS_PER_BYTE, floor, 
+steganos/lib/channel.c:		residue, res_len, ss->hiding_key, 1, 1,
+steganos/lib/channel.c:    if(_read_subliminal_residue(residue[ss->res_lineup[i]], 
+steganos/lib/channel.c:  if(ss->hide(bitstream, SIZE_FIELD_BITS, floor, residue, res_len,
+steganos/lib/channel.c:	      ss->hiding_key, 1, 1,
+steganos/lib/channel.c:    if(_read_subliminal_residue(residue[ss->res_lineup[i]], 
+steganos/lib/channel.c:  if(ss->hide(bitstream, sub_size, floor, residue, res_len,
+steganos/lib/channel.c:	      ss->hiding_key, ss->synchro_method, 1,
+steganos/lib/channel.c:  ss->protocol_recv_state = READ;
+steganos/lib/channel.c: *  the method specified in ss->hide_method.
+steganos/lib/channel.c: * applying the hiding method specified by ss->hide_method. In a successful 
+steganos/lib/channel.c:  if(!ss || /*ss->protocol_send_state != SYNCHRONIZED ||*/ 
+steganos/lib/channel.c:     ((!data || !d_len) && ss->eot != -1) ||
+steganos/lib/channel.c:  if(ss->synchro_method == RES_HEADER) {
+steganos/lib/channel.c:  if(!ss->desync) {
+steganos/lib/channel.c:      if(ss->synchro_method == ISS) {
+steganos/lib/channel.c:	  ss->eot = 1;
+steganos/lib/channel.c:	  ss->eot = -1; /* Serves as "pending EOT" */
+steganos/lib/channel.c:  if(ss->synchro_method == RES_HEADER) {
+steganos/lib/channel.c:    if(ss->desync) {
+steganos/lib/channel.c:    if(ss->synchro_method == RES_HEADER) {
+steganos/lib/channel.c:    wt = ss->remaining+header_bits;
+steganos/lib/channel.c:  if(ss->hide(meta_data, meta_data_bits, floor, residue, 
+steganos/lib/channel.c:	      res_len, ss->hiding_key, ss->synchro_method, 0,
+steganos/lib/channel.c:  if(!ss /*|| ss->protocol_send_state != CIPHERED*/ || !data || d_len < 0 || 
+steganos/lib/channel.c:    pos = ss->res_lineup[i];
+steganos/lib/channel.c:    max_bits = ss->res_max_capacity[pos];
+steganos/lib/channel.c:    min_bits = ss->res_min_capacity[pos];
+steganos/lib/channel.c:    if(signbit(residue[pos]) == signbit(ss->variation_limit[pos][0])) {
+steganos/lib/channel.c:      upper = ceil(residue[pos]+ss->variation_limit[pos][0]); // TODO!!!! check!!!
+steganos/lib/channel.c:      lower = floor(residue[pos]+ss->variation_limit[pos][1]); // TODO!!!! check!!!
+steganos/lib/channel.c:      lower = ceil(residue[pos]+ss->variation_limit[pos][0]); // TODO!!!! check!!!
+steganos/lib/channel.c:      upper = floor(residue[pos]+ss->variation_limit[pos][1]); // TODO!!!! check!!!
+steganos/lib/channel.c:  ss->protocol_send_state = HIDED;
+steganos/lib/channel.c:  if(!ss /*|| ss->protocol_send_state != HIDED*/ || !residue || !sub_residue || res_len <= 0) {
+steganos/lib/channel.c:  if(set_seed(ss->synchro_key->key, ss->synchro_key->length) == I_STEGANOS_ERR) {

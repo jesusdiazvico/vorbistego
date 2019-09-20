@@ -1,0 +1,52 @@
+\hypertarget{structcryptos__protocol__buffer__t}{
+\section{cryptos\_\-protocol\_\-buffer\_\-t Struct Reference}
+\label{structcryptos__protocol__buffer__t}\index{cryptos\_\-protocol\_\-buffer\_\-t@{cryptos\_\-protocol\_\-buffer\_\-t}}
+}
+
+
+{\ttfamily \#include $<$cryptos\_\-types.h$>$}\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structcryptos__protocol__buffer__t_a63a8f5b70415ffa8c59dcd7b783398c8}{fd}
+\item 
+size\_\-t \hyperlink{structcryptos__protocol__buffer__t_abfbda774fe7657594b8ccc1a17f32d15}{offset}
+\item 
+\hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$ \hyperlink{structcryptos__protocol__buffer__t_a06a239a5294eecb4b8cbf4e176f601f8}{buffer}
+\item 
+size\_\-t \hyperlink{structcryptos__protocol__buffer__t_a3e75fb39440a18d4eda8b756ffea773d}{buffer\_\-size}
+\item 
+size\_\-t \hyperlink{structcryptos__protocol__buffer__t_a537d72e9b1d579ecc4aaf0f00747d3b0}{buffer\_\-used}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcryptos__protocol__buffer__t_a06a239a5294eecb4b8cbf4e176f601f8}{
+\index{cryptos\_\-protocol\_\-buffer\_\-t@{cryptos\_\-protocol\_\-buffer\_\-t}!buffer@{buffer}}
+\index{buffer@{buffer}!cryptos_protocol_buffer_t@{cryptos\_\-protocol\_\-buffer\_\-t}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf byte}$\ast$ {\bf cryptos\_\-protocol\_\-buffer\_\-t::buffer}}}
+\label{structcryptos__protocol__buffer__t_a06a239a5294eecb4b8cbf4e176f601f8}
+Buffer to store data not successfuly sent or received in previous packets. \hypertarget{structcryptos__protocol__buffer__t_a3e75fb39440a18d4eda8b756ffea773d}{
+\index{cryptos\_\-protocol\_\-buffer\_\-t@{cryptos\_\-protocol\_\-buffer\_\-t}!buffer\_\-size@{buffer\_\-size}}
+\index{buffer\_\-size@{buffer\_\-size}!cryptos_protocol_buffer_t@{cryptos\_\-protocol\_\-buffer\_\-t}}
+\subsubsection[{buffer\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t {\bf cryptos\_\-protocol\_\-buffer\_\-t::buffer\_\-size}}}
+\label{structcryptos__protocol__buffer__t_a3e75fb39440a18d4eda8b756ffea773d}
+Allocated size for buffer. \hypertarget{structcryptos__protocol__buffer__t_a537d72e9b1d579ecc4aaf0f00747d3b0}{
+\index{cryptos\_\-protocol\_\-buffer\_\-t@{cryptos\_\-protocol\_\-buffer\_\-t}!buffer\_\-used@{buffer\_\-used}}
+\index{buffer\_\-used@{buffer\_\-used}!cryptos_protocol_buffer_t@{cryptos\_\-protocol\_\-buffer\_\-t}}
+\subsubsection[{buffer\_\-used}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t {\bf cryptos\_\-protocol\_\-buffer\_\-t::buffer\_\-used}}}
+\label{structcryptos__protocol__buffer__t_a537d72e9b1d579ecc4aaf0f00747d3b0}
+Current amount of bytes in buffer. \hypertarget{structcryptos__protocol__buffer__t_a63a8f5b70415ffa8c59dcd7b783398c8}{
+\index{cryptos\_\-protocol\_\-buffer\_\-t@{cryptos\_\-protocol\_\-buffer\_\-t}!fd@{fd}}
+\index{fd@{fd}!cryptos_protocol_buffer_t@{cryptos\_\-protocol\_\-buffer\_\-t}}
+\subsubsection[{fd}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cryptos\_\-protocol\_\-buffer\_\-t::fd}}}
+\label{structcryptos__protocol__buffer__t_a63a8f5b70415ffa8c59dcd7b783398c8}
+The file from which we'll read the data to send at the emitter's side, or the file in which we'll write the data at the receiver's side. \hypertarget{structcryptos__protocol__buffer__t_abfbda774fe7657594b8ccc1a17f32d15}{
+\index{cryptos\_\-protocol\_\-buffer\_\-t@{cryptos\_\-protocol\_\-buffer\_\-t}!offset@{offset}}
+\index{offset@{offset}!cryptos_protocol_buffer_t@{cryptos\_\-protocol\_\-buffer\_\-t}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t {\bf cryptos\_\-protocol\_\-buffer\_\-t::offset}}}
+\label{structcryptos__protocol__buffer__t_abfbda774fe7657594b8ccc1a17f32d15}
+Offset inside fd, in bytes. 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{cryptos__types_8h}{cryptos\_\-types.h}\end{DoxyCompactItemize}

@@ -1,0 +1,375 @@
+\hypertarget{cryptos__channel_8h}{
+\section{lib/cryptos\_\-channel.h File Reference}
+\label{cryptos__channel_8h}\index{lib/cryptos\_\-channel.h@{lib/cryptos\_\-channel.h}}
+}
+{\ttfamily \#include \char`\"{}cryptos\_\-types.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cryptos__channel_8h_a7c1db6bf9f40ac05ecbf951309023000}{CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN}~3
+\begin{DoxyCompactList}\small\item\em Defines the number of bytes of the SYNC header field. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a4b01da0a30c6c33719ba7a286d21843d}{CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN}~4
+\begin{DoxyCompactList}\small\item\em Defines the number of bytes of the \char`\"{}length\char`\"{} header field. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a0a6fe10d58962c9689889c18376b7c92}{CRYPTOS\_\-IV\_\-HEADER\_\-LEN}~16
+\begin{DoxyCompactList}\small\item\em Defines the number of bytes of the IV header field. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a382386d5c1b47427e64124cfc65908fd}{CRYPTOS\_\-EMISSION\_\-HEADER\_\-LEN}~sizeof(uint64\_\-t)
+\begin{DoxyCompactList}\small\item\em Defines the number of bytes of the EMISSION header field. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a984f884b4ca70914b046f647f0b77c55}{CRYPTOS\_\-PACKET\_\-HEADER\_\-LEN}~sizeof(uint64\_\-t)
+\begin{DoxyCompactList}\small\item\em Defines the number of bytes of the PACKET header field. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a2288de8094acf582dca4ee1f0cdd2e97}{CRYPTOS\_\-MAX\_\-DATA}~0xFFFFFFFF
+\begin{DoxyCompactList}\small\item\em Defines the maximum number of bytes of the data field, which will depend on the CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN bytes. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a20d6a01cb16dacc10ae93e08a17d4e4f}{CRYPTOS\_\-DEFAULT\_\-DATA\_\-SIZE}~512
+\begin{DoxyCompactList}\small\item\em Defines the default size of the data field in crypto packets. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a83449b187be07e92ad376998b548007d}{CRYPTOS\_\-MIN\_\-DIGEST\_\-LEN}~3
+\begin{DoxyCompactList}\small\item\em Defines the size of the message digest algorithm which produces the minimum length digest, in bytes. Currently, CRC24. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a4142ab5974d31fa8942a01954157d556}{CRYPTOS\_\-MAX\_\-DIGEST\_\-LEN}~64
+\begin{DoxyCompactList}\small\item\em Defines the size of the message digest algorithm which produces the maximum length digest, in bytes. Currently, SHA512. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a92ab390999745403000d321f5d294c04}{RATIO\_\-DD}~16
+\begin{DoxyCompactList}\small\item\em Defines the number of bytes of data per byte of message digest. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{cryptos__channel_8h_a7167887c2b9516515c63028ca184431b}{CRYPTOS\_\-BUFFER\_\-MAX\_\-SIZE}~CRYPTOS\_\-PACKET\_\-MAX\_\-LEN$\ast$2
+\begin{DoxyCompactList}\small\item\em The max size, in bytes, of the cryptos buffer. It is set to twice the size of a cryptos packet because it'll never store two whole packets. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cryptos__channel_8h_ab342f589e781ce06f945fb976a68b061}{cryptos\_\-buffer\_\-init} (\hyperlink{structcryptos__protocol__buffer__t}{cryptos\_\-protocol\_\-buffer\_\-t} $\ast$cb, int fd, size\_\-t size)
+\begin{DoxyCompactList}\small\item\em Initializes cryptographic layer buffer. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_a01580452cf8439df43896e83fd27656d}{cryptos\_\-buffer\_\-free} (\hyperlink{structcryptos__protocol__buffer__t}{cryptos\_\-protocol\_\-buffer\_\-t} $\ast$cb)
+\begin{DoxyCompactList}\small\item\em Frees the resources allocated for the cryptographic layer buffer. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_a64d6ea6588e5e6bc9011e92b2014f41f}{cryptos\_\-config\_\-init} (\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} $\ast$cc, int cipher\_\-algo, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$key, int keylen, int md\_\-algo, int hmac, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$iv, int ivlen, uint64\_\-t emission, uint64\_\-t packet, uint64\_\-t default\_\-data\_\-size)
+\begin{DoxyCompactList}\small\item\em Initializes the internal variables of the \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} structure needed during the protocol. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_a8ddf30d69f0d693857243682444a2bab}{cryptos\_\-config\_\-free} (\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} $\ast$cc)
+\begin{DoxyCompactList}\small\item\em Frees any internal variable of the structure. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_a46675fbc652fcaf68c8ee63e52fef302}{cryptos\_\-config\_\-set\_\-key} (\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} $\ast$cc, \hyperlink{structcryptos__key__t}{cryptos\_\-key\_\-t} $\ast$key)
+\begin{DoxyCompactList}\small\item\em Sets the key attribute of \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} to the key specified, freeing the previous iv when necessary. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_a421782f25372a747ff7024500a73ed79}{cryptos\_\-config\_\-set\_\-iv} (\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} $\ast$cc, \hyperlink{structcryptos__key__t}{cryptos\_\-key\_\-t} $\ast$iv)
+\begin{DoxyCompactList}\small\item\em Sets the key attribute of \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} to the key specified, freeing the previous iv when necessary. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_ac2e853bea1812472bc1688b1851af89a}{produce\_\-packet} (\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} $\ast$cc, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$data, uint64\_\-t d\_\-len, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$packet, uint64\_\-t p\_\-len, uint64\_\-t $\ast$w\_\-data)
+\begin{DoxyCompactList}\small\item\em Produces a new packet ready to be sent. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_ac1160b347f305764a4802a0301d5b8f1}{parse\_\-packet} (\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} $\ast$cc, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$packet, uint64\_\-t p\_\-len, \hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$data, uint64\_\-t $\ast$d\_\-len, uint64\_\-t $\ast$r\_\-data)
+\begin{DoxyCompactList}\small\item\em Parses the received data, returning the data in it. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_af36e717fb86043efe61ac431efc62bb4}{cryptos\_\-key\_\-init} (\hyperlink{global__types_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$byte\_\-key, const int size, \hyperlink{structcryptos__key__t}{cryptos\_\-key\_\-t} $\ast$key)
+\begin{DoxyCompactList}\small\item\em Allocates memory for the key fields and sets them to the received values. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_a86d5045c3d909e3a1639bc623de0e652}{cryptos\_\-key\_\-free} (\hyperlink{structcryptos__key__t}{cryptos\_\-key\_\-t} $\ast$key)
+\begin{DoxyCompactList}\small\item\em Frees the memory allocated for the internal variables of the given cryptos\_\-key. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_a434093aaf62efbc01205f4fa20b6bbda}{cryptos\_\-cipher\_\-algo\_\-code} (const char $\ast$cipher\_\-algo\_\-name, int $\ast$code)
+\begin{DoxyCompactList}\small\item\em Returns the GCRY code for the algorithm with {\itshape cipher\_\-algo\_\-name\/} name. If the specified name is NULL, returns the code for ARCFOUR, which is the default cipher algorithm in this system. \item\end{DoxyCompactList}\item 
+int \hyperlink{cryptos__channel_8h_a1e97f5628f332b4ab41812200be9b915}{cryptos\_\-md\_\-algo\_\-code} (const char $\ast$md\_\-algo\_\-name, int $\ast$code)
+\begin{DoxyCompactList}\small\item\em Returns the GCRY code for the algorithm with {\itshape md\_\-algo\_\-name\/} name. If the specified name is NULL, returns the code for SHA1, which is the default message digest algorithm in this system. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{cryptos__channel_8h_a7167887c2b9516515c63028ca184431b}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-BUFFER\_\-MAX\_\-SIZE@{CRYPTOS\_\-BUFFER\_\-MAX\_\-SIZE}}
+\index{CRYPTOS\_\-BUFFER\_\-MAX\_\-SIZE@{CRYPTOS\_\-BUFFER\_\-MAX\_\-SIZE}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-BUFFER\_\-MAX\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-BUFFER\_\-MAX\_\-SIZE~CRYPTOS\_\-PACKET\_\-MAX\_\-LEN$\ast$2}}
+\label{cryptos__channel_8h_a7167887c2b9516515c63028ca184431b}
+
+
+The max size, in bytes, of the cryptos buffer. It is set to twice the size of a cryptos packet because it'll never store two whole packets. \hypertarget{cryptos__channel_8h_a20d6a01cb16dacc10ae93e08a17d4e4f}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-DEFAULT\_\-DATA\_\-SIZE@{CRYPTOS\_\-DEFAULT\_\-DATA\_\-SIZE}}
+\index{CRYPTOS\_\-DEFAULT\_\-DATA\_\-SIZE@{CRYPTOS\_\-DEFAULT\_\-DATA\_\-SIZE}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-DEFAULT\_\-DATA\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-DEFAULT\_\-DATA\_\-SIZE~512}}
+\label{cryptos__channel_8h_a20d6a01cb16dacc10ae93e08a17d4e4f}
+
+
+Defines the default size of the data field in crypto packets. \hypertarget{cryptos__channel_8h_a382386d5c1b47427e64124cfc65908fd}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-EMISSION\_\-HEADER\_\-LEN@{CRYPTOS\_\-EMISSION\_\-HEADER\_\-LEN}}
+\index{CRYPTOS\_\-EMISSION\_\-HEADER\_\-LEN@{CRYPTOS\_\-EMISSION\_\-HEADER\_\-LEN}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-EMISSION\_\-HEADER\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-EMISSION\_\-HEADER\_\-LEN~sizeof(uint64\_\-t)}}
+\label{cryptos__channel_8h_a382386d5c1b47427e64124cfc65908fd}
+
+
+Defines the number of bytes of the EMISSION header field. \hypertarget{cryptos__channel_8h_a0a6fe10d58962c9689889c18376b7c92}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-IV\_\-HEADER\_\-LEN@{CRYPTOS\_\-IV\_\-HEADER\_\-LEN}}
+\index{CRYPTOS\_\-IV\_\-HEADER\_\-LEN@{CRYPTOS\_\-IV\_\-HEADER\_\-LEN}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-IV\_\-HEADER\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-IV\_\-HEADER\_\-LEN~16}}
+\label{cryptos__channel_8h_a0a6fe10d58962c9689889c18376b7c92}
+
+
+Defines the number of bytes of the IV header field. \hypertarget{cryptos__channel_8h_a4b01da0a30c6c33719ba7a286d21843d}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN@{CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN}}
+\index{CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN@{CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN~4}}
+\label{cryptos__channel_8h_a4b01da0a30c6c33719ba7a286d21843d}
+
+
+Defines the number of bytes of the \char`\"{}length\char`\"{} header field. \hypertarget{cryptos__channel_8h_a2288de8094acf582dca4ee1f0cdd2e97}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-MAX\_\-DATA@{CRYPTOS\_\-MAX\_\-DATA}}
+\index{CRYPTOS\_\-MAX\_\-DATA@{CRYPTOS\_\-MAX\_\-DATA}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-MAX\_\-DATA}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-MAX\_\-DATA~0xFFFFFFFF}}
+\label{cryptos__channel_8h_a2288de8094acf582dca4ee1f0cdd2e97}
+
+
+Defines the maximum number of bytes of the data field, which will depend on the CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN bytes. \hypertarget{cryptos__channel_8h_a4142ab5974d31fa8942a01954157d556}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-MAX\_\-DIGEST\_\-LEN@{CRYPTOS\_\-MAX\_\-DIGEST\_\-LEN}}
+\index{CRYPTOS\_\-MAX\_\-DIGEST\_\-LEN@{CRYPTOS\_\-MAX\_\-DIGEST\_\-LEN}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-MAX\_\-DIGEST\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-MAX\_\-DIGEST\_\-LEN~64}}
+\label{cryptos__channel_8h_a4142ab5974d31fa8942a01954157d556}
+
+
+Defines the size of the message digest algorithm which produces the maximum length digest, in bytes. Currently, SHA512. \hypertarget{cryptos__channel_8h_a83449b187be07e92ad376998b548007d}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-MIN\_\-DIGEST\_\-LEN@{CRYPTOS\_\-MIN\_\-DIGEST\_\-LEN}}
+\index{CRYPTOS\_\-MIN\_\-DIGEST\_\-LEN@{CRYPTOS\_\-MIN\_\-DIGEST\_\-LEN}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-MIN\_\-DIGEST\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-MIN\_\-DIGEST\_\-LEN~3}}
+\label{cryptos__channel_8h_a83449b187be07e92ad376998b548007d}
+
+
+Defines the size of the message digest algorithm which produces the minimum length digest, in bytes. Currently, CRC24. \hypertarget{cryptos__channel_8h_a984f884b4ca70914b046f647f0b77c55}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-PACKET\_\-HEADER\_\-LEN@{CRYPTOS\_\-PACKET\_\-HEADER\_\-LEN}}
+\index{CRYPTOS\_\-PACKET\_\-HEADER\_\-LEN@{CRYPTOS\_\-PACKET\_\-HEADER\_\-LEN}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-PACKET\_\-HEADER\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-PACKET\_\-HEADER\_\-LEN~sizeof(uint64\_\-t)}}
+\label{cryptos__channel_8h_a984f884b4ca70914b046f647f0b77c55}
+
+
+Defines the number of bytes of the PACKET header field. \hypertarget{cryptos__channel_8h_a7c1db6bf9f40ac05ecbf951309023000}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN@{CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN}}
+\index{CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN@{CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN~3}}
+\label{cryptos__channel_8h_a7c1db6bf9f40ac05ecbf951309023000}
+
+
+Defines the number of bytes of the SYNC header field. \hypertarget{cryptos__channel_8h_a92ab390999745403000d321f5d294c04}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!RATIO\_\-DD@{RATIO\_\-DD}}
+\index{RATIO\_\-DD@{RATIO\_\-DD}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{RATIO\_\-DD}]{\setlength{\rightskip}{0pt plus 5cm}\#define RATIO\_\-DD~16}}
+\label{cryptos__channel_8h_a92ab390999745403000d321f5d294c04}
+
+
+Defines the number of bytes of data per byte of message digest. 
+
+\subsection{Function Documentation}
+\hypertarget{cryptos__channel_8h_a01580452cf8439df43896e83fd27656d}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-buffer\_\-free@{cryptos\_\-buffer\_\-free}}
+\index{cryptos\_\-buffer\_\-free@{cryptos\_\-buffer\_\-free}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-buffer\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-buffer\_\-free ({\bf cryptos\_\-protocol\_\-buffer\_\-t} $\ast$ {\em cb})}}
+\label{cryptos__channel_8h_a01580452cf8439df43896e83fd27656d}
+
+
+Frees the resources allocated for the cryptographic layer buffer. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em cb}]The cryptographic layer buffer structure to free\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno != 0 \&\& errno != EINVAL (see corresponding error code) \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_ab342f589e781ce06f945fb976a68b061}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-buffer\_\-init@{cryptos\_\-buffer\_\-init}}
+\index{cryptos\_\-buffer\_\-init@{cryptos\_\-buffer\_\-init}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-buffer\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-buffer\_\-init ({\bf cryptos\_\-protocol\_\-buffer\_\-t} $\ast$ {\em cb}, \/  int {\em fd}, \/  size\_\-t {\em size})}}
+\label{cryptos__channel_8h_ab342f589e781ce06f945fb976a68b061}
+
+
+Initializes cryptographic layer buffer. Initializes the internal variables of the \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} structure needed during the protocol.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em cb}]The cryptographic layer buffer structure to initialize \item[\mbox{$\leftarrow$} {\em fd}]The file descriptor from which the cryptographic layer will retrieve the data to produce crypto packets \item[\mbox{$\leftarrow$} {\em size}]The desired size of the buffer, in bytes.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno != 0 \&\& errno != EINVAL (see corresponding error code) \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_a434093aaf62efbc01205f4fa20b6bbda}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-cipher\_\-algo\_\-code@{cryptos\_\-cipher\_\-algo\_\-code}}
+\index{cryptos\_\-cipher\_\-algo\_\-code@{cryptos\_\-cipher\_\-algo\_\-code}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-cipher\_\-algo\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-cipher\_\-algo\_\-code (const char $\ast$ {\em cipher\_\-algo\_\-name}, \/  int $\ast$ {\em code})}}
+\label{cryptos__channel_8h_a434093aaf62efbc01205f4fa20b6bbda}
+
+
+Returns the GCRY code for the algorithm with {\itshape cipher\_\-algo\_\-name\/} name. If the specified name is NULL, returns the code for ARCFOUR, which is the default cipher algorithm in this system. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em cipher\_\-algo\_\-name}]The name of the ciphering algorithm, in char$\ast$ representation. \item[\mbox{$\rightarrow$} {\em code}]Variable to store the corresponding code.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_a8ddf30d69f0d693857243682444a2bab}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-config\_\-free@{cryptos\_\-config\_\-free}}
+\index{cryptos\_\-config\_\-free@{cryptos\_\-config\_\-free}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-config\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-config\_\-free ({\bf cryptos\_\-config\_\-t} $\ast$ {\em cc})}}
+\label{cryptos__channel_8h_a8ddf30d69f0d693857243682444a2bab}
+
+
+Frees any internal variable of the structure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cc}]The crytpos config structure to free.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_a64d6ea6588e5e6bc9011e92b2014f41f}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-config\_\-init@{cryptos\_\-config\_\-init}}
+\index{cryptos\_\-config\_\-init@{cryptos\_\-config\_\-init}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-config\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-config\_\-init ({\bf cryptos\_\-config\_\-t} $\ast$ {\em cc}, \/  int {\em cipher\_\-algo}, \/  {\bf byte} $\ast$ {\em key}, \/  int {\em keylen}, \/  int {\em md\_\-algo}, \/  int {\em hmac}, \/  {\bf byte} $\ast$ {\em iv}, \/  int {\em ivlen}, \/  uint64\_\-t {\em emission}, \/  uint64\_\-t {\em packet}, \/  uint64\_\-t {\em default\_\-data\_\-size})}}
+\label{cryptos__channel_8h_a64d6ea6588e5e6bc9011e92b2014f41f}
+
+
+Initializes the internal variables of the \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} structure needed during the protocol. Initializes the internal variables of the \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} structure needed during the protocol.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em cc}]The \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} structure to initialize \item[\mbox{$\leftarrow$} {\em cipher\_\-algo}]The cipher algorithm to use \item[\mbox{$\leftarrow$} {\em key}]The key to use, must have at least 16 bytes \item[\mbox{$\leftarrow$} {\em keylen}]Length of key, in bytes \item[\mbox{$\leftarrow$} {\em md\_\-algo}]The message digest algorithm \item[\mbox{$\leftarrow$} {\em hmac}]Boolean. When set, indicates the hmac variant of the md\_\-algo wants to be used (if possible) \item[\mbox{$\leftarrow$} {\em iv}]Initialization vector. It is not a key, but uses the same structure. Must have a length of 16 bytes (128 bits). Will be NULL at the receiver's side. \item[\mbox{$\leftarrow$} {\em ivlen}]Length of iv, in bytes. Will be 0 at the receiver's side. \item[\mbox{$\leftarrow$} {\em emission}]Emission id \item[\mbox{$\leftarrow$} {\em packet}]Packet id initial value. Will be 1 at the receiver's side. \item[\mbox{$\leftarrow$} {\em default\_\-data\_\-size}]Default data size, in bytes, to send in each packet.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno != 0 \&\& errno != EINVAL (see corresponding error code)\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{cryptos__channel_8h_a421782f25372a747ff7024500a73ed79}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-config\_\-set\_\-iv@{cryptos\_\-config\_\-set\_\-iv}}
+\index{cryptos\_\-config\_\-set\_\-iv@{cryptos\_\-config\_\-set\_\-iv}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-config\_\-set\_\-iv}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-config\_\-set\_\-iv ({\bf cryptos\_\-config\_\-t} $\ast$ {\em cc}, \/  {\bf cryptos\_\-key\_\-t} $\ast$ {\em iv})}}
+\label{cryptos__channel_8h_a421782f25372a747ff7024500a73ed79}
+
+
+Sets the key attribute of \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} to the key specified, freeing the previous iv when necessary. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cc}]The crytpos config structure \item[{\em iv}]The IV\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_a46675fbc652fcaf68c8ee63e52fef302}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-config\_\-set\_\-key@{cryptos\_\-config\_\-set\_\-key}}
+\index{cryptos\_\-config\_\-set\_\-key@{cryptos\_\-config\_\-set\_\-key}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-config\_\-set\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-config\_\-set\_\-key ({\bf cryptos\_\-config\_\-t} $\ast$ {\em cc}, \/  {\bf cryptos\_\-key\_\-t} $\ast$ {\em key})}}
+\label{cryptos__channel_8h_a46675fbc652fcaf68c8ee63e52fef302}
+
+
+Sets the key attribute of \hyperlink{structcryptos__config__t}{cryptos\_\-config\_\-t} to the key specified, freeing the previous iv when necessary. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cc}]The crytpos config structure \item[{\em key}]The key\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_a86d5045c3d909e3a1639bc623de0e652}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-key\_\-free@{cryptos\_\-key\_\-free}}
+\index{cryptos\_\-key\_\-free@{cryptos\_\-key\_\-free}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-key\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-key\_\-free ({\bf cryptos\_\-key\_\-t} $\ast$ {\em key})}}
+\label{cryptos__channel_8h_a86d5045c3d909e3a1639bc623de0e652}
+
+
+Frees the memory allocated for the internal variables of the given cryptos\_\-key. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em key}]A pointer to the key to free.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_af36e717fb86043efe61ac431efc62bb4}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-key\_\-init@{cryptos\_\-key\_\-init}}
+\index{cryptos\_\-key\_\-init@{cryptos\_\-key\_\-init}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-key\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-key\_\-init ({\bf byte} $\ast$ {\em byte\_\-key}, \/  const int {\em size}, \/  {\bf cryptos\_\-key\_\-t} $\ast$ {\em key})}}
+\label{cryptos__channel_8h_af36e717fb86043efe61ac431efc62bb4}
+
+
+Allocates memory for the key fields and sets them to the received values. Allocates memory for the key fields and sets them to the received values.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em byte\_\-key}]The key value. \item[\mbox{$\leftarrow$} {\em size}]The size of the {\itshape byte\_\-key\/} argument, in bytes. \item[\mbox{$\leftrightarrow$} {\em key}]A pointer to a previously allocated \hyperlink{structcryptos__key__t}{cryptos\_\-key\_\-t} variable in which we'll store the key's members.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = ERANGE (invalid key size). \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_a1e97f5628f332b4ab41812200be9b915}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!cryptos\_\-md\_\-algo\_\-code@{cryptos\_\-md\_\-algo\_\-code}}
+\index{cryptos\_\-md\_\-algo\_\-code@{cryptos\_\-md\_\-algo\_\-code}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{cryptos\_\-md\_\-algo\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}int cryptos\_\-md\_\-algo\_\-code (const char $\ast$ {\em md\_\-algo\_\-name}, \/  int $\ast$ {\em code})}}
+\label{cryptos__channel_8h_a1e97f5628f332b4ab41812200be9b915}
+
+
+Returns the GCRY code for the algorithm with {\itshape md\_\-algo\_\-name\/} name. If the specified name is NULL, returns the code for SHA1, which is the default message digest algorithm in this system. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em md\_\-algo\_\-name}]The name of the digest algorithm, in char$\ast$ representation. \item[\mbox{$\rightarrow$} {\em code}]Variable to store the corresponding code.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_ac1160b347f305764a4802a0301d5b8f1}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!parse\_\-packet@{parse\_\-packet}}
+\index{parse\_\-packet@{parse\_\-packet}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{parse\_\-packet}]{\setlength{\rightskip}{0pt plus 5cm}int parse\_\-packet ({\bf cryptos\_\-config\_\-t} $\ast$ {\em cc}, \/  {\bf byte} $\ast$ {\em packet}, \/  uint64\_\-t {\em p\_\-len}, \/  {\bf byte} $\ast$ {\em data}, \/  uint64\_\-t $\ast$ {\em d\_\-len}, \/  uint64\_\-t $\ast$ {\em r\_\-data})}}
+\label{cryptos__channel_8h_ac1160b347f305764a4802a0301d5b8f1}
+
+
+Parses the received data, returning the data in it. Parses the packet {\itshape packet\/}, of {\itshape p\_\-len\/} bytes, using the cryptos context defined by {\itshape cc\/}, verifying it's integrity and that matches with the expected emission and packet IDs. If everything goes OK, the recoverd data will be stored in {\itshape data\/}, of {\itshape d\_\-len\/} allocated bytes, which will be reallocated (and {\itshape d\_\-len\/} updated consequently) if more space is needed. The total amount of pure data recoverd, in bytes, will be stored in {\itshape r\_\-data\/}.
+
+A packet will have the structure depicted below:
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ $|$ SYNC $|$ DATA\_\-LENGTH $|$ IV $|$ EMISSION\_\-ID $|$ PACKET\_\-ID $|$.. DATA .. $|$ DIGEST $|$ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+
+\begin{DoxyItemize}
+\item The field SYNC will be equal to CRYPTOS\_\-SYNC\_\-HEADER and will be of CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN bytes long.
+\item The field DATA\_\-LENGTH will mark the length of the field DATA and will be of CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN bytes long.
+\item The field IV will be of CRYPTOS\_\-IV\_\-LEN bytes
+\item The field EMISSION\_\-ID will be CRYPTOS\_\-EMISSION\_\-LEN bytes long
+\item The field PACKET\_\-ID will be CRYPTOS\_\-PACKET\_\-LEN bytes long
+\item The field DATA will have the size marked in the DATA\_\-LENGTH field
+\item The DIGEST field will have a variable size, depending on the digest algorithm in use, and will vary from 24 bits (CRC24) to 64 bytes (SHA512) although high sizes are not likely to happen.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cc}]Cryptos context. \item[{\em packet}]Packet to parse \item[{\em p\_\-len}]Allocated size, in bytes, for {\itshape packet\/} \item[{\em data}]Array to store the recovered data in \item[{\em d\_\-len}]Allocated size, in bytes, for {\itshape data\/} \item[{\em r\_\-data}]Final successfully recovered amount of data, in bytes.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno != 0 \&\& errno != EINVAL (see corresponding error code) \end{DoxyRetVals}
+\hypertarget{cryptos__channel_8h_ac2e853bea1812472bc1688b1851af89a}{
+\index{cryptos\_\-channel.h@{cryptos\_\-channel.h}!produce\_\-packet@{produce\_\-packet}}
+\index{produce\_\-packet@{produce\_\-packet}!cryptos_channel.h@{cryptos\_\-channel.h}}
+\subsubsection[{produce\_\-packet}]{\setlength{\rightskip}{0pt plus 5cm}int produce\_\-packet ({\bf cryptos\_\-config\_\-t} $\ast$ {\em cc}, \/  {\bf byte} $\ast$ {\em data}, \/  uint64\_\-t {\em d\_\-len}, \/  {\bf byte} $\ast$ {\em packet}, \/  uint64\_\-t {\em p\_\-len}, \/  uint64\_\-t $\ast$ {\em w\_\-data})}}
+\label{cryptos__channel_8h_ac2e853bea1812472bc1688b1851af89a}
+
+
+Produces a new packet ready to be sent. Prepares a new packet ready to be sent. The data field will be ciphered and inserted in the packet. The header fields and integrity checks will be generated accordingly to the cryptos configuration received, and, upon successful execution, the packet id will be increased for the next packet.
+
+A packet will have the structure depicted below:
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ $|$ SYNC $|$ DATA\_\-LENGTH $|$ IV $|$ EMISSION\_\-ID $|$ PACKET\_\-ID $|$.. DATA .. $|$ DIGEST $|$ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+
+\begin{DoxyItemize}
+\item The field SYNC will be equal to CRYPTOS\_\-SYNC\_\-HEADER and will be of CRYPTOS\_\-SYNC\_\-HEADER\_\-LEN bytes long.
+\item The field DATA\_\-LENGTH will mark the length of the field DATA and will be of CRYPTOS\_\-LENGTH\_\-HEADER\_\-LEN bytes long.
+\item The field IV will be of CRYPTOS\_\-IV\_\-LEN bytes
+\item The field EMISSION\_\-ID will be CRYPTOS\_\-EMISSION\_\-LEN bytes long
+\item The field PACKET\_\-ID will be CRYPTOS\_\-PACKET\_\-LEN bytes long
+\item The field DATA will have the size marked in the DATA\_\-LENGTH field and will be the only field ciphered.
+\item The DIGEST field will have a variable size, depending on the digest algorithm in use, and will vary from 24 bits (CRC24) to 64 bytes (SHA512) although high sizes are not likely to happen. The digest includes the whole packet except the SYNC field.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cc}]Cryptos config structure \item[{\em data}]The (plain) data to write \item[{\em d\_\-len}]The length of {\itshape data\/}, in bytes \item[{\em packet}]The byte array in which store the result \item[{\em p\_\-len}]The memory allocated for {\itshape packet\/}, in bytes. \item[{\em w\_\-data}]The number of data bytes successfuly included in the current packet. Note that the amount of received plain data can exceed the amount of data that can be included in the current packet.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding error code for integer returning functions, i.e., I\_\-CRYPTOS\_\-OK if no error was present and I\_\-CRYPTOS\_\-ERR if an error occured with errno updated. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+\item[{\em I\_\-CRYPTOS\_\-OK}]with errno = 0 (No error). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno = EINVAL (invalid argument). \item[{\em I\_\-CRYPTOS\_\-ERR}]with errno != 0 \&\& errno != EINVAL (see corresponding error code) \end{DoxyRetVals}
